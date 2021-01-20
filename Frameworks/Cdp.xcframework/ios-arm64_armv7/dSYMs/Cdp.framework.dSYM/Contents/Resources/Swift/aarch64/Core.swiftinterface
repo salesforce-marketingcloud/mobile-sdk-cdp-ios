@@ -1,0 +1,278 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.3.1 (swiftlang-1200.0.41 clang-1200.0.32.8)
+// swift-module-flags: -target arm64-apple-ios10.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Core
+@_exported import Core
+import Foundation
+import Swift
+import UIKit
+import os
+@objc(MCCoreLogger) public protocol Logger {
+  @objc var redactedValues: [Swift.String] { get set }
+  @objc var logLevel: Core.MCLogLevel { get set }
+  @objc var logOutputter: Core.LogOutputter? { get set }
+  @objc var subsystem: Swift.String { get }
+}
+extension Logger {
+  public func i(category: Swift.String, message: Swift.String)
+  public func i(category: Swift.String, format: Swift.String, args: Swift.String...)
+  public func d(category: Swift.String, message: Swift.String)
+  public func d(category: Swift.String, format: Swift.String, args: Swift.String...)
+  public func w(category: Swift.String, message: Swift.String)
+  public func w(category: Swift.String, format: Swift.String, args: Swift.String...)
+  public func e(category: Swift.String, message: Swift.String)
+  public func e(category: Swift.String, format: Swift.String, args: Swift.String...)
+  public func registerLogger()
+}
+extension Logger {
+  public func debug(category: Swift.String, message: Swift.String)
+  public func info(category: Swift.String, message: Swift.String)
+  public func warning(category: Swift.String, message: Swift.String)
+  public func error(category: Swift.String, message: Swift.String)
+}
+@available(swift, obsoleted: 1)
+@objc(MCCoreLoggerHelper) public class LoggerHelper : ObjectiveC.NSObject, Core.Logger {
+  @objc public var redactedValues: [Swift.String]
+  @objc public var logLevel: Core.MCLogLevel
+  @objc public var logOutputter: Core.LogOutputter?
+  @objc public var subsystem: Swift.String
+  @objc public init(subsystem: Swift.String, logLevel: Core.MCLogLevel)
+  @objc public func debug(category: Swift.String, message: Swift.String)
+  @objc public func info(category: Swift.String, message: Swift.String)
+  @objc public func warning(category: Swift.String, message: Swift.String)
+  @objc public func error(category: Swift.String, message: Swift.String)
+  @objc public func registerLogger()
+  @objc deinit
+  @objc override dynamic public init()
+}
+@_inheritsConvenienceInitializers @objc(MCCoreLogOutputter) open class LogOutputter : ObjectiveC.NSObject {
+  @objc open func out(level: Core.MCLogLevel, subsystem: Swift.String, category: Swift.String, message: Swift.String)
+  @objc deinit
+  @objc override dynamic public init()
+}
+@objc(MCCoreAuthHeader) public class AuthHeader : ObjectiveC.NSObject {
+  @objc final public let key: Swift.String
+  @objc final public let value: Swift.String
+  @objc public init(key: Swift.String, value: Swift.String)
+  @objc deinit
+  @objc override dynamic public init()
+}
+@objc(MCCoreModule) public protocol CoreModule : AnyObject {
+  @objc var state: Swift.String { get }
+  @objc var _coreComponents: Core.CoreComponents? { get set }
+  @objc var coreModuleConfig: Core.CoreModuleConfig { get }
+}
+extension CoreModule {
+  public var coreComponents: Core.CoreComponents {
+    get
+  }
+  public var name: Swift.String {
+    get
+  }
+  public var appId: Swift.String {
+    get
+  }
+  public func registerModule()
+  public func unregisterModule()
+}
+@available(swift, obsoleted: 1)
+@objc(MCCoreModuleHelper) public class CoreModuleHelper : ObjectiveC.NSObject, Core.CoreModule {
+  @objc public var state: Swift.String
+  @objc public var _coreComponents: Core.CoreComponents?
+  @objc public var coreModuleConfig: Core.CoreModuleConfig
+  @objc public var coreComponents: Core.CoreComponents {
+    @objc get
+  }
+  @objc public var name: Swift.String {
+    @objc get
+  }
+  @objc public var appId: Swift.String {
+    @objc get
+  }
+  @objc public init(config: Core.CoreModuleConfig)
+  @objc public func registerModule()
+  @objc public func unregisterModule()
+  @objc deinit
+  @objc override dynamic public init()
+}
+@objc(MCCoreModuleConfig) public protocol CoreModuleConfig {
+  @objc var name: Swift.String { get }
+  @objc var appId: Swift.String { get }
+}
+@objc(MCCoreLogLevel) public enum MCLogLevel : Swift.Int, Swift.Comparable {
+  case debug
+  case info
+  case warn
+  case error
+  case none
+  public static func < (left: Core.MCLogLevel, right: Core.MCLogLevel) -> Swift.Bool
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @objc(MCCoreStorageManager) public class StorageManager : ObjectiveC.NSObject {
+  @objc public func getOrCreateSecurePrefs(name: Swift.String) -> Core.SecurePrefs
+  @objc public func getFilenameForModuleInstallation(fileName: Swift.String) -> Swift.String
+  @objc deinit
+  @objc override dynamic public init()
+}
+@_hasMissingDesignatedInitializers @objc(MCCoreSecurePrefs) public class SecurePrefs : ObjectiveC.NSObject {
+  @objc public func setString(_ value: Swift.String, for key: Swift.String)
+  @objc public func setInt(_ value: Swift.Int, for key: Swift.String)
+  @objc public func setBool(_ value: Swift.Bool, for key: Swift.String)
+  @objc public func setFloat(_ value: Swift.Float, for key: Swift.String)
+  @objc public func setDouble(_ value: Swift.Double, for key: Swift.String)
+  @objc public func stringFor(key: Swift.String) -> Swift.String?
+  public func intFor(key: Swift.String) -> Swift.Int?
+  public func boolFor(key: Swift.String) -> Swift.Bool?
+  public func floatFor(key: Swift.String) -> Swift.Float?
+  public func doubleFor(key: Swift.String) -> Swift.Double?
+  @objc public func remove(key: Swift.String)
+  @objc public func clearAll()
+  @objc deinit
+  @objc override dynamic public init()
+}
+@_hasMissingDesignatedInitializers @objc(MCCoreEncryptionManager) public class EncryptionManager : ObjectiveC.NSObject {
+  @objc public func encrypt(string: Swift.String) -> Foundation.Data?
+  @objc public func decrypt(stringData: Foundation.Data) -> Swift.String?
+  @objc deinit
+  @objc override dynamic public init()
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(MCCoreBehaviorManager) final public class BehaviorManager : ObjectiveC.NSObject {
+  public static let shared: Core.BehaviorManager
+  final public func addObserver(_ observer: Core.BehaviorObserver)
+  final public func removeObserver(_ observer: Core.BehaviorObserver)
+  @objc deinit
+}
+@objc(MCCoreBehaviorType) public enum BehaviorType : Swift.Int, Swift.CaseIterable {
+  case appForegrounded
+  case appBackgrounded
+  case appVersionChanged
+  case screenEntry
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+  public init?(rawValue: Swift.Int)
+  public typealias AllCases = [Core.BehaviorType]
+  public static var allCases: [Core.BehaviorType] {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @objc(MCCoreBehavior) public class Behavior : ObjectiveC.NSObject {
+  final public let type: Core.BehaviorType
+  final public let timestamp: Foundation.Date
+  final public let appVersion: Swift.String?
+  final public let appName: Swift.String?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc(MCCoreAppForegrounded) public class AppForegrounded : Core.Behavior {
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc(MCCoreAppBackgrounded) public class AppBackgrounded : Core.Behavior {
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc(MCCoreAppVersionChanged) public class AppVersionChanged : Core.Behavior {
+  final public let previousAppVersion: Swift.String
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc(MCCoreScreenEntry) public class ScreenEntry : Core.Behavior {
+  final public let name: Swift.String
+  @objc deinit
+}
+@objc(MCCoreBehaviorObserver) public protocol BehaviorObserver : AnyObject {
+  @objc var behaviorTypesToObserve: Swift.Set<Core.BehaviorType.RawValue> { get }
+  @objc func onBehavior(behavior: Core.Behavior)
+}
+@_hasMissingDesignatedInitializers @objc(MCCoreComponents) public class CoreComponents : ObjectiveC.NSObject {
+  @objc final public let encryptionManager: Core.EncryptionManager
+  @objc final public let storageManager: Core.StorageManager
+  @objc final public let behaviorManager: Core.BehaviorManager
+  @objc public func createNetworkManager(authenticator: Core.Authenticator? = nil) -> Core.NetworkManager
+  @objc deinit
+  @objc override dynamic public init()
+}
+@objc(MCCoreNetworkManager) open class NetworkManager : ObjectiveC.NSObject {
+  @objc public init(networkPreferences: Core.SecurePrefs, authenticator: Core.Authenticator?)
+  @objc open func executeSync(_ wrappedRequest: Core.WrappedRequest) -> Core.CompletedCall
+  @objc open func executeAsync(_ wrappedRequest: Core.WrappedRequest, completionHandler: @escaping (Core.CompletedCall) -> Swift.Void)
+  @objc open func isBlockedByRetryAfter(_ requestName: Swift.String) -> Swift.Bool
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc(MCCoreAuthenticator) public protocol Authenticator {
+  @objc var lock: Foundation.NSLock { get }
+  @objc func getCachedTokenHeader() -> Core.AuthHeader?
+  @objc func refreshAuthTokenHeader() -> Core.AuthHeader?
+  @objc func deleteCachedToken()
+}
+@_hasMissingDesignatedInitializers @objc(MCCoreWrappedRequest) public class WrappedRequest : ObjectiveC.NSObject {
+  @objc public var request: Foundation.URLRequest
+  @objc final public let name: Swift.String
+  @objc final public let rateLimit: Foundation.TimeInterval
+  @objc final public let tag: Swift.String?
+  @_inheritsConvenienceInitializers @objc(MCCoreWrappedRequestBuilder) public class Builder : ObjectiveC.NSObject {
+    @objc override dynamic public init()
+    @objc public func method(_ method: Swift.String) -> Core.WrappedRequest.Builder
+    @objc public func url(_ url: Swift.String) -> Core.WrappedRequest.Builder
+    @objc public func url(base: Swift.String, path: Swift.String) -> Core.WrappedRequest.Builder
+    @objc public func addOrReplaceHeader(key: Swift.String, value: Swift.String) -> Core.WrappedRequest.Builder
+    @objc public func body(_ body: Foundation.Data) -> Core.WrappedRequest.Builder
+    @objc public func timeout(_ seconds: Foundation.TimeInterval) -> Core.WrappedRequest.Builder
+    @objc public func rateLimit(_ seconds: Foundation.TimeInterval) -> Core.WrappedRequest.Builder
+    @objc public func name(_ name: Swift.String) -> Core.WrappedRequest.Builder
+    @objc public func tag(_ tag: Swift.String) -> Core.WrappedRequest.Builder
+    @objc public func build() -> Core.WrappedRequest?
+    @objc deinit
+  }
+  @objc deinit
+  @objc override dynamic public init()
+}
+@objc(MCCoreWrappedResponse) public class WrappedResponse : ObjectiveC.NSObject {
+  @objc final public let data: Foundation.Data?
+  @objc final public let response: Foundation.HTTPURLResponse?
+  @objc final public let error: Swift.Error?
+  @objc public var isSuccess: Swift.Bool {
+    @objc get
+  }
+  @objc public var isUnauthorized: Swift.Bool {
+    @objc get
+  }
+  @objc public var timeToExecute: Swift.Int64 {
+    @objc get
+  }
+  @objc public init(data: Foundation.Data? = nil, response: Foundation.URLResponse? = nil, error: Swift.Error? = nil, startTimeMillis: Swift.Int64 = Int64(Date().timeIntervalSince1970 * 1000), endTimeMillis: Swift.Int64 = Int64(Date().timeIntervalSince1970 * 1000))
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc(MCCoreNetworkManagerError) public enum NetworkManagerError : Swift.Int, Swift.Error {
+  case tokenFetchFailed
+  case tokenRefreshFailed
+  case tooManyRequests
+  case requestAlreadyInFlight
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+  public static var _nsErrorDomain: Swift.String {
+    get
+  }
+}
+@objc(MCCoreCompletedCall) public class CompletedCall : ObjectiveC.NSObject {
+  @objc final public let wrappedRequest: Core.WrappedRequest
+  @objc final public let wrappedResponse: Core.WrappedResponse
+  @objc public init(_ wrappedRequest: Core.WrappedRequest, _ wrappedResponse: Core.WrappedResponse)
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension Core.MCLogLevel : Swift.Hashable {}
+extension Core.MCLogLevel : Swift.RawRepresentable {}
+extension Core.BehaviorType : Swift.Equatable {}
+extension Core.BehaviorType : Swift.Hashable {}
+extension Core.BehaviorType : Swift.RawRepresentable {}
+extension Core.NetworkManagerError : Swift.Equatable {}
+extension Core.NetworkManagerError : Swift.Hashable {}
+extension Core.NetworkManagerError : Swift.RawRepresentable {}
