@@ -1,0 +1,19 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/stopczewska/sandbox/sdk-cdp-ios/Cdp/Cdp/Extensions/HTTPURLResponse/StatusMessage.swift",
+      "line": 9,
+      "symbol": "HTTPURLResponse.statusMessage",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/stopczewska/sandbox/sdk-cdp-ios/Cdp/Cdp/Utils/HttpResponseUtil.swift",
+      "line": 9,
+      "symbol": "httpResponseStatusToMessage(statusCode:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/stopczewska/sandbox/sdk-cdp-ios"
+}

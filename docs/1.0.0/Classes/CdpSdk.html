@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CdpSdk Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/CdpSdk" class="dashAnchor"></a>
+    <a title="CdpSdk Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">Cdp 1.0.0 Docs</a> (94% documented)</p>
+        <p class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">Cdp Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        CdpSdk Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/CdpConfig.html">CdpConfig</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CdpConfigBuilder.html">CdpConfigBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CdpSdk.html">CdpSdk</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Coordinates.html">Coordinates</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Event.html">Event</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/QueueEventEntity.html">QueueEventEntity</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/Consent.html">Consent</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/HTTPURLResponse.html">HTTPURLResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/NSManagedObjectContext.html">NSManagedObjectContext</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:3Cdp27httpResponseStatusToMessage10statusCodeSSSi_tF">httpResponseStatusToMessage(statusCode:)</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>CdpSdk</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">CdpSdk</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">CoreModule</span><span class="p">,</span> <span class="kt">AuthenticatorChangeObserver</span></code></pre>
+
+                </div>
+              </div>
+            <p>This class provides CDP Software Development Kit feature access and integration point.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Cdp@objc(cs)CdpSdk(cpy)shared"></a>
+                    <a name="//apple_ref/swift/Variable/shared" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Cdp@objc(cs)CdpSdk(cpy)shared">shared</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Shared CdpSdk Instance</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">shared</span><span class="p">:</span> <span class="kt">CdpSdk</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Cdp@objc(cs)CdpSdk(cm)configure:"></a>
+                    <a name="//apple_ref/swift/Method/configure(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Cdp@objc(cs)CdpSdk(cm)configure:">configure(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initializes the SDK.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="kd">func</span> <span class="nf">configure</span><span class="p">(</span><span class="n">_</span> <span class="nv">config</span><span class="p">:</span> <span class="kt"><a href="../Classes/CdpConfig.html">CdpConfig</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">CdpSdk</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>config</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>configuration instance (<a href="x-source-tag://CdpConfig">CdpConfig</a>)</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>shared SDK instance</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Cdp@objc(cs)CdpSdk(py)coreModuleConfig"></a>
+                    <a name="//apple_ref/swift/Property/coreModuleConfig" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Cdp@objc(cs)CdpSdk(py)coreModuleConfig">coreModuleConfig</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Core Module configuration (modules must initialize with a config that extends from CoreModuleConfig)</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">coreModuleConfig</span><span class="p">:</span> <span class="kt">CoreModuleConfig</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Cdp@objc(cs)CdpSdk(py)_coreComponents"></a>
+                    <a name="//apple_ref/swift/Property/_coreComponents" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Cdp@objc(cs)CdpSdk(py)_coreComponents">_coreComponents</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Core Components</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">_coreComponents</span><span class="p">:</span> <span class="kt">CoreComponents</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3Cdp0A3SdkC6configAA0A6ConfigCvp"></a>
+                    <a name="//apple_ref/swift/Property/config" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3Cdp0A3SdkC6configAA0A6ConfigCvp">config</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>CdpSdk configuration</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">config</span><span class="p">:</span> <span class="kt"><a href="../Classes/CdpConfig.html">CdpConfig</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Cdp@objc(cs)CdpSdk(py)state"></a>
+                    <a name="//apple_ref/swift/Property/state" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Cdp@objc(cs)CdpSdk(py)state">state</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Current state of the CdpSdk instance</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="k">var</span> <span class="nv">state</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Cdp@objc(cs)CdpSdk(py)consent"></a>
+                    <a name="//apple_ref/swift/Property/consent" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Cdp@objc(cs)CdpSdk(py)consent">consent</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Consent status</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="k">var</span> <span class="nv">consent</span><span class="p">:</span> <span class="kt"><a href="../Enums/Consent.html">Consent</a></span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Cdp@objc(cs)CdpSdk(im)trackWithEvent:"></a>
+                    <a name="//apple_ref/swift/Method/track(event:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Cdp@objc(cs)CdpSdk(im)trackWithEvent:">track(event:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sends event to be tracked.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">track</span><span class="p">(</span><span class="nv">event</span><span class="p">:</span> <span class="kt"><a href="../Classes/Event.html">Event</a></span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>event</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>event instance (<a href="x-source-tag://Event">Event</a>)</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Cdp@objc(cs)CdpSdk(im)setLocationWithCoordinates:expiresIn:"></a>
+                    <a name="//apple_ref/swift/Method/setLocation(coordinates:expiresIn:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Cdp@objc(cs)CdpSdk(im)setLocationWithCoordinates:expiresIn:">setLocation(coordinates:<wbr>expiresIn:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sets Location tracking for given coordinates with expiration time.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">setLocation</span><span class="p">(</span><span class="nv">coordinates</span><span class="p">:</span> <span class="kt"><a href="../Classes/Coordinates.html">Coordinates</a></span><span class="p">?,</span> <span class="nv">expiresIn</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>coordinates</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>instance of (<a href="x-source-tag://Coordinates">Coordinates</a>)</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>expiresIn</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>expiration time in seconds</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Cdp@objc(cs)CdpSdk(cm)setLogLevel:logOutputter:"></a>
+                    <a name="//apple_ref/swift/Method/setLogLevel(_:logOutputter:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Cdp@objc(cs)CdpSdk(cm)setLogLevel:logOutputter:">setLogLevel(_:<wbr>logOutputter:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sets Log Level.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="kd">func</span> <span class="nf">setLogLevel</span><span class="p">(</span><span class="n">_</span> <span class="nv">logLevel</span><span class="p">:</span> <span class="kt">MCLogLevel</span><span class="p">,</span> <span class="nv">logOutputter</span><span class="p">:</span> <span class="kt">LogOutputter</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>logLevel</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>defines depth of detail in log output using MCLogLevel</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>logOutputter</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>defines log output using LogOutputter</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2021 <a class="link" href="https://github.com/salesforce-marketingcloud/mobile-sdk-cdp-ios" target="_blank" rel="external">Salesforce Marketing Cloud</a>. All rights reserved. (Last updated: 2021-01-20)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
