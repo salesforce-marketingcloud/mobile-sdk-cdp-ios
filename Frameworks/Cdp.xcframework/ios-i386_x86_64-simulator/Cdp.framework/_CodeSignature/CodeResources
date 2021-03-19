@@ -22,7 +22,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		ZJgv6FWxHR36LhwKd5lmjOz/ZwE=
+		2PZ+wXwCuERf1brRZoH2c8KfuZY=
 		</data>
 		<key>Modules/Cdp.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Modules/Cdp.swiftmodule/i386-apple-ios-simulator.swiftmodule</key>
 		<data>
-		+32XXp5NqI+uo2gmKbXfab/1Uuc=
+		TZ57YM8Xso7/hV1hl3YGcZamq5Q=
 		</data>
 		<key>Modules/Cdp.swiftmodule/i386.swiftdoc</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Modules/Cdp.swiftmodule/i386.swiftmodule</key>
 		<data>
-		+32XXp5NqI+uo2gmKbXfab/1Uuc=
+		TZ57YM8Xso7/hV1hl3YGcZamq5Q=
 		</data>
 		<key>Modules/Cdp.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>Modules/Cdp.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		cKUWnzYnNmAv+Yhzd2zrapAmvjg=
+		ewVsEGETTw0r1eEdQiB1NOKY9rs=
 		</data>
 		<key>Modules/Cdp.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -70,7 +70,7 @@
 		</data>
 		<key>Modules/Cdp.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		cKUWnzYnNmAv+Yhzd2zrapAmvjg=
+		ewVsEGETTw0r1eEdQiB1NOKY9rs=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -149,11 +149,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+32XXp5NqI+uo2gmKbXfab/1Uuc=
+			TZ57YM8Xso7/hV1hl3YGcZamq5Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			Zihjtc9f/15Yq8Jx3bkucneG9MBGAu4tQz34JeYtKmE=
+			uMsQVJEabryxwfEKeHGEaKQmAYOSwYKviduXFF1onGY=
 			</data>
 		</dict>
 		<key>Modules/Cdp.swiftmodule/i386.swiftdoc</key>
@@ -182,11 +182,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+32XXp5NqI+uo2gmKbXfab/1Uuc=
+			TZ57YM8Xso7/hV1hl3YGcZamq5Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			Zihjtc9f/15Yq8Jx3bkucneG9MBGAu4tQz34JeYtKmE=
+			uMsQVJEabryxwfEKeHGEaKQmAYOSwYKviduXFF1onGY=
 			</data>
 		</dict>
 		<key>Modules/Cdp.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -215,11 +215,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			cKUWnzYnNmAv+Yhzd2zrapAmvjg=
+			ewVsEGETTw0r1eEdQiB1NOKY9rs=
 			</data>
 			<key>hash2</key>
 			<data>
-			pUWtYPJXfw51fEs83iksllxLpPwIxOq4OXg9TimN1NE=
+			6OILEoBDi7yxvDVmD1Cf5d1XBfUJVD3RwfOZ8+Up+b4=
 			</data>
 		</dict>
 		<key>Modules/Cdp.swiftmodule/x86_64.swiftdoc</key>
@@ -248,11 +248,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			cKUWnzYnNmAv+Yhzd2zrapAmvjg=
+			ewVsEGETTw0r1eEdQiB1NOKY9rs=
 			</data>
 			<key>hash2</key>
 			<data>
-			pUWtYPJXfw51fEs83iksllxLpPwIxOq4OXg9TimN1NE=
+			6OILEoBDi7yxvDVmD1Cf5d1XBfUJVD3RwfOZ8+Up+b4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
