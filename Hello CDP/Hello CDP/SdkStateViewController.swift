@@ -7,7 +7,7 @@
 
 import UIKit
 import Cdp
-import Core
+import SFMCSDK
 import CoreLocation
 
 class SdkStateViewController: UIViewController {

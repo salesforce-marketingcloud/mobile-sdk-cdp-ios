@@ -24,7 +24,6 @@
 		6A204B94256453B300833D05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6A204B96256453B300833D05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6AB877C8256F225C000B1A4C /* HelloCDPLogOutputter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloCDPLogOutputter.swift; sourceTree = "<group>"; };
-		6AB877D7256F2570000B1A4C /* Core.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Core.xcframework; path = "Pods/MarketingCloud-Core-Internal/Frameworks/Core.xcframework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,20 +37,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		16B744316F523A85EEAC82CD /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		6A204B7C256453B200833D05 = {
 			isa = PBXGroup;
 			children = (
 				6A204B87256453B200833D05 /* Hello CDP */,
 				6A204B86256453B200833D05 /* Products */,
-				16B744316F523A85EEAC82CD /* Pods */,
-				F7455A2EE2C068675F4538F3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,14 +65,6 @@
 				6A204B96256453B300833D05 /* Info.plist */,
 			);
 			path = "Hello CDP";
-			sourceTree = "<group>";
-		};
-		F7455A2EE2C068675F4538F3 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				6AB877D7256F2570000B1A4C /* Core.xcframework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -311,6 +293,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.salesforce.Hello-CDP";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -329,6 +312,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.salesforce.Hello-CDP";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

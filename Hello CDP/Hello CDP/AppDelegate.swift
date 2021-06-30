@@ -7,7 +7,7 @@
 
 import UIKit
 import Cdp
-import Core
+import SFMCSDK
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

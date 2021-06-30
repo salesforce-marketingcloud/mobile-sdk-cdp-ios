@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "SFMCSdk",
+        "repositoryURL": "https://git.soma.salesforce.com/MarketingCloudSdk/mobile-sfmc-sdk-ios",
+        "state": {
+          "branch": null,
+          "revision": "4ccf9c50e98df0d960777618ec50aa942e18e53d",
+          "version": "0.3.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
