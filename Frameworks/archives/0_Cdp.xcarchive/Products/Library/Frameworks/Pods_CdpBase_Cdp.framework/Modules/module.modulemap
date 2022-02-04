@@ -1,0 +1,6 @@
+framework module Pods_CdpBase_Cdp {
+  umbrella header "Pods-CdpBase-Cdp-umbrella.h"
+
+  export *
+  module * { export * }
+}
