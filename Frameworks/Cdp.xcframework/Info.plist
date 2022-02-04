@@ -5,10 +5,6 @@
 	<key>AvailableLibraries</key>
 	<array>
 		<dict>
-			<key>BitcodeSymbolMapsPath</key>
-			<string>BCSymbolMaps</string>
-			<key>DebugSymbolsPath</key>
-			<string>dSYMs</string>
 			<key>LibraryIdentifier</key>
 			<string>ios-arm64_armv7</string>
 			<key>LibraryPath</key>
@@ -22,14 +18,13 @@
 			<string>ios</string>
 		</dict>
 		<dict>
-			<key>DebugSymbolsPath</key>
-			<string>dSYMs</string>
 			<key>LibraryIdentifier</key>
-			<string>ios-i386_x86_64-simulator</string>
+			<string>ios-arm64_i386_x86_64-simulator</string>
 			<key>LibraryPath</key>
 			<string>Cdp.framework</string>
 			<key>SupportedArchitectures</key>
 			<array>
+				<string>arm64</string>
 				<string>i386</string>
 				<string>x86_64</string>
 			</array>

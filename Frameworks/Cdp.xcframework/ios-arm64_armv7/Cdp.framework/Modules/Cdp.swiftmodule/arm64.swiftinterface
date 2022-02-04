@@ -1,64 +1,52 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.3.1 (swiftlang-1200.0.41 clang-1200.0.32.8)
+// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
 // swift-module-flags: -target arm64-apple-ios10.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Cdp
 import AdSupport
 @_exported import Cdp
-import Core
 import CoreData
 import Foundation
+import SFMCSDK
 import Swift
-extension NSManagedObjectContext {
+import UIKit
+import _Concurrency
+extension CoreData.NSManagedObjectContext {
   public func executeAndMergeChanges(using batchDeleteRequest: CoreData.NSBatchDeleteRequest) throws
 }
-extension HTTPURLResponse {
+extension Foundation.HTTPURLResponse {
   public var statusMessage: Swift.String {
     get
   }
 }
-@_hasMissingDesignatedInitializers @objc public class CdpConfig : ObjectiveC.NSObject, Core.CoreModuleConfig {
-  @objc final public let name: Swift.String
+@_hasMissingDesignatedInitializers @objc public class CdpConfig : ObjectiveC.NSObject, SFMCSDK.ModuleConfig {
+  @objc final public let name: SFMCSDK.ModuleName
   @objc final public let appId: Swift.String
   @objc deinit
-  @objc override dynamic public init()
 }
-@_hasMissingDesignatedInitializers @objc(CdpEvent) public class Event : ObjectiveC.NSObject {
-  @objc public static func engagement(eventType: Swift.String) -> Cdp.Event?
-  @objc public static func engagement(eventType: Swift.String, attributes: [Swift.String : Any]) -> Cdp.Event?
-  @objc public static func profile(eventType: Swift.String) -> Cdp.Event?
-  @objc public static func profile(eventType: Swift.String, attributes: [Swift.String : Any]) -> Cdp.Event?
-  @objc public static func getIdfa() -> Swift.String
-  @objc override dynamic public init()
-  @objc deinit
-}
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers final public class CdpSdk : ObjectiveC.NSObject, Core.CoreModule {
-  @objc public static var shared: Cdp.CdpSdk {
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers final public class CdpModule : ObjectiveC.NSObject, SFMCSDK.CdpInterface, SFMCSDK.SFMCModule, SFMCSDK.Subscriber, SFMCSDK.Publisher {
+  @objc public static var stateProperties: [Swift.String : Swift.String]?
+  @objc public static var moduleVersion: Swift.String
+  @objc final public var name: SFMCSDK.ModuleName
+  final public var coreModuleConfig: Cdp.CdpConfig
+  final public var coreComponents: SFMCSDK.SFMCSdkComponents
+  final public let config: Cdp.CdpConfig
+  @objc public static var shared: Cdp.CdpModule {
     @objc get
   }
-  @discardableResult
-  @objc final public class func configure(_ config: Cdp.CdpConfig) -> Cdp.CdpSdk
-  @objc final public var coreModuleConfig: Core.CoreModuleConfig
-  @objc final public var _coreComponents: Core.CoreComponents?
-  final public let config: Cdp.CdpConfig
   @objc final public var state: Swift.String {
     @objc get
   }
-  @objc final public var consent: Cdp.Consent {
-    @objc get
-    @objc set(consent)
-  }
-  @objc final public func track(event: Cdp.Event?)
-  @objc final public func setLocation(coordinates: Cdp.Coordinates?, expiresIn: Swift.Int)
-  @objc final public class func setLogLevel(_ logLevel: Core.MCLogLevel, logOutputter: Core.LogOutputter)
+  @objc public static func initModule(config: SFMCSDK.ModuleConfig, components: SFMCSDK.SFMCSdkComponents) -> SFMCSDK.SFMCModule?
+  @objc final public func getConsent() -> SFMCSDK.Consent
+  @objc final public func setConsent(consent: SFMCSDK.Consent)
+  @objc final public func setLocation(coordinates: SFMCSDK.Coordinates?, expiresIn: Swift.Int)
+  @objc final public func getIdentity() -> SFMCSDK.ModuleIdentity?
+  @objc final public func setProfileToAnonymous()
+  @objc final public func setProfileToKnown()
+  @objc final public func receive(message: SFMCSDK.Message)
+  final public func tearDown()
   @objc deinit
 }
 public func httpResponseStatusToMessage(statusCode: Swift.Int) -> Swift.String
-@objc(CdpCoordinates) public class Coordinates : ObjectiveC.NSObject {
-  @objc final public let latitude: Swift.Double
-  @objc final public let longitude: Swift.Double
-  @objc public init?(latitude: Swift.Double, longitude: Swift.Double)
-  @objc override dynamic public init()
-  @objc deinit
-}
 @objc public class CdpConfigBuilder : ObjectiveC.NSObject {
   @objc public init(appId: Swift.String, endpoint: Swift.String)
   @objc public func trackScreens(_ enable: Swift.Bool) -> Cdp.CdpConfigBuilder
@@ -66,24 +54,18 @@ public func httpResponseStatusToMessage(statusCode: Swift.Int) -> Swift.String
   @objc public func sessionTimeout(_ seconds: Swift.Int) -> Cdp.CdpConfigBuilder
   @objc public func build() -> Cdp.CdpConfig
   @objc deinit
-  @objc override dynamic public init()
 }
-@objc(CdpConsent) public enum Consent : Swift.Int {
-  case optIn
-  case optOut
-  case pending
-  public init(fromString: Swift.String?)
-  public typealias RawValue = Swift.Int
-  public init?(rawValue: Swift.Int)
-  public var rawValue: Swift.Int {
-    get
-  }
+@objc(CdpCoordinates) public class CdpCoordinates : ObjectiveC.NSObject, SFMCSDK.Coordinates {
+  @objc final public let latitude: Swift.Double
+  @objc final public let longitude: Swift.Double
+  @objc public init?(latitude: Swift.Double, longitude: Swift.Double)
+  @objc deinit
 }
 @_inheritsConvenienceInitializers @objc(QueueEventEntity) public class QueueEventEntity : CoreData.NSManagedObject {
   @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
   @objc deinit
 }
-extension QueueEventEntity {
+extension Cdp.QueueEventEntity {
   @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<Cdp.QueueEventEntity>
   @objc @NSManaged dynamic public var category: Swift.String? {
     @objc get
@@ -110,6 +92,3 @@ extension QueueEventEntity {
     @objc set
   }
 }
-extension Cdp.Consent : Swift.Equatable {}
-extension Cdp.Consent : Swift.Hashable {}
-extension Cdp.Consent : Swift.RawRepresentable {}
