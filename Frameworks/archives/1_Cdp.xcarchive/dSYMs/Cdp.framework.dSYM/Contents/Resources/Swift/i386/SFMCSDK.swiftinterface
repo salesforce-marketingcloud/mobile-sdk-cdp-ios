@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
+// swift-compiler-version: Apple Swift version 5.4 (swiftlang-1205.0.26.9 clang-1205.0.19.55)
 // swift-module-flags: -target i386-apple-ios10.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name SFMCSDK
 import CoreLocation
 import Foundation
@@ -7,7 +7,6 @@ import Foundation
 import Swift
 import UIKit
 import UserNotifications
-import _Concurrency
 import os
 @objc(SFMCSdkURLHandlingDelegate) public protocol URLHandlingDelegate {
   @objc func sfmc_handleURL(_ url: Foundation.URL, type: Swift.String)
@@ -80,6 +79,7 @@ import os
   @objc final public let category: SFMCSDK.EventCategory
   @objc final public let attributes: [Swift.String : Any]?
   @objc public init(name: Swift.String, attributes: [Swift.String : Any]? = nil)
+  @objc override dynamic public init()
   @objc deinit
 }
 @objc public protocol CdpInterface {
@@ -97,6 +97,7 @@ import os
   final public let parameters: [Swift.String : Any]?
   final public let fromEvent: SFMCSDK.Event?
   final public let priority: Swift.Bool
+  @objc override dynamic public init()
   @objc deinit
 }
 @objc(SFMCSdkModuleLogger) final public class ModuleLogger : ObjectiveC.NSObject, SFMCSDK.Logger {
@@ -112,6 +113,7 @@ import os
   @objc final public func warningWithCategory(_ category: SFMCSDK.LoggerCategory, message: Swift.String)
   @available(swift, obsoleted: 1)
   @objc final public func errorWithCategory(_ category: SFMCSDK.LoggerCategory, message: Swift.String)
+  @objc override dynamic public init()
   @objc deinit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(SFMCSdkCDP) final public class CDP : ObjectiveC.NSObject, SFMCSDK.CdpInterface {
@@ -159,6 +161,7 @@ import os
   @objc final public let currency: Swift.String?
   @objc final public let attributes: [Swift.String : Any]
   @objc public init(id: Swift.String, lineItems: [SFMCSDK.LineItem], totalValue: Foundation.NSDecimalNumber? = nil, currency: Swift.String? = nil, attributes: [Swift.String : Any] = [:])
+  @objc override dynamic public init()
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc(SFMCSdkLogOutputter) open class LogOutputter : ObjectiveC.NSObject {
@@ -184,11 +187,13 @@ import os
   @objc final public let key: Swift.String
   @objc final public let value: Swift.String
   @objc public init(key: Swift.String, value: Swift.String)
+  @objc override dynamic public init()
   @objc deinit
 }
 @objc(SFMCSdkModuleConfig) public protocol ModuleConfig {
   @objc var name: SFMCSDK.ModuleName { get }
   @objc var appId: Swift.String { get }
+  @objc var trackScreens: Swift.Bool { get }
 }
 @objc(SFMCSdkCoordinates) public protocol Coordinates {
   @objc var latitude: Swift.Double { get }
@@ -231,6 +236,9 @@ import os
   @objc public func getRegistrationId() -> Swift.String
   @objc public func getOrCreateSecurePrefs(name: Swift.String) -> SFMCSDK.SecurePrefs
   @objc public func getFilenameForModuleInstallation(fileName: Swift.String) -> Swift.String
+  @objc public static func setKeychainAccessibilityAttribute(accessibleAttribute: CoreFoundation.CFTypeRef?)
+  @objc public static func keychainAccessibilityAttribute() -> CoreFoundation.CFTypeRef?
+  @objc override dynamic public init()
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc(SFMCSdkSecurePrefs) public class SecurePrefs : ObjectiveC.NSObject {
@@ -246,14 +254,17 @@ import os
   public func doubleFor(key: Swift.String) -> Swift.Double?
   @objc public func remove(key: Swift.String)
   @objc public func clearAll()
+  @objc override dynamic public init()
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc(SFMCSdkEncryptionManager) public class EncryptionManager : ObjectiveC.NSObject {
   @objc public func encrypt(string: Swift.String) -> Foundation.Data?
   @objc public func decrypt(stringData: Foundation.Data) -> Swift.String?
+  @objc override dynamic public init()
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc public class Compatibility : ObjectiveC.NSObject {
+  @objc override dynamic public init()
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc(SFMCSdkCatalogObjectEvent) public class CatalogObjectEvent : SFMCSDK.EngagementEvent {
@@ -302,6 +313,7 @@ import os
   @objc final public let category: SFMCSDK.EventCategory
   @objc final public let attributes: [Swift.String : Any]?
   @objc public init?(name: Swift.String)
+  @objc override dynamic public init()
   @objc deinit
 }
 public enum LoggerSubsystem {
@@ -322,13 +334,14 @@ public enum LoggerSubsystem {
   @objc public init(profileId: Swift.String)
   @objc public init(profileAttributes: [Swift.String : Swift.String])
   @objc public init(attributes: [Swift.String : Any])
+  @objc override dynamic public init()
   @objc deinit
 }
 public protocol Publisher : AnyObject {
   var name: SFMCSDK.ModuleName { get }
   func send(message: SFMCSDK.Event)
 }
-extension SFMCSDK.Publisher {
+extension Publisher {
   public func send(message: SFMCSDK.Event)
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(SFMCSdkPUSH) final public class PUSH : ObjectiveC.NSObject, SFMCSDK.PushInterface {
@@ -419,6 +432,7 @@ extension SFMCSDK.Publisher {
   @objc final public let currency: Swift.String?
   @objc final public let attributes: [Swift.String : Any]?
   @objc public init(catalogObjectType: Swift.String, catalogObjectId: Swift.String, quantity: Swift.Int, price: Foundation.NSDecimalNumber? = nil, currency: Swift.String? = nil, attributes: [Swift.String : Any] = [:])
+  @objc override dynamic public init()
   @objc deinit
 }
 @objc(SFMCSdkConsent) public enum Consent : Swift.Int {
@@ -444,6 +458,7 @@ extension SFMCSDK.Publisher {
   @objc final public let attributes: [Swift.String : Any]
   @objc final public let relatedCatalogObjects: [Swift.String : [Swift.String]]
   @objc public init(type: Swift.String, id: Swift.String, attributes: [Swift.String : Any] = [:], relatedCatalogObjects: [Swift.String : [Swift.String]] = [:])
+  @objc override dynamic public init()
   @objc deinit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(SFMCSdkBehaviorManager) final public class BehaviorManager : ObjectiveC.NSObject {
@@ -477,6 +492,7 @@ extension SFMCSDK.Publisher {
   final public let timestamp: Foundation.Date
   final public let appVersion: Swift.String?
   final public let appName: Swift.String?
+  @objc override dynamic public init()
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc(SFMCSdkAppForegrounded) public class AppForegrounded : SFMCSDK.Behavior {
@@ -498,6 +514,7 @@ extension SFMCSDK.Publisher {
   @objc func onBehavior(behavior: SFMCSDK.Behavior)
 }
 @_hasMissingDesignatedInitializers @objc(SFMCSdkConfig) public class Config : ObjectiveC.NSObject {
+  @objc override dynamic public init()
   @objc deinit
 }
 @objc(SFMCSdkInboxMessagesDataSource) public protocol InboxMessagesDataSource : UIKit.UITableViewDataSource {
@@ -516,6 +533,7 @@ extension SFMCSDK.Publisher {
   @objc final public let category: SFMCSDK.EventCategory
   @objc final public let attributes: [Swift.String : Any]?
   @objc public init?(name: Swift.String, attributes: [Swift.String : Any]? = nil)
+  @objc override dynamic public init()
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc(SFMCSdkComponents) public class SFMCSdkComponents : ObjectiveC.NSObject {
@@ -523,6 +541,7 @@ extension SFMCSDK.Publisher {
   @objc final public let storageManager: SFMCSDK.StorageManager
   @objc final public let behaviorManager: SFMCSDK.BehaviorManager
   @objc public func createNetworkManager(authenticator: SFMCSDK.Authenticator? = nil) -> SFMCSDK.NetworkManager
+  @objc override dynamic public init()
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc(SFMCSdkEngagementEvent) public class EngagementEvent : ObjectiveC.NSObject, SFMCSDK.Event {
@@ -530,6 +549,7 @@ extension SFMCSDK.Publisher {
   @objc final public let category: SFMCSDK.EventCategory
   @objc final public let attributes: [Swift.String : Any]?
   @objc final public let name: Swift.String
+  @objc override dynamic public init()
   @objc deinit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(SFMCSdk) final public class SFMCSdk : ObjectiveC.NSObject {
@@ -543,13 +563,15 @@ extension SFMCSDK.Publisher {
   @objc public static func setLogger(logLevel: SFMCSDK.LogLevel, logOutputter: SFMCSDK.LogOutputter = LogOutputter())
   public static func setLogger(logLevel: SFMCSDK.LogLevel, logOutputter: SFMCSDK.LogOutputter = LogOutputter(), filters: [SFMCSDK.LoggerCategory] = [LoggerCategory]())
   @objc public static func clearLoggerFilters()
+  @objc public static func setKeychainAccessibleAttribute(accessibleAtrribute: CoreFoundation.CFTypeRef?)
+  @objc public static func keychainAccessibleAttribute() -> CoreFoundation.CFTypeRef?
   @objc public static func tearDownModule(name: SFMCSDK.ModuleName)
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc(SFMCSdkConfigBuilder) public class ConfigBuilder : ObjectiveC.NSObject {
   @objc override dynamic public init()
-  @objc public func setCdp(config: SFMCSDK.ModuleConfig, onCompletion: ((_ result: SFMCSDK.OperationResult) -> Swift.Void)? = nil) -> SFMCSDK.ConfigBuilder
-  @objc public func setPush(config: SFMCSDK.ModuleConfig, onCompletion: ((_ result: SFMCSDK.OperationResult) -> Swift.Void)? = nil) -> SFMCSDK.ConfigBuilder
+  @objc public func setCdp(config: SFMCSDK.ModuleConfig, onCompletion: ((SFMCSDK.OperationResult) -> Swift.Void)? = nil) -> SFMCSDK.ConfigBuilder
+  @objc public func setPush(config: SFMCSDK.ModuleConfig, onCompletion: ((SFMCSDK.OperationResult) -> Swift.Void)? = nil) -> SFMCSDK.ConfigBuilder
   @objc public func build() -> SFMCSDK.Config
   @objc deinit
 }
@@ -608,6 +630,7 @@ extension SFMCSDK.Publisher {
   @objc open func executeSync(_ wrappedRequest: SFMCSDK.WrappedRequest) -> SFMCSDK.CompletedCall
   @objc open func executeAsync(_ wrappedRequest: SFMCSDK.WrappedRequest, completionHandler: @escaping (SFMCSDK.CompletedCall) -> Swift.Void)
   @objc open func isBlockedByRetryAfter(_ requestName: Swift.String) -> Swift.Bool
+  @objc override dynamic public init()
   @objc deinit
 }
 @objc(SFMCSdkAuthenticator) public protocol Authenticator {
@@ -635,6 +658,7 @@ extension SFMCSDK.Publisher {
     @objc public func build() -> SFMCSDK.WrappedRequest?
     @objc deinit
   }
+  @objc override dynamic public init()
   @objc deinit
 }
 @objc(SFMCSdkModuleIdentity) public protocol ModuleIdentity {
@@ -675,6 +699,7 @@ extension SFMCSDK.Publisher {
     @objc get
   }
   @objc public init(data: Foundation.Data? = nil, response: Foundation.URLResponse? = nil, error: Swift.Error? = nil, startTimeMillis: Swift.Int64 = Int64(Date().timeIntervalSince1970 * 1000), endTimeMillis: Swift.Int64 = Int64(Date().timeIntervalSince1970 * 1000))
+  @objc override dynamic public init()
   @objc deinit
 }
 @objc(SFMCSdkNetworkManagerError) public enum NetworkManagerError : Swift.Int, Swift.Error {
@@ -695,6 +720,7 @@ extension SFMCSDK.Publisher {
   @objc final public let wrappedRequest: SFMCSDK.WrappedRequest
   @objc final public let wrappedResponse: SFMCSDK.WrappedResponse
   @objc public init(_ wrappedRequest: SFMCSDK.WrappedRequest, _ wrappedResponse: SFMCSDK.WrappedResponse)
+  @objc override dynamic public init()
   @objc deinit
 }
 extension SFMCSDK.MessageProducer : Swift.Equatable {}
