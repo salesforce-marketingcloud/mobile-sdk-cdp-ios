@@ -12,8 +12,8 @@ let package = Package(
         ),
     ],
     dependencies: [
-        .package(url:"https://git.soma.salesforce.com/MarketingCloudSdk/mobile-sfmc-sdk-ios",
-                 from: "0.3.0"
+        .package(url:"https://github.com/salesforce-marketingcloud/sfmc-sdk-ios",
+                 from: "1.0.4"
         ),
     ],
     targets: [
