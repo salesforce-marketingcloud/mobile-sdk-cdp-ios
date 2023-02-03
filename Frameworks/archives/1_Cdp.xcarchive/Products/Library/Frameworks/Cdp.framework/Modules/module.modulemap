@@ -6,6 +6,6 @@ framework module Cdp {
 }
 
 module Cdp.Swift {
-    header "Cdp-Swift.h"
-    requires objc
+  header "Cdp-Swift.h"
+  requires objc
 }

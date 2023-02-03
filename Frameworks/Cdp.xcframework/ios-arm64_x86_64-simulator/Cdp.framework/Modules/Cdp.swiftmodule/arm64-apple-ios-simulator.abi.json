@@ -1,0 +1,3976 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Cdp",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SFMCSDK",
+        "printedName": "SFMCSDK",
+        "declKind": "Import",
+        "moduleName": "Cdp"
+      },
+      {
+        "kind": "Import",
+        "name": "SFMCSDK",
+        "printedName": "SFMCSDK",
+        "declKind": "Import",
+        "moduleName": "Cdp",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Cdp",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SFMCSDK",
+        "printedName": "SFMCSDK",
+        "declKind": "Import",
+        "moduleName": "Cdp",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Cdp",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SFMCSDK",
+        "printedName": "SFMCSDK",
+        "declKind": "Import",
+        "moduleName": "Cdp"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Cdp",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SFMCSDK",
+        "printedName": "SFMCSDK",
+        "declKind": "Import",
+        "moduleName": "Cdp"
+      },
+      {
+        "kind": "Import",
+        "name": "SFMCSDK",
+        "printedName": "SFMCSDK",
+        "declKind": "Import",
+        "moduleName": "Cdp",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Cdp",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SFMCSDK",
+        "printedName": "SFMCSDK",
+        "declKind": "Import",
+        "moduleName": "Cdp"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Cdp",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SFMCSDK",
+        "printedName": "SFMCSDK",
+        "declKind": "Import",
+        "moduleName": "Cdp"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Cdp",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreData",
+        "printedName": "CoreData",
+        "declKind": "Import",
+        "moduleName": "Cdp"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Cdp",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreData",
+        "printedName": "CoreData",
+        "declKind": "Import",
+        "moduleName": "Cdp"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Cdp",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SFMCSDK",
+        "printedName": "SFMCSDK",
+        "declKind": "Import",
+        "moduleName": "Cdp"
+      },
+      {
+        "kind": "Import",
+        "name": "SFMCSDK",
+        "printedName": "SFMCSDK",
+        "declKind": "Import",
+        "moduleName": "Cdp",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CdpConfig",
+        "printedName": "CdpConfig",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "name",
+            "printedName": "name",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ModuleName",
+                "printedName": "SFMCSDK.ModuleName",
+                "usr": "c:@M@SFMCSDK@E@SFMCSdkModuleName"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Cdp@objc(cs)CdpConfig(py)name",
+            "mangledName": "$s3Cdp0A6ConfigC4name7SFMCSDK10ModuleNameOvp",
+            "moduleName": "Cdp",
+            "objc_name": "name",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "ObjC",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ModuleName",
+                    "printedName": "SFMCSDK.ModuleName",
+                    "usr": "c:@M@SFMCSDK@E@SFMCSdkModuleName"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Cdp@objc(cs)CdpConfig(im)name",
+                "mangledName": "$s3Cdp0A6ConfigC4name7SFMCSDK10ModuleNameOvg",
+                "moduleName": "Cdp",
+                "implicit": true,
+                "objc_name": "name",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "appId",
+            "printedName": "appId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Cdp@objc(cs)CdpConfig(py)appId",
+            "mangledName": "$s3Cdp0A6ConfigC5appIdSSvp",
+            "moduleName": "Cdp",
+            "objc_name": "appId",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Cdp@objc(cs)CdpConfig(im)appId",
+                "mangledName": "$s3Cdp0A6ConfigC5appIdSSvg",
+                "moduleName": "Cdp",
+                "implicit": true,
+                "objc_name": "appId",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "trackScreens",
+            "printedName": "trackScreens",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Cdp@objc(cs)CdpConfig(py)trackScreens",
+            "mangledName": "$s3Cdp0A6ConfigC12trackScreensSbvp",
+            "moduleName": "Cdp",
+            "objc_name": "trackScreens",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Cdp@objc(cs)CdpConfig(im)trackScreens",
+                "mangledName": "$s3Cdp0A6ConfigC12trackScreensSbvg",
+                "moduleName": "Cdp",
+                "implicit": true,
+                "objc_name": "trackScreens",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CdpConfig",
+                "printedName": "Cdp.CdpConfig",
+                "usr": "c:@M@Cdp@objc(cs)CdpConfig"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@Cdp@objc(cs)CdpConfig(im)init",
+            "mangledName": "$s3Cdp0A6ConfigCACycfc",
+            "moduleName": "Cdp",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@Cdp@objc(cs)CdpConfig",
+        "mangledName": "$s3Cdp0A6ConfigC",
+        "moduleName": "Cdp",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "ModuleConfig",
+            "printedName": "ModuleConfig",
+            "usr": "c:@M@SFMCSDK@objc(pl)SFMCSdkModuleConfig",
+            "mangledName": "$s7SFMCSDK12ModuleConfigP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Cdp",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SFMCSDK",
+        "printedName": "SFMCSDK",
+        "declKind": "Import",
+        "moduleName": "Cdp"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Cdp",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Cdp",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SFMCSDK",
+        "printedName": "SFMCSDK",
+        "declKind": "Import",
+        "moduleName": "Cdp"
+      },
+      {
+        "kind": "Import",
+        "name": "SFMCSDK",
+        "printedName": "SFMCSDK",
+        "declKind": "Import",
+        "moduleName": "Cdp",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AdSupport",
+        "printedName": "AdSupport",
+        "declKind": "Import",
+        "moduleName": "Cdp"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Cdp",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SFMCSDK",
+        "printedName": "SFMCSDK",
+        "declKind": "Import",
+        "moduleName": "Cdp",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Cdp"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Cdp"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CdpModule",
+        "printedName": "CdpModule",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "stateProperties",
+            "printedName": "stateProperties",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Cdp@objc(cs)CdpModule(cpy)stateProperties",
+            "mangledName": "$s3Cdp0A6ModuleC15statePropertiesSDyS2SGSgvpZ",
+            "moduleName": "Cdp",
+            "static": true,
+            "objc_name": "stateProperties",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "ObjC",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String : Swift.String]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : Swift.String]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Cdp@objc(cs)CdpModule(cm)stateProperties",
+                "mangledName": "$s3Cdp0A6ModuleC15statePropertiesSDyS2SGSgvgZ",
+                "moduleName": "Cdp",
+                "static": true,
+                "implicit": true,
+                "objc_name": "stateProperties",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String : Swift.String]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : Swift.String]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Cdp@objc(cs)CdpModule(cm)setStateProperties:",
+                "mangledName": "$s3Cdp0A6ModuleC15statePropertiesSDyS2SGSgvsZ",
+                "moduleName": "Cdp",
+                "static": true,
+                "implicit": true,
+                "objc_name": "setStateProperties:",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:3Cdp0A6ModuleC15statePropertiesSDyS2SGSgvMZ",
+                "mangledName": "$s3Cdp0A6ModuleC15statePropertiesSDyS2SGSgvMZ",
+                "moduleName": "Cdp",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "moduleVersion",
+            "printedName": "moduleVersion",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Cdp@objc(cs)CdpModule(cpy)moduleVersion",
+            "mangledName": "$s3Cdp0A6ModuleC13moduleVersionSSvpZ",
+            "moduleName": "Cdp",
+            "static": true,
+            "objc_name": "moduleVersion",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "ObjC",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Cdp@objc(cs)CdpModule(cm)moduleVersion",
+                "mangledName": "$s3Cdp0A6ModuleC13moduleVersionSSvgZ",
+                "moduleName": "Cdp",
+                "static": true,
+                "implicit": true,
+                "objc_name": "moduleVersion",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Cdp@objc(cs)CdpModule(cm)setModuleVersion:",
+                "mangledName": "$s3Cdp0A6ModuleC13moduleVersionSSvsZ",
+                "moduleName": "Cdp",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:3Cdp0A6ModuleC13moduleVersionSSvMZ",
+                "mangledName": "$s3Cdp0A6ModuleC13moduleVersionSSvMZ",
+                "moduleName": "Cdp",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "name",
+            "printedName": "name",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ModuleName",
+                "printedName": "SFMCSDK.ModuleName",
+                "usr": "c:@M@SFMCSDK@E@SFMCSdkModuleName"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Cdp@objc(cs)CdpModule(py)name",
+            "mangledName": "$s3Cdp0A6ModuleC4name7SFMCSDK0B4NameOvp",
+            "moduleName": "Cdp",
+            "objc_name": "name",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "ObjC",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ModuleName",
+                    "printedName": "SFMCSDK.ModuleName",
+                    "usr": "c:@M@SFMCSDK@E@SFMCSdkModuleName"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Cdp@objc(cs)CdpModule(im)name",
+                "mangledName": "$s3Cdp0A6ModuleC4name7SFMCSDK0B4NameOvg",
+                "moduleName": "Cdp",
+                "implicit": true,
+                "objc_name": "name",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ModuleName",
+                    "printedName": "SFMCSDK.ModuleName",
+                    "usr": "c:@M@SFMCSDK@E@SFMCSdkModuleName"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Cdp@objc(cs)CdpModule(im)setName:",
+                "mangledName": "$s3Cdp0A6ModuleC4name7SFMCSDK0B4NameOvs",
+                "moduleName": "Cdp",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:3Cdp0A6ModuleC4name7SFMCSDK0B4NameOvM",
+                "mangledName": "$s3Cdp0A6ModuleC4name7SFMCSDK0B4NameOvM",
+                "moduleName": "Cdp",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "coreModuleConfig",
+            "printedName": "coreModuleConfig",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CdpConfig",
+                "printedName": "Cdp.CdpConfig",
+                "usr": "c:@M@Cdp@objc(cs)CdpConfig"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:3Cdp0A6ModuleC04coreB6ConfigAA0aD0Cvp",
+            "mangledName": "$s3Cdp0A6ModuleC04coreB6ConfigAA0aD0Cvp",
+            "moduleName": "Cdp",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CdpConfig",
+                    "printedName": "Cdp.CdpConfig",
+                    "usr": "c:@M@Cdp@objc(cs)CdpConfig"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:3Cdp0A6ModuleC04coreB6ConfigAA0aD0Cvg",
+                "mangledName": "$s3Cdp0A6ModuleC04coreB6ConfigAA0aD0Cvg",
+                "moduleName": "Cdp",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CdpConfig",
+                    "printedName": "Cdp.CdpConfig",
+                    "usr": "c:@M@Cdp@objc(cs)CdpConfig"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:3Cdp0A6ModuleC04coreB6ConfigAA0aD0Cvs",
+                "mangledName": "$s3Cdp0A6ModuleC04coreB6ConfigAA0aD0Cvs",
+                "moduleName": "Cdp",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:3Cdp0A6ModuleC04coreB6ConfigAA0aD0CvM",
+                "mangledName": "$s3Cdp0A6ModuleC04coreB6ConfigAA0aD0CvM",
+                "moduleName": "Cdp",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "coreComponents",
+            "printedName": "coreComponents",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SFMCSdkComponents",
+                "printedName": "SFMCSDK.SFMCSdkComponents",
+                "usr": "c:@M@SFMCSDK@objc(cs)SFMCSdkComponents"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:3Cdp0A6ModuleC14coreComponents7SFMCSDK07SFMCSdkD0Cvp",
+            "mangledName": "$s3Cdp0A6ModuleC14coreComponents7SFMCSDK07SFMCSdkD0Cvp",
+            "moduleName": "Cdp",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SFMCSdkComponents",
+                    "printedName": "SFMCSDK.SFMCSdkComponents",
+                    "usr": "c:@M@SFMCSDK@objc(cs)SFMCSdkComponents"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:3Cdp0A6ModuleC14coreComponents7SFMCSDK07SFMCSdkD0Cvg",
+                "mangledName": "$s3Cdp0A6ModuleC14coreComponents7SFMCSDK07SFMCSdkD0Cvg",
+                "moduleName": "Cdp",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SFMCSdkComponents",
+                    "printedName": "SFMCSDK.SFMCSdkComponents",
+                    "usr": "c:@M@SFMCSDK@objc(cs)SFMCSdkComponents"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:3Cdp0A6ModuleC14coreComponents7SFMCSDK07SFMCSdkD0Cvs",
+                "mangledName": "$s3Cdp0A6ModuleC14coreComponents7SFMCSDK07SFMCSdkD0Cvs",
+                "moduleName": "Cdp",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:3Cdp0A6ModuleC14coreComponents7SFMCSDK07SFMCSdkD0CvM",
+                "mangledName": "$s3Cdp0A6ModuleC14coreComponents7SFMCSDK07SFMCSdkD0CvM",
+                "moduleName": "Cdp",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "config",
+            "printedName": "config",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CdpConfig",
+                "printedName": "Cdp.CdpConfig",
+                "usr": "c:@M@Cdp@objc(cs)CdpConfig"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:3Cdp0A6ModuleC6configAA0A6ConfigCvp",
+            "mangledName": "$s3Cdp0A6ModuleC6configAA0A6ConfigCvp",
+            "moduleName": "Cdp",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CdpConfig",
+                    "printedName": "Cdp.CdpConfig",
+                    "usr": "c:@M@Cdp@objc(cs)CdpConfig"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:3Cdp0A6ModuleC6configAA0A6ConfigCvg",
+                "mangledName": "$s3Cdp0A6ModuleC6configAA0A6ConfigCvg",
+                "moduleName": "Cdp",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CdpModule",
+                "printedName": "Cdp.CdpModule",
+                "usr": "c:@M@Cdp@objc(cs)CdpModule"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Cdp@objc(cs)CdpModule(cpy)shared",
+            "mangledName": "$s3Cdp0A6ModuleC6sharedACvpZ",
+            "moduleName": "Cdp",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CdpModule",
+                    "printedName": "Cdp.CdpModule",
+                    "usr": "c:@M@Cdp@objc(cs)CdpModule"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Cdp@objc(cs)CdpModule(cm)shared",
+                "mangledName": "$s3Cdp0A6ModuleC6sharedACvgZ",
+                "moduleName": "Cdp",
+                "static": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "state",
+            "printedName": "state",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Cdp@objc(cs)CdpModule(py)state",
+            "mangledName": "$s3Cdp0A6ModuleC5stateSSvp",
+            "moduleName": "Cdp",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Cdp@objc(cs)CdpModule(im)state",
+                "mangledName": "$s3Cdp0A6ModuleC5stateSSvg",
+                "moduleName": "Cdp",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "initModule",
+            "printedName": "initModule(config:components:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "SFMCSDK.SFMCModule?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SFMCModule",
+                    "printedName": "SFMCSDK.SFMCModule",
+                    "usr": "c:@M@SFMCSDK@objc(pl)SFMCModule"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ModuleConfig",
+                "printedName": "SFMCSDK.ModuleConfig",
+                "usr": "c:@M@SFMCSDK@objc(pl)SFMCSdkModuleConfig"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SFMCSdkComponents",
+                "printedName": "SFMCSDK.SFMCSdkComponents",
+                "usr": "c:@M@SFMCSDK@objc(cs)SFMCSdkComponents"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Cdp@objc(cs)CdpModule(cm)initModuleWithConfig:components:",
+            "mangledName": "$s3Cdp0A6ModuleC04initB06config10components7SFMCSDK10SFMCModule_pSgAG0B6Config_p_AG17SFMCSdkComponentsCtFZ",
+            "moduleName": "Cdp",
+            "static": true,
+            "objc_name": "initModuleWithConfig:components:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getConsent",
+            "printedName": "getConsent()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Consent",
+                "printedName": "SFMCSDK.Consent",
+                "usr": "c:@M@SFMCSDK@E@SFMCSdkConsent"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Cdp@objc(cs)CdpModule(im)getConsent",
+            "mangledName": "$s3Cdp0A6ModuleC10getConsent7SFMCSDK0D0OyF",
+            "moduleName": "Cdp",
+            "objc_name": "getConsent",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setConsent",
+            "printedName": "setConsent(consent:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Consent",
+                "printedName": "SFMCSDK.Consent",
+                "usr": "c:@M@SFMCSDK@E@SFMCSdkConsent"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Cdp@objc(cs)CdpModule(im)setConsentWithConsent:",
+            "mangledName": "$s3Cdp0A6ModuleC10setConsent7consenty7SFMCSDK0D0O_tF",
+            "moduleName": "Cdp",
+            "objc_name": "setConsentWithConsent:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setLocation",
+            "printedName": "setLocation(coordinates:expiresIn:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "SFMCSDK.Coordinates?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Coordinates",
+                    "printedName": "SFMCSDK.Coordinates",
+                    "usr": "c:@M@SFMCSDK@objc(pl)SFMCSdkCoordinates"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Cdp@objc(cs)CdpModule(im)setLocationWithCoordinates:expiresIn:",
+            "mangledName": "$s3Cdp0A6ModuleC11setLocation11coordinates9expiresIny7SFMCSDK11Coordinates_pSg_SitF",
+            "moduleName": "Cdp",
+            "objc_name": "setLocationWithCoordinates:expiresIn:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getIdentity",
+            "printedName": "getIdentity()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "SFMCSDK.ModuleIdentity?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ModuleIdentity",
+                    "printedName": "SFMCSDK.ModuleIdentity",
+                    "usr": "c:@M@SFMCSDK@objc(pl)SFMCSdkModuleIdentity"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Cdp@objc(cs)CdpModule(im)getIdentity",
+            "mangledName": "$s3Cdp0A6ModuleC11getIdentity7SFMCSDK0bD0_pSgyF",
+            "moduleName": "Cdp",
+            "objc_name": "getIdentity",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setProfileToAnonymous",
+            "printedName": "setProfileToAnonymous()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Cdp@objc(cs)CdpModule(im)setProfileToAnonymous",
+            "mangledName": "$s3Cdp0A6ModuleC21setProfileToAnonymousyyF",
+            "moduleName": "Cdp",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setProfileToKnown",
+            "printedName": "setProfileToKnown()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Cdp@objc(cs)CdpModule(im)setProfileToKnown",
+            "mangledName": "$s3Cdp0A6ModuleC17setProfileToKnownyyF",
+            "moduleName": "Cdp",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "receive",
+            "printedName": "receive(message:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Message",
+                "printedName": "SFMCSDK.Message",
+                "usr": "c:@M@SFMCSDK@objc(cs)SFMCSdkMessage"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Cdp@objc(cs)CdpModule(im)receiveWithMessage:",
+            "mangledName": "$s3Cdp0A6ModuleC7receive7messagey7SFMCSDK7MessageC_tF",
+            "moduleName": "Cdp",
+            "objc_name": "receiveWithMessage:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "tearDown",
+            "printedName": "tearDown()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:3Cdp0A6ModuleC8tearDownyyF",
+            "mangledName": "$s3Cdp0A6ModuleC8tearDownyyF",
+            "moduleName": "Cdp",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@Cdp@objc(cs)CdpModule",
+        "mangledName": "$s3Cdp0A6ModuleC",
+        "moduleName": "Cdp",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "RawDocComment",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "CdpInterface",
+            "printedName": "CdpInterface",
+            "usr": "c:@M@SFMCSDK@objc(pl)CdpInterface",
+            "mangledName": "$s7SFMCSDK12CdpInterfaceP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SFMCModule",
+            "printedName": "SFMCModule",
+            "usr": "c:@M@SFMCSDK@objc(pl)SFMCModule",
+            "mangledName": "$s7SFMCSDK10SFMCModuleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Subscriber",
+            "printedName": "Subscriber",
+            "usr": "c:@M@SFMCSDK@objc(pl)Subscriber",
+            "mangledName": "$s7SFMCSDK10SubscriberP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Publisher",
+            "printedName": "Publisher",
+            "usr": "s:7SFMCSDK9PublisherP",
+            "mangledName": "$s7SFMCSDK9PublisherP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SFMCSDK",
+        "printedName": "SFMCSDK",
+        "declKind": "Import",
+        "moduleName": "Cdp",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreData",
+        "printedName": "CoreData",
+        "declKind": "Import",
+        "moduleName": "Cdp"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Cdp"
+      },
+      {
+        "kind": "Import",
+        "name": "SFMCSDK",
+        "printedName": "SFMCSDK",
+        "declKind": "Import",
+        "moduleName": "Cdp",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreData",
+        "printedName": "CoreData",
+        "declKind": "Import",
+        "moduleName": "Cdp"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Cdp"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Cdp",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SFMCSDK",
+        "printedName": "SFMCSDK",
+        "declKind": "Import",
+        "moduleName": "Cdp"
+      },
+      {
+        "kind": "Import",
+        "name": "SFMCSDK",
+        "printedName": "SFMCSDK",
+        "declKind": "Import",
+        "moduleName": "Cdp",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SFMCSDK",
+        "printedName": "SFMCSDK",
+        "declKind": "Import",
+        "moduleName": "Cdp",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Function",
+        "name": "httpResponseStatusToMessage",
+        "printedName": "httpResponseStatusToMessage(statusCode:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "String",
+            "printedName": "Swift.String",
+            "usr": "s:SS"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Int",
+            "printedName": "Swift.Int",
+            "usr": "s:Si"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:3Cdp27httpResponseStatusToMessage10statusCodeSSSi_tF",
+        "mangledName": "$s3Cdp27httpResponseStatusToMessage10statusCodeSSSi_tF",
+        "moduleName": "Cdp",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Cdp",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SFMCSDK",
+        "printedName": "SFMCSDK",
+        "declKind": "Import",
+        "moduleName": "Cdp"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Cdp",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SFMCSDK",
+        "printedName": "SFMCSDK",
+        "declKind": "Import",
+        "moduleName": "Cdp"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Cdp",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SFMCSDK",
+        "printedName": "SFMCSDK",
+        "declKind": "Import",
+        "moduleName": "Cdp"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CdpConfigBuilder",
+        "printedName": "CdpConfigBuilder",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(appId:endpoint:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CdpConfigBuilder",
+                "printedName": "Cdp.CdpConfigBuilder",
+                "usr": "c:@M@Cdp@objc(cs)CdpConfigBuilder"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@Cdp@objc(cs)CdpConfigBuilder(im)initWithAppId:endpoint:",
+            "mangledName": "$s3Cdp0A13ConfigBuilderC5appId8endpointACSS_SStcfc",
+            "moduleName": "Cdp",
+            "objc_name": "initWithAppId:endpoint:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "trackScreens",
+            "printedName": "trackScreens(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CdpConfigBuilder",
+                "printedName": "Cdp.CdpConfigBuilder",
+                "usr": "c:@M@Cdp@objc(cs)CdpConfigBuilder"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Cdp@objc(cs)CdpConfigBuilder(im)trackScreens:",
+            "mangledName": "$s3Cdp0A13ConfigBuilderC12trackScreensyACSbF",
+            "moduleName": "Cdp",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "trackLifecycle",
+            "printedName": "trackLifecycle(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CdpConfigBuilder",
+                "printedName": "Cdp.CdpConfigBuilder",
+                "usr": "c:@M@Cdp@objc(cs)CdpConfigBuilder"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Cdp@objc(cs)CdpConfigBuilder(im)trackLifecycle:",
+            "mangledName": "$s3Cdp0A13ConfigBuilderC14trackLifecycleyACSbF",
+            "moduleName": "Cdp",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sessionTimeout",
+            "printedName": "sessionTimeout(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CdpConfigBuilder",
+                "printedName": "Cdp.CdpConfigBuilder",
+                "usr": "c:@M@Cdp@objc(cs)CdpConfigBuilder"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Cdp@objc(cs)CdpConfigBuilder(im)sessionTimeout:",
+            "mangledName": "$s3Cdp0A13ConfigBuilderC14sessionTimeoutyACSiF",
+            "moduleName": "Cdp",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "build",
+            "printedName": "build()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CdpConfig",
+                "printedName": "Cdp.CdpConfig",
+                "usr": "c:@M@Cdp@objc(cs)CdpConfig"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Cdp@objc(cs)CdpConfigBuilder(im)build",
+            "mangledName": "$s3Cdp0A13ConfigBuilderC5buildAA0aB0CyF",
+            "moduleName": "Cdp",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CdpConfigBuilder",
+                "printedName": "Cdp.CdpConfigBuilder",
+                "usr": "c:@M@Cdp@objc(cs)CdpConfigBuilder"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@Cdp@objc(cs)CdpConfigBuilder(im)init",
+            "mangledName": "$s3Cdp0A13ConfigBuilderCACycfc",
+            "moduleName": "Cdp",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@Cdp@objc(cs)CdpConfigBuilder",
+        "mangledName": "$s3Cdp0A13ConfigBuilderC",
+        "moduleName": "Cdp",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Cdp",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreData",
+        "printedName": "CoreData",
+        "declKind": "Import",
+        "moduleName": "Cdp"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Cdp",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreData",
+        "printedName": "CoreData",
+        "declKind": "Import",
+        "moduleName": "Cdp"
+      },
+      {
+        "kind": "Import",
+        "name": "SFMCSDK",
+        "printedName": "SFMCSDK",
+        "declKind": "Import",
+        "moduleName": "Cdp"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Cdp",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Cdp",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SFMCSDK",
+        "printedName": "SFMCSDK",
+        "declKind": "Import",
+        "moduleName": "Cdp"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CdpCoordinates",
+        "printedName": "CdpCoordinates",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "latitude",
+            "printedName": "latitude",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Cdp@objc(cs)CdpCoordinates(py)latitude",
+            "mangledName": "$s3Cdp0A11CoordinatesC8latitudeSdvp",
+            "moduleName": "Cdp",
+            "objc_name": "latitude",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Cdp@objc(cs)CdpCoordinates(im)latitude",
+                "mangledName": "$s3Cdp0A11CoordinatesC8latitudeSdvg",
+                "moduleName": "Cdp",
+                "implicit": true,
+                "objc_name": "latitude",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "longitude",
+            "printedName": "longitude",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Cdp@objc(cs)CdpCoordinates(py)longitude",
+            "mangledName": "$s3Cdp0A11CoordinatesC9longitudeSdvp",
+            "moduleName": "Cdp",
+            "objc_name": "longitude",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Cdp@objc(cs)CdpCoordinates(im)longitude",
+                "mangledName": "$s3Cdp0A11CoordinatesC9longitudeSdvg",
+                "moduleName": "Cdp",
+                "implicit": true,
+                "objc_name": "longitude",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(latitude:longitude:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Cdp.CdpCoordinates?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CdpCoordinates",
+                    "printedName": "Cdp.CdpCoordinates",
+                    "usr": "c:@M@Cdp@objc(cs)CdpCoordinates"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@Cdp@objc(cs)CdpCoordinates(im)initWithLatitude:longitude:",
+            "mangledName": "$s3Cdp0A11CoordinatesC8latitude9longitudeACSgSd_Sdtcfc",
+            "moduleName": "Cdp",
+            "objc_name": "initWithLatitude:longitude:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CdpCoordinates",
+                "printedName": "Cdp.CdpCoordinates",
+                "usr": "c:@M@Cdp@objc(cs)CdpCoordinates"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@Cdp@objc(cs)CdpCoordinates(im)init",
+            "mangledName": "$s3Cdp0A11CoordinatesCACycfc",
+            "moduleName": "Cdp",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@Cdp@objc(cs)CdpCoordinates",
+        "mangledName": "$s3Cdp0A11CoordinatesC",
+        "moduleName": "Cdp",
+        "objc_name": "CdpCoordinates",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Coordinates",
+            "printedName": "Coordinates",
+            "usr": "c:@M@SFMCSDK@objc(pl)SFMCSdkCoordinates",
+            "mangledName": "$s7SFMCSDK11CoordinatesP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Cdp",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SFMCSDK",
+        "printedName": "SFMCSDK",
+        "declKind": "Import",
+        "moduleName": "Cdp"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Cdp",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Cdp",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Cdp",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreData",
+        "printedName": "CoreData",
+        "declKind": "Import",
+        "moduleName": "Cdp"
+      },
+      {
+        "kind": "Import",
+        "name": "SFMCSDK",
+        "printedName": "SFMCSDK",
+        "declKind": "Import",
+        "moduleName": "Cdp"
+      },
+      {
+        "kind": "Import",
+        "name": "SFMCSDK",
+        "printedName": "SFMCSDK",
+        "declKind": "Import",
+        "moduleName": "Cdp",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SFMCSDK",
+        "printedName": "SFMCSDK",
+        "declKind": "Import",
+        "moduleName": "Cdp",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Cdp",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SFMCSDK",
+        "printedName": "SFMCSDK",
+        "declKind": "Import",
+        "moduleName": "Cdp"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Cdp",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreData",
+        "printedName": "CoreData",
+        "declKind": "Import",
+        "moduleName": "Cdp"
+      },
+      {
+        "kind": "Import",
+        "name": "SFMCSDK",
+        "printedName": "SFMCSDK",
+        "declKind": "Import",
+        "moduleName": "Cdp"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Cdp",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SFMCSDK",
+        "printedName": "SFMCSDK",
+        "declKind": "Import",
+        "moduleName": "Cdp"
+      },
+      {
+        "kind": "Import",
+        "name": "AdSupport",
+        "printedName": "AdSupport",
+        "declKind": "Import",
+        "moduleName": "Cdp"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Cdp",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreData",
+        "printedName": "CoreData",
+        "declKind": "Import",
+        "moduleName": "Cdp"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "QueueEventEntity",
+        "printedName": "QueueEventEntity",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(entity:insertInto:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "QueueEventEntity",
+                "printedName": "Cdp.QueueEventEntity",
+                "usr": "c:@M@Cdp@objc(cs)QueueEventEntity"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSEntityDescription",
+                "printedName": "CoreData.NSEntityDescription",
+                "usr": "c:objc(cs)NSEntityDescription"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CoreData.NSManagedObjectContext?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSManagedObjectContext",
+                    "printedName": "CoreData.NSManagedObjectContext",
+                    "usr": "c:objc(cs)NSManagedObjectContext"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@Cdp@objc(cs)QueueEventEntity(im)initWithEntity:insertIntoManagedObjectContext:",
+            "mangledName": "$s3Cdp16QueueEventEntityC6entity10insertIntoACSo19NSEntityDescriptionC_So22NSManagedObjectContextCSgtcfc",
+            "moduleName": "Cdp",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithEntity:insertIntoManagedObjectContext:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "fetchRequest",
+            "printedName": "fetchRequest()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NSFetchRequest",
+                "printedName": "CoreData.NSFetchRequest<Cdp.QueueEventEntity>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "QueueEventEntity",
+                    "printedName": "Cdp.QueueEventEntity",
+                    "usr": "c:@M@Cdp@objc(cs)QueueEventEntity"
+                  }
+                ],
+                "usr": "c:objc(cs)NSFetchRequest"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:3Cdp16QueueEventEntityC12fetchRequestSo07NSFetchF0CyACGyFZ",
+            "mangledName": "$s3Cdp16QueueEventEntityC12fetchRequestSo07NSFetchF0CyACGyFZ",
+            "moduleName": "Cdp",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "NonObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "category",
+            "printedName": "category",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@Cdp@objc(cs)QueueEventEntity(py)category",
+            "mangledName": "$s3Cdp16QueueEventEntityC8categorySSSgvp",
+            "moduleName": "Cdp",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@Cdp@objc(cs)QueueEventEntity(im)category",
+                "mangledName": "$s3Cdp16QueueEventEntityC8categorySSSgvg",
+                "moduleName": "Cdp",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@Cdp@objc(cs)QueueEventEntity(im)setCategory:",
+                "mangledName": "$s3Cdp16QueueEventEntityC8categorySSSgvs",
+                "moduleName": "Cdp",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "createdDate",
+            "printedName": "createdDate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Date?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Date",
+                    "printedName": "Foundation.Date",
+                    "usr": "s:10Foundation4DateV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@Cdp@objc(cs)QueueEventEntity(py)createdDate",
+            "mangledName": "$s3Cdp16QueueEventEntityC11createdDate10Foundation0F0VSgvp",
+            "moduleName": "Cdp",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.Date?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Date",
+                        "printedName": "Foundation.Date",
+                        "usr": "s:10Foundation4DateV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@Cdp@objc(cs)QueueEventEntity(im)createdDate",
+                "mangledName": "$s3Cdp16QueueEventEntityC11createdDate10Foundation0F0VSgvg",
+                "moduleName": "Cdp",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.Date?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Date",
+                        "printedName": "Foundation.Date",
+                        "usr": "s:10Foundation4DateV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@Cdp@objc(cs)QueueEventEntity(im)setCreatedDate:",
+                "mangledName": "$s3Cdp16QueueEventEntityC11createdDate10Foundation0F0VSgvs",
+                "moduleName": "Cdp",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "eventId",
+            "printedName": "eventId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@Cdp@objc(cs)QueueEventEntity(py)eventId",
+            "mangledName": "$s3Cdp16QueueEventEntityC7eventIdSSSgvp",
+            "moduleName": "Cdp",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@Cdp@objc(cs)QueueEventEntity(im)eventId",
+                "mangledName": "$s3Cdp16QueueEventEntityC7eventIdSSSgvg",
+                "moduleName": "Cdp",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@Cdp@objc(cs)QueueEventEntity(im)setEventId:",
+                "mangledName": "$s3Cdp16QueueEventEntityC7eventIdSSSgvs",
+                "moduleName": "Cdp",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "failedAttempts",
+            "printedName": "failedAttempts",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int64",
+                "printedName": "Swift.Int64",
+                "usr": "s:s5Int64V"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@Cdp@objc(cs)QueueEventEntity(py)failedAttempts",
+            "mangledName": "$s3Cdp16QueueEventEntityC14failedAttemptss5Int64Vvp",
+            "moduleName": "Cdp",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int64",
+                    "printedName": "Swift.Int64",
+                    "usr": "s:s5Int64V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@Cdp@objc(cs)QueueEventEntity(im)failedAttempts",
+                "mangledName": "$s3Cdp16QueueEventEntityC14failedAttemptss5Int64Vvg",
+                "moduleName": "Cdp",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int64",
+                    "printedName": "Swift.Int64",
+                    "usr": "s:s5Int64V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@Cdp@objc(cs)QueueEventEntity(im)setFailedAttempts:",
+                "mangledName": "$s3Cdp16QueueEventEntityC14failedAttemptss5Int64Vvs",
+                "moduleName": "Cdp",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "payload",
+            "printedName": "payload",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Data?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@Cdp@objc(cs)QueueEventEntity(py)payload",
+            "mangledName": "$s3Cdp16QueueEventEntityC7payload10Foundation4DataVSgvp",
+            "moduleName": "Cdp",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.Data?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Data",
+                        "printedName": "Foundation.Data",
+                        "usr": "s:10Foundation4DataV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@Cdp@objc(cs)QueueEventEntity(im)payload",
+                "mangledName": "$s3Cdp16QueueEventEntityC7payload10Foundation4DataVSgvg",
+                "moduleName": "Cdp",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.Data?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Data",
+                        "printedName": "Foundation.Data",
+                        "usr": "s:10Foundation4DataV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@Cdp@objc(cs)QueueEventEntity(im)setPayload:",
+                "mangledName": "$s3Cdp16QueueEventEntityC7payload10Foundation4DataVSgvs",
+                "moduleName": "Cdp",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "priority",
+            "printedName": "priority",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int64",
+                "printedName": "Swift.Int64",
+                "usr": "s:s5Int64V"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@Cdp@objc(cs)QueueEventEntity(py)priority",
+            "mangledName": "$s3Cdp16QueueEventEntityC8prioritys5Int64Vvp",
+            "moduleName": "Cdp",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int64",
+                    "printedName": "Swift.Int64",
+                    "usr": "s:s5Int64V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@Cdp@objc(cs)QueueEventEntity(im)priority",
+                "mangledName": "$s3Cdp16QueueEventEntityC8prioritys5Int64Vvg",
+                "moduleName": "Cdp",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int64",
+                    "printedName": "Swift.Int64",
+                    "usr": "s:s5Int64V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@Cdp@objc(cs)QueueEventEntity(im)setPriority:",
+                "mangledName": "$s3Cdp16QueueEventEntityC8prioritys5Int64Vvs",
+                "moduleName": "Cdp",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@Cdp@objc(cs)QueueEventEntity",
+        "mangledName": "$s3Cdp16QueueEventEntityC",
+        "moduleName": "Cdp",
+        "objc_name": "QueueEventEntity",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSManagedObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "CoreData.NSManagedObject",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ObservableObject",
+            "printedName": "ObservableObject",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ObjectWillChangePublisher",
+                "printedName": "ObjectWillChangePublisher",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ObservableObjectPublisher",
+                    "printedName": "Combine.ObservableObjectPublisher",
+                    "usr": "s:7Combine25ObservableObjectPublisherC"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7Combine16ObservableObjectP",
+            "mangledName": "$s7Combine16ObservableObjectP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Cdp",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreData",
+        "printedName": "CoreData",
+        "declKind": "Import",
+        "moduleName": "Cdp"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Cdp",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreData",
+        "printedName": "CoreData",
+        "declKind": "Import",
+        "moduleName": "Cdp"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NSManagedObjectContext",
+        "printedName": "NSManagedObjectContext",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "executeAndMergeChanges",
+            "printedName": "executeAndMergeChanges(using:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSBatchDeleteRequest",
+                "printedName": "CoreData.NSBatchDeleteRequest",
+                "usr": "c:objc(cs)NSBatchDeleteRequest"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So22NSManagedObjectContextC3CdpE22executeAndMergeChanges5usingySo20NSBatchDeleteRequestC_tKF",
+            "mangledName": "$sSo22NSManagedObjectContextC3CdpE22executeAndMergeChanges5usingySo20NSBatchDeleteRequestC_tKF",
+            "moduleName": "Cdp",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:objc(cs)NSManagedObjectContext",
+        "moduleName": "CoreData",
+        "isOpen": true,
+        "intro_iOS": "3.0",
+        "objc_name": "NSManagedObjectContext",
+        "declAttributes": [
+          "Available",
+          "ObjC",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "HTTPURLResponse",
+        "printedName": "HTTPURLResponse",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "statusMessage",
+            "printedName": "statusMessage",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:So17NSHTTPURLResponseC3CdpE13statusMessageSSvp",
+            "mangledName": "$sSo17NSHTTPURLResponseC3CdpE13statusMessageSSvp",
+            "moduleName": "Cdp",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:So17NSHTTPURLResponseC3CdpE13statusMessageSSvg",
+                "mangledName": "$sSo17NSHTTPURLResponseC3CdpE13statusMessageSSvg",
+                "moduleName": "Cdp",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:objc(cs)NSHTTPURLResponse",
+        "moduleName": "Foundation",
+        "isOpen": true,
+        "intro_iOS": "2.0",
+        "objc_name": "NSHTTPURLResponse",
+        "declAttributes": [
+          "Available",
+          "ObjC",
+          "SynthesizedProtocol",
+          "NonSendable",
+          "Sendable",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)NSURLResponse",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "Foundation.URLResponse",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Session\/Session.swift",
+      "kind": "StringLiteral",
+      "offset": 195,
+      "length": 9,
+      "value": "\"Session\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/ConsentEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 134,
+      "length": 12,
+      "value": "\"Cdp.ConsentEvent\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/Managers\/EventManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1883,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Session\/SessionManager.swift",
+      "kind": "StringLiteral",
+      "offset": 231,
+      "length": 13,
+      "value": "\"firstLaunch\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Session\/SessionManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1013,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Extensions\/JSON\/DateDecodingStrategy.swift",
+      "kind": "StringLiteral",
+      "offset": 916,
+      "length": 78,
+      "value": "\"Unable to format invalid date: \""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Extensions\/JSON\/DateDecodingStrategy.swift",
+      "kind": "StringLiteral",
+      "offset": 957,
+      "length": 2,
+      "value": "\" as iso 8601 with fractional seconds\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Extensions\/JSON\/DateDecodingStrategy.swift",
+      "kind": "StringLiteral",
+      "offset": 1094,
+      "length": 16,
+      "value": "\"Invalid date: \""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Http\/CdpAuthenticator.swift",
+      "kind": "StringLiteral",
+      "offset": 242,
+      "length": 24,
+      "value": "\"CdpTenantDeprovisioned\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Http\/CdpAuthenticator.swift",
+      "kind": "StringLiteral",
+      "offset": 322,
+      "length": 22,
+      "value": "\"tenant_deprovisioned\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Http\/CdpAuthenticator.swift",
+      "kind": "StringLiteral",
+      "offset": 380,
+      "length": 11,
+      "value": "\"authToken\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Http\/CdpAuthenticator.swift",
+      "kind": "StringLiteral",
+      "offset": 423,
+      "length": 11,
+      "value": "\"authToken\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Http\/CdpAuthenticator.swift",
+      "kind": "StringLiteral",
+      "offset": 667,
+      "length": 20,
+      "value": "\"APP_SOURCE_UNKNOWN\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Consent\/Managers\/ConsentManager.swift",
+      "kind": "StringLiteral",
+      "offset": 199,
+      "length": 9,
+      "value": "\"consent\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Consent\/Managers\/ConsentManager.swift",
+      "kind": "StringLiteral",
+      "offset": 242,
+      "length": 10,
+      "value": "\"deviceId\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Consent\/Managers\/ConsentManager.swift",
+      "kind": "StringLiteral",
+      "offset": 303,
+      "length": 27,
+      "value": "\"partyIdentificationUserId\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Config\/CdpConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 260,
+      "length": 9,
+      "value": "\"Cdp.CdpConfig\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Location\/ValueObjects\/Location.swift",
+      "kind": "StringLiteral",
+      "offset": 277,
+      "length": 10,
+      "value": "\"location\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Extensions\/Formatter\/ISO8601DateFormatter.swift",
+      "kind": "StringLiteral",
+      "offset": 712,
+      "length": 13,
+      "value": "\"en_US_POSIX\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Extensions\/Formatter\/ISO8601DateFormatter.swift",
+      "kind": "StringLiteral",
+      "offset": 777,
+      "length": 5,
+      "value": "\"UTC\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Extensions\/Formatter\/ISO8601DateFormatter.swift",
+      "kind": "StringLiteral",
+      "offset": 815,
+      "length": 28,
+      "value": "\"yyyy-MM-dd'T'HH:mm:ssZZZZZ\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/CdpEvent.swift",
+      "kind": "Array",
+      "offset": 259,
+      "length": 96,
+      "value": "[\"AppFirstLaunch\", \"AppLaunch\", \"AppUpdate\", \"ScreenView\"]"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/CdpEvent.swift",
+      "kind": "Array",
+      "offset": 387,
+      "length": 168,
+      "value": "[\"deviceId\", \"eventId\", \"sessionId\", \"dateTime\", \"eventType\", \"category\", \"latitude\", \"longitude\"]"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/CdpEvent.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1191,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/CdpModule.swift",
+      "kind": "StringLiteral",
+      "offset": 573,
+      "length": 35,
+      "value": "\"com.salesforce.marketingcloud.cdp\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/CdpModule.swift",
+      "kind": "StringLiteral",
+      "offset": 649,
+      "length": 16,
+      "value": "\"CDPSdk_version\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/CdpModule.swift",
+      "kind": "StringLiteral",
+      "offset": 681,
+      "length": 24,
+      "value": "\"Failed to read version\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/CdpModule.swift",
+      "kind": "StringLiteral",
+      "offset": 1746,
+      "length": 16,
+      "value": "\"CdpModuleModel\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/CdpModule.swift",
+      "kind": "StringLiteral",
+      "offset": 5502,
+      "length": 31,
+      "value": "\"cdp.identityEvent.serialQueue\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Storage\/Dao\/QueueEventDao.swift",
+      "kind": "StringLiteral",
+      "offset": 345,
+      "length": 18,
+      "value": "\"QueueEventEntity\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Storage\/Dao\/QueueEventDao.swift",
+      "kind": "IntegerLiteral",
+      "offset": 382,
+      "length": 3,
+      "value": "200"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Storage\/Dao\/QueueEventDao.swift",
+      "kind": "IntegerLiteral",
+      "offset": 414,
+      "length": 2,
+      "value": "20"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Storage\/Entities\/Domain\/QueueEventDomainEntity.swift",
+      "kind": "IntegerLiteral",
+      "offset": 246,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Storage\/Entities\/Domain\/QueueEventDomainEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 156,
+      "length": 22,
+      "value": "\"Cdp.QueueEventDomainEntity\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/JsonUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 175,
+      "length": 4,
+      "value": "\"{}\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Http\/RequestHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 204,
+      "length": 7,
+      "value": "\"EVENT\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Http\/RequestHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 245,
+      "length": 6,
+      "value": "\"AUTH\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/ReceivedEventToCdpEvents.swift",
+      "kind": "IntegerLiteral",
+      "offset": 189,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/ReceivedEventToCdpEvents.swift",
+      "kind": "IntegerLiteral",
+      "offset": 218,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Config\/CdpConfigBuilder.swift",
+      "kind": "BooleanLiteral",
+      "offset": 370,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Config\/CdpConfigBuilder.swift",
+      "kind": "BooleanLiteral",
+      "offset": 410,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Config\/CdpConfigBuilder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 459,
+      "length": 3,
+      "value": "600"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Config\/CdpConfigBuilder.swift",
+      "kind": "StringLiteral",
+      "offset": 244,
+      "length": 16,
+      "value": "\"Cdp.CdpConfigBuilder\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Location\/ValueObjects\/CdpCoordinates.swift",
+      "kind": "StringLiteral",
+      "offset": 285,
+      "length": 14,
+      "value": "\"Cdp.CdpCoordinates\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/FatalErrorUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 435,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Storage\/Managers\/CdpStorageManager.swift",
+      "kind": "StringLiteral",
+      "offset": 909,
+      "length": 6,
+      "value": "\"auth\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Identity\/IdentityManager.swift",
+      "kind": "StringLiteral",
+      "offset": 202,
+      "length": 19,
+      "value": "\"profileAttributes\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Identity\/IdentityManager.swift",
+      "kind": "Dictionary",
+      "offset": 339,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Identity\/ContactPoint.swift",
+      "kind": "StringLiteral",
+      "offset": 197,
+      "length": 19,
+      "value": "\"contactPointEmail\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Identity\/ContactPoint.swift",
+      "kind": "Array",
+      "offset": 246,
+      "length": 9,
+      "value": "[\"email\"]"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Identity\/ContactPoint.swift",
+      "kind": "StringLiteral",
+      "offset": 318,
+      "length": 19,
+      "value": "\"contactPointPhone\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Identity\/ContactPoint.swift",
+      "kind": "Array",
+      "offset": 367,
+      "length": 15,
+      "value": "[\"phoneNumber\"]"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Identity\/ContactPoint.swift",
+      "kind": "StringLiteral",
+      "offset": 447,
+      "length": 21,
+      "value": "\"contactPointAddress\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Identity\/ContactPoint.swift",
+      "kind": "Array",
+      "offset": 498,
+      "length": 66,
+      "value": "[\"addressLine1\", \"city\", \"stateProvince\", \"postalCode\", \"country\"]"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Identity\/ContactPoint.swift",
+      "kind": "Array",
+      "offset": 594,
+      "length": 48,
+      "value": "[\"addressLine2\", \"addressLine3\", \"addressLine4\"]"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Identity\/ContactPoint.swift",
+      "kind": "StringLiteral",
+      "offset": 788,
+      "length": 17,
+      "value": "\"contactPointApp\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Identity\/ContactPoint.swift",
+      "kind": "Array",
+      "offset": 835,
+      "length": 265,
+      "value": "[\"registrationId\", \"softwareApplicationId\", \"softwareApplicationName\", \"softwareApplicationVersion\", \"advertiserId\", \"osName\", \"osVersion\"]"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Identity\/ContactPoint.swift",
+      "kind": "StringLiteral",
+      "offset": 1247,
+      "length": 18,
+      "value": "\"contactPointName\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Identity\/ContactPoint.swift",
+      "kind": "Array",
+      "offset": 1295,
+      "length": 25,
+      "value": "[\"firstName\", \"lastName\"]"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Identity\/ContactPoint.swift",
+      "kind": "Array",
+      "offset": 1492,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/InternalSdk.swift",
+      "kind": "StringLiteral",
+      "offset": 751,
+      "length": 15,
+      "value": "\"Deprovisioned\""
+    }
+  ]
+}
