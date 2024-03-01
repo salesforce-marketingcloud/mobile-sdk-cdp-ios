@@ -7,7 +7,7 @@
 
 import UIKit
 import Cdp
-import Core
+import SFMCSDK
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -22,18 +22,41 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     private func initializeCdpSDK() {
-        CdpSdk.setLogLevel(<#T##logLevel: MCLogLevel##MCLogLevel#>, logOutputter: <#T##LogOutputter#>)
+        // Debug level not recommended for production apps as significant data will be logged to the console.
+#if DEBUG
+        SFMCSdk.setLogger(logLevel: LogLevel.debug, logOutputter: HelloCDPLogOutputter.shared)
+#endif
         // Can use default LogOutputter() or custom subclass. See example: HelloCDPLogOutputter.swift
         
-        // configure
-        let config = CdpConfigBuilder(appId: <#T##String#>, endpoint: <#T##String#>)
-            .trackScreens(<#T##enable: Bool##Bool#>)
-            .trackLifecycle(<#T##enable: Bool##Bool#>)
-            .sessionTimeout(<#T##seconds: Int##Int#>)
-            .build()
+        // Example Mobile Connector schema used in this demo:
+        // https://cdn.c360a.salesforce.com/cdp/schemas/238/mobile-connector-schema.json
         
-        // initialize
-        CdpSdk.configure(config)
+        SFMCSdk.initializeSdk(
+            ConfigBuilder()
+                //.setPush(config: mobilePushConfiguration) // If using PUSH make sure to only call initializeSdk once.
+                .setCdp(config: getCDPConfig(), onCompletion: { _ in
+                    print("CDP init onComplete");
+                })
+            .build()
+        )
+        
+        // Keep in mind events are only sent across the network once one of the following conditions are met:
+        // 1. The app is backgrounded or foregrounded.
+        // 2. A threshold of 20 events have been queued.
+    }
+
+    // Data Cloud Setup -> Websites & Mobile Apps -> Your Mobile App Connector -> Integration Guide
+    // https://help.salesforce.com/s/articleView?id=sf.c360_a_web_mobile_app_connector.htm&type=5
+    func getCDPConfig() -> ModuleConfig {
+        // TODO: Replace Data Cloud (CDP) Mobile App connector properties
+        return CdpConfigBuilder(
+            //appId: "", // <-- ** UPDATE your Source ID **
+            //endpoint: "https://" // <-- ** UPDATE your Tenant Specific Endpoint **
+        )
+        .trackScreens(true) // default: false
+        .trackLifecycle(true) // default: false
+        .sessionTimeout(600) // default: 600
+        .build()
     }
 
 }

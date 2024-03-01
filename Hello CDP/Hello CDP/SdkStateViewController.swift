@@ -7,7 +7,7 @@
 
 import UIKit
 import Cdp
-import Core
+import SFMCSDK
 import CoreLocation
 
 class SdkStateViewController: UIViewController {
@@ -24,12 +24,13 @@ class SdkStateViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
 
-        optInSwitch.isOn = CdpSdk.shared.consent == Consent.optIn
-        refreshOutput()
+        optInSwitch.isOn = SFMCSdk.cdp.getConsent() == Consent.optIn
+        //refreshOutput()
     }
     
     @IBAction func toggleConsent(_ sender: Any) {
-        CdpSdk.shared.consent = optInSwitch.isOn ? Consent.optIn : Consent.optOut
+        let consent = optInSwitch.isOn ? Consent.optIn : Consent.optOut
+        SFMCSdk.cdp.setConsent(consent: consent)
         
         refreshOutput()
     }
@@ -44,21 +45,56 @@ class SdkStateViewController: UIViewController {
     }
     
     @IBAction func sendProfileEvent(_ sender: Any) {
-        let profileEvent = Event.profile(eventType: <#T##String#>, attributes: <#T##[String : Any]#>)
-        CdpSdk.shared.track(event: <#T##Event#>)
+        let profileAttributes = [
+          "isAnonymous": "0",
+          "firstName": "John",
+          "lastName": "Smith",
+          "email": "john.smith@domain.com",
+          "phoneNumber": "1234567890"
+        ]
+        SFMCSdk.identity.setProfileAttributes([.cdp: profileAttributes])
         
         refreshOutput()
     }
     
     @IBAction func sendEngagmentEvent(_ sender: Any) {
-        let engagementEvent = Event.engagement(eventType: <#T##String#>, attributes: <#T##[String : Any]#>)
-        CdpSdk.shared.track(event: <#T##Event#>)
-        
+        // collecting the structured AddToCartEvent
+        SFMCSdk.track(event: AddToCartEvent(
+            lineItem: LineItem(
+                catalogObjectType: "Product",
+                catalogObjectId: "product-1",
+                quantity: 1,
+                price: 20.0,
+                currency: "USD",
+                // attributes can contain any custom field data
+                // as long as the schema is modified to define them
+                attributes: [
+                    "gift_wrap": false
+                ]
+            )
+        ))
+        refreshOutput()
+    }
+    
+    @IBAction func sendCustomEngagmentEvent(_ sender: Any) {
+        // collecting an unstructured CustomEvent
+        SFMCSdk.track(event: CustomEvent(
+            name: "CartAbandonment",
+            attributes: [
+                "sku": "COFFEE-NTR-06",
+                "price": 19.99
+            ]
+        )!)
         refreshOutput()
     }
     
     @IBAction func setLocationTracking(_ sender: Any) {
-        CdpSdk.shared.setLocation(coordinates: <#T##Coordinates?#>, expiresIn: <#T##Int#>)
+        // prepare the coordinates, use the CdpCoordinates wrapper
+        let coordinates = CdpCoordinates(latitude: 54.187738, longitude: 15.554440)
+
+        // set the location coordinates and expiration time in seconds
+        SFMCSdk.cdp.setLocation(coordinates: coordinates, expiresIn: 60)
+
         refreshOutput()
     }
     
@@ -67,7 +103,7 @@ class SdkStateViewController: UIViewController {
             guard let unwrappedSelf = self else { return }
             
             if unwrappedSelf.outputSegmentedControl.selectedSegmentIndex == 0 {
-                unwrappedSelf.outputTextView.text = CdpSdk.shared.state
+                unwrappedSelf.outputTextView.text = CdpModule.shared.state // SFMCSdk.state()
             } else if unwrappedSelf.outputSegmentedControl.selectedSegmentIndex == 1 {
                 unwrappedSelf.outputTextView.text = HelloCDPLogOutputter.shared.logMessages.reversed().map{ $0 }.joined(separator: "\n\n---------------------\n\n")
             }
