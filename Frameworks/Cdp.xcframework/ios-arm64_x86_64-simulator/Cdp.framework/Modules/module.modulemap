@@ -1,7 +1,7 @@
 framework module Cdp {
   umbrella header "Cdp.h"
-
   export *
+
   module * { export * }
 }
 

@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
 // swift-module-flags: -target arm64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Cdp
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import AdSupport
@@ -11,6 +11,7 @@ import Swift
 import UIKit
 import _Concurrency
 import _StringProcessing
+import _SwiftConcurrencyShims
 extension CoreData.NSManagedObjectContext {
   public func executeAndMergeChanges(using batchDeleteRequest: CoreData.NSBatchDeleteRequest) throws
 }
@@ -38,15 +39,14 @@ extension Foundation.HTTPURLResponse {
   @objc final public var state: Swift.String {
     @objc get
   }
-  @objc public static func initModule(config: SFMCSDK.ModuleConfig, components: SFMCSDK.SFMCSdkComponents) -> SFMCSDK.SFMCModule?
+  @objc public static func initModule(config: any SFMCSDK.ModuleConfig, components: SFMCSDK.SFMCSdkComponents) -> (any SFMCSDK.SFMCModule)?
   @objc final public func getConsent() -> SFMCSDK.Consent
   @objc final public func setConsent(consent: SFMCSDK.Consent)
-  @objc final public func setLocation(coordinates: SFMCSDK.Coordinates?, expiresIn: Swift.Int)
-  @objc final public func getIdentity() -> SFMCSDK.ModuleIdentity?
+  @objc final public func setLocation(coordinates: (any SFMCSDK.Coordinates)?, expiresIn: Swift.Int)
+  @objc final public func getIdentity() -> (any SFMCSDK.ModuleIdentity)?
   @objc final public func setProfileToAnonymous()
   @objc final public func setProfileToKnown()
   @objc final public func receive(message: SFMCSDK.Message)
-  final public func tearDown()
   @objc deinit
 }
 public func httpResponseStatusToMessage(statusCode: Swift.Int) -> Swift.String

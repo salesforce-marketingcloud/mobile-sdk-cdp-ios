@@ -1519,28 +1519,6 @@
               "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "tearDown",
-            "printedName": "tearDown()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:3Cdp0A6ModuleC8tearDownyyF",
-            "mangledName": "$s3Cdp0A6ModuleC8tearDownyyF",
-            "moduleName": "Cdp",
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -3553,6 +3531,69 @@
       "value": "\"Session\""
     },
     {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Session\/Session.swift",
+      "kind": "StringLiteral",
+      "offset": 1414,
+      "length": 49,
+      "value": "\"Error while encoding session to json: \""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Session\/Session.swift",
+      "kind": "StringLiteral",
+      "offset": 1461,
+      "length": 1,
+      "value": "\".\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Session\/Session.swift",
+      "kind": "StringLiteral",
+      "offset": 1504,
+      "length": 4,
+      "value": "\"{}\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Session\/Session.swift",
+      "kind": "StringLiteral",
+      "offset": 1875,
+      "length": 49,
+      "value": "\"Error while decoding json to session: \""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Session\/Session.swift",
+      "kind": "StringLiteral",
+      "offset": 1922,
+      "length": 1,
+      "value": "\".\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Identity\/CdpIdentity.swift",
+      "kind": "StringLiteral",
+      "offset": 796,
+      "length": 60,
+      "value": "\"Error while converting custom properties to JSON: \""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Identity\/CdpIdentity.swift",
+      "kind": "StringLiteral",
+      "offset": 855,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/ConsentEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 322,
+      "length": 12,
+      "value": "\"consentLog\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/ConsentEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 349,
+      "length": 8,
+      "value": "\"status\""
+    },
+    {
       "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/ConsentEvent.swift",
       "kind": "StringLiteral",
       "offset": 134,
@@ -3561,10 +3602,192 @@
     },
     {
       "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/Managers\/EventManager.swift",
+      "kind": "StringLiteral",
+      "offset": 884,
+      "length": 11,
+      "value": "\"queueSize\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/Managers\/EventManager.swift",
       "kind": "BooleanLiteral",
       "offset": 1883,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/Managers\/EventManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2036,
+      "length": 57,
+      "value": "\"Cannot track event because event couldn't be unwrapped.\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/Managers\/EventManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2400,
+      "length": 77,
+      "value": "\"Cannot track event because consent was: \""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/Managers\/EventManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2475,
+      "length": 1,
+      "value": "\".\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/Managers\/EventManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2605,
+      "length": 61,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/Managers\/EventManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2650,
+      "length": 5,
+      "value": "\" event tracked.\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/Managers\/EventManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2721,
+      "length": 21,
+      "value": "\"partyIdentification\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/Managers\/EventManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2810,
+      "length": 8,
+      "value": "\"userId\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/Managers\/EventManager.swift",
+      "kind": "StringLiteral",
+      "offset": 3259,
+      "length": 30,
+      "value": "\"Send Events process started.\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/Managers\/EventManager.swift",
+      "kind": "StringLiteral",
+      "offset": 3460,
+      "length": 69,
+      "value": "\"The sendEvents() was called, but deviceId is null. Request aborted.\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/Managers\/EventManager.swift",
+      "kind": "StringLiteral",
+      "offset": 3903,
+      "length": 93,
+      "value": "\"Events are currently blocked by consent: Pending. Please opt_in if you wish to send events.\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/Managers\/EventManager.swift",
+      "kind": "StringLiteral",
+      "offset": 4041,
+      "length": 59,
+      "value": "\"Unknown consent occurred value. This should never happen.\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/Managers\/EventManager.swift",
+      "kind": "StringLiteral",
+      "offset": 4151,
+      "length": 59,
+      "value": "\"Unknown consent occurred value. This should never happen.\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/Managers\/EventManager.swift",
+      "kind": "StringLiteral",
+      "offset": 4302,
+      "length": 32,
+      "value": "\"Send Events process completed.\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/Managers\/EventManager.swift",
+      "kind": "StringLiteral",
+      "offset": 4566,
+      "length": 24,
+      "value": "\"Queue event was empty.\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/Managers\/EventManager.swift",
+      "kind": "StringLiteral",
+      "offset": 4826,
+      "length": 43,
+      "value": "\"Failed to create network wrapped request.\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/Managers\/EventManager.swift",
+      "kind": "StringLiteral",
+      "offset": 5059,
+      "length": 7,
+      "value": "\"EVENT\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/Managers\/EventManager.swift",
+      "kind": "StringLiteral",
+      "offset": 5168,
+      "length": 39,
+      "value": "\"Event request blocked by retry after.\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/Managers\/EventManager.swift",
+      "kind": "StringLiteral",
+      "offset": 6102,
+      "length": 35,
+      "value": "\"Failed to create event json body.\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/Managers\/EventManager.swift",
+      "kind": "StringLiteral",
+      "offset": 6344,
+      "length": 43,
+      "value": "\"Can't send an event request without tags.\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/Managers\/EventManager.swift",
+      "kind": "StringLiteral",
+      "offset": 6909,
+      "length": 50,
+      "value": "\"Failed to extract tags from the wrapped request.\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/Managers\/EventManager.swift",
+      "kind": "Array",
+      "offset": 7071,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/Managers\/EventManager.swift",
+      "kind": "StringLiteral",
+      "offset": 7474,
+      "length": 43,
+      "value": "\"Failed to send events: \""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/Managers\/EventManager.swift",
+      "kind": "StringLiteral",
+      "offset": 7516,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/Managers\/EventManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7588,
+      "length": 3,
+      "value": "429"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/Managers\/EventManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 9244,
+      "length": 4,
+      "value": "true"
     },
     {
       "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Session\/SessionManager.swift",
@@ -3575,10 +3798,59 @@
     },
     {
       "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Session\/SessionManager.swift",
+      "kind": "StringLiteral",
+      "offset": 763,
+      "length": 11,
+      "value": "\"sessionId\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Session\/SessionManager.swift",
       "kind": "IntegerLiteral",
       "offset": 1013,
       "length": 2,
       "value": "10"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Session\/SessionManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1188,
+      "length": 4,
+      "value": "1000"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Session\/SessionManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1277,
+      "length": 4,
+      "value": "1000"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Session\/SessionManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1400,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Session\/SessionManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1475,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Session\/SessionManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1803,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Session\/SessionManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2874,
+      "length": 4,
+      "value": "1000"
     },
     {
       "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Extensions\/JSON\/DateDecodingStrategy.swift",
@@ -3637,6 +3909,104 @@
       "value": "\"APP_SOURCE_UNKNOWN\""
     },
     {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Http\/CdpAuthenticator.swift",
+      "kind": "StringLiteral",
+      "offset": 1455,
+      "length": 36,
+      "value": "\"Failed to get cached token header.\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Http\/CdpAuthenticator.swift",
+      "kind": "StringLiteral",
+      "offset": 1896,
+      "length": 88,
+      "value": "\"Failed to refresh auth token header due to deviceId or configuration (\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Http\/CdpAuthenticator.swift",
+      "kind": "StringLiteral",
+      "offset": 1982,
+      "length": 1,
+      "value": "\")\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Http\/CdpAuthenticator.swift",
+      "kind": "StringLiteral",
+      "offset": 2331,
+      "length": 26,
+      "value": "\"Tenant was deprovisioned\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Http\/CdpAuthenticator.swift",
+      "kind": "StringLiteral",
+      "offset": 2960,
+      "length": 7,
+      "value": "\"token\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Http\/CdpAuthenticator.swift",
+      "kind": "StringLiteral",
+      "offset": 3048,
+      "length": 37,
+      "value": "\"Failed to parse auth token response\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Http\/CdpAuthenticator.swift",
+      "kind": "StringLiteral",
+      "offset": 3370,
+      "length": 57,
+      "value": "\"Failed to parse auth token response. \""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Http\/CdpAuthenticator.swift",
+      "kind": "StringLiteral",
+      "offset": 3426,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Http\/CdpAuthenticator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3665,
+      "length": 3,
+      "value": "401"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Http\/CdpAuthenticator.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3732,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Http\/CdpAuthenticator.swift",
+      "kind": "StringLiteral",
+      "offset": 3971,
+      "length": 11,
+      "value": "\"errorCode\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Http\/CdpAuthenticator.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4068,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Http\/CdpAuthenticator.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4125,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Http\/CdpAuthenticator.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4157,
+      "length": 4,
+      "value": "true"
+    },
+    {
       "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Consent\/Managers\/ConsentManager.swift",
       "kind": "StringLiteral",
       "offset": 199,
@@ -3658,6 +4028,209 @@
       "value": "\"partyIdentificationUserId\""
     },
     {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Consent\/Managers\/ConsentManager.swift",
+      "kind": "StringLiteral",
+      "offset": 662,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Consent\/Managers\/ConsentManager.swift",
+      "kind": "StringLiteral",
+      "offset": 830,
+      "length": 54,
+      "value": "\"Consent may not be set to \""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Consent\/Managers\/ConsentManager.swift",
+      "kind": "StringLiteral",
+      "offset": 883,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Consent\/Managers\/ConsentManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1038,
+      "length": 51,
+      "value": "\"Consent already set to \""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Consent\/Managers\/ConsentManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1088,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Consent\/Managers\/ConsentManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1188,
+      "length": 43,
+      "value": "\"Consent set to \""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Consent\/Managers\/ConsentManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1230,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Consent\/Managers\/ConsentManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1685,
+      "length": 9,
+      "value": "\"consent\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Consent\/Managers\/ConsentManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1726,
+      "length": 10,
+      "value": "\"deviceId\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Consent\/Managers\/ConsentManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1750,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Consent\/Managers\/ConsentManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1766,
+      "length": 27,
+      "value": "\"partyIdentificationUserId\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Consent\/Managers\/ConsentManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1806,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Consent\/Managers\/ConsentManager.swift",
+      "kind": "StringLiteral",
+      "offset": 3253,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Storage\/Managers\/CoreDataStorageManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1097,
+      "length": 6,
+      "value": "\"momd\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Storage\/Managers\/CoreDataStorageManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1808,
+      "length": 21,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Storage\/Managers\/CoreDataStorageManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1821,
+      "length": 1,
+      "value": "\".sqlite\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Storage\/Managers\/CoreDataStorageManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1925,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Storage\/Managers\/CoreDataStorageManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1991,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Storage\/Extensions\/NsManagedObjectContext\/ExecuteAndMergeChanges.swift",
+      "kind": "Array",
+      "offset": 1064,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Extensions\/URL\/IsSalesforceEndpoint.swift",
+      "kind": "Array",
+      "offset": 371,
+      "length": 37,
+      "value": "[\"salesforce.com\", \"exacttarget.com\"]"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Extensions\/URL\/IsSalesforceEndpoint.swift",
+      "kind": "BooleanLiteral",
+      "offset": 528,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Extensions\/URL\/IsSalesforceEndpoint.swift",
+      "kind": "StringLiteral",
+      "offset": 688,
+      "length": 70,
+      "value": "\"Provided url \""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Extensions\/URL\/IsSalesforceEndpoint.swift",
+      "kind": "StringLiteral",
+      "offset": 721,
+      "length": 2,
+      "value": "\" is not a valid Salesforce endpoint.\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Extensions\/URL\/IsSalesforceEndpoint.swift",
+      "kind": "BooleanLiteral",
+      "offset": 792,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Config\/CdpConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 592,
+      "length": 7,
+      "value": "\"appId\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Config\/CdpConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 620,
+      "length": 10,
+      "value": "\"endpoint\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Config\/CdpConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 654,
+      "length": 16,
+      "value": "\"sessionTimeout\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Config\/CdpConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 709,
+      "length": 16,
+      "value": "\"trackLifecycle\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Config\/CdpConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 755,
+      "length": 14,
+      "value": "\"trackScreens\""
+    },
+    {
       "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Config\/CdpConfig.swift",
       "kind": "StringLiteral",
       "offset": 260,
@@ -3670,6 +4243,41 @@
       "offset": 277,
       "length": 10,
       "value": "\"location\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Location\/ValueObjects\/Location.swift",
+      "kind": "StringLiteral",
+      "offset": 1394,
+      "length": 74,
+      "value": "\"Error while encoding location to json: \""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Location\/ValueObjects\/Location.swift",
+      "kind": "StringLiteral",
+      "offset": 1442,
+      "length": 1,
+      "value": "\". Returning empty object.\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Location\/ValueObjects\/Location.swift",
+      "kind": "StringLiteral",
+      "offset": 1509,
+      "length": 4,
+      "value": "\"{}\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Location\/ValueObjects\/Location.swift",
+      "kind": "StringLiteral",
+      "offset": 2057,
+      "length": 50,
+      "value": "\"Error while decoding json to location: \""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Location\/ValueObjects\/Location.swift",
+      "kind": "StringLiteral",
+      "offset": 2105,
+      "length": 1,
+      "value": "\".\""
     },
     {
       "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Extensions\/Formatter\/ISO8601DateFormatter.swift",
@@ -3693,6 +4301,97 @@
       "value": "\"yyyy-MM-dd'T'HH:mm:ssZZZZZ\""
     },
     {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Extensions\/Decimal\/Precision.swift",
+      "kind": "IntegerLiteral",
+      "offset": 174,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Extensions\/Decimal\/Precision.swift",
+      "kind": "IntegerLiteral",
+      "offset": 482,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Location\/Managers\/LocationManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1140,
+      "length": 10,
+      "value": "\"latitude\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Location\/Managers\/LocationManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1171,
+      "length": 11,
+      "value": "\"longitude\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Location\/Managers\/LocationManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1204,
+      "length": 12,
+      "value": "\"expiration\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Location\/Managers\/LocationManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2134,
+      "length": 201,
+      "value": "\"    Cannot track location because consent was: \""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Location\/Managers\/LocationManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2239,
+      "length": 3,
+      "value": "\" and allowing pending     consent was not granted.\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Location\/Managers\/LocationManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2445,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Location\/Managers\/LocationManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2865,
+      "length": 104,
+      "value": "\"Location (\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Location\/Managers\/LocationManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2899,
+      "length": 3,
+      "value": "\" and \""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Location\/Managers\/LocationManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2928,
+      "length": 1,
+      "value": "\") was saved and expires in \""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Location\/Managers\/LocationManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2967,
+      "length": 1,
+      "value": "\".\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Location\/Managers\/LocationManager.swift",
+      "kind": "StringLiteral",
+      "offset": 3099,
+      "length": 33,
+      "value": "\"Removing location from storage.\""
+    },
+    {
       "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/CdpEvent.swift",
       "kind": "Array",
       "offset": 259,
@@ -3712,6 +4411,342 @@
       "offset": 1191,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/CdpEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 1534,
+      "length": 71,
+      "value": "\"Name \"\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/CdpEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 1549,
+      "length": 1,
+      "value": "\"\" cannot be empty or consist of whitespace characters.\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/CdpEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 1793,
+      "length": 52,
+      "value": "\"Name \"\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/CdpEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 1808,
+      "length": 1,
+      "value": "\"\" was trimmed to \"\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/CdpEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 1842,
+      "length": 1,
+      "value": "\"\"\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/CdpEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 2109,
+      "length": 116,
+      "value": "\"Event name \""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/CdpEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 2135,
+      "length": 2,
+      "value": "\" is reserved. Other reserved keys: \""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/CdpEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 2218,
+      "length": 4,
+      "value": "\", \""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/CdpEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 2224,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/CdpEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 2649,
+      "length": 43,
+      "value": "\"Key \"\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/CdpEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 2662,
+      "length": 1,
+      "value": "\"\" was trimmed to \"\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/CdpEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 2689,
+      "length": 1,
+      "value": "\"\"\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/CdpEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 2903,
+      "length": 89,
+      "value": "\"Key \"\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/CdpEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 2916,
+      "length": 1,
+      "value": "\"\" cannot be empty. The key \"\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/CdpEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 2952,
+      "length": 1,
+      "value": "\"\" value \"\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/CdpEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 2971,
+      "length": 1,
+      "value": "\"\" pair was dropped.\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/CdpEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 3223,
+      "length": 223,
+      "value": "\"Key \"\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/CdpEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 3259,
+      "length": 1,
+      "value": "\"\" is reserved. The key: \"\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/CdpEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 3292,
+      "length": 1,
+      "value": "\"\" value: \"\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/CdpEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 3312,
+      "length": 1,
+      "value": "\"\" pair was dropped.\nOther reserved keys: \""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/CdpEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 3416,
+      "length": 4,
+      "value": "\", \""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/CdpEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 3422,
+      "length": 3939,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/CdpEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 3859,
+      "length": 10,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/CdpEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 3868,
+      "length": 4,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/CdpEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 4059,
+      "length": 10,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/CdpEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 4068,
+      "length": 4,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/CdpEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4260,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/CdpEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4264,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/CdpEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 4398,
+      "length": 88,
+      "value": "\"Value of \""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/CdpEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 4415,
+      "length": 2,
+      "value": "\" is not valid. The key \"\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/CdpEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 4446,
+      "length": 1,
+      "value": "\"\" value \"\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/CdpEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 4465,
+      "length": 1,
+      "value": "\"\" pair was dropped.\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/CdpEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4870,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/CdpEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4927,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/CdpEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4979,
+      "length": 2,
+      "value": "20"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/CdpEvent.swift",
+      "kind": "Dictionary",
+      "offset": 5272,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/CdpEvent.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6215,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/CdpEvent.swift",
+      "kind": "Dictionary",
+      "offset": 6474,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/Structs\/PrecisionDecimal.swift",
+      "kind": "StringLiteral",
+      "offset": 1413,
+      "length": 7,
+      "value": "\"whole\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/Structs\/PrecisionDecimal.swift",
+      "kind": "StringLiteral",
+      "offset": 1472,
+      "length": 10,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/Structs\/PrecisionDecimal.swift",
+      "kind": "StringLiteral",
+      "offset": 1481,
+      "length": 3,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/Structs\/PrecisionDecimal.swift",
+      "kind": "StringLiteral",
+      "offset": 1520,
+      "length": 10,
+      "value": "\"fraction\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/Structs\/PrecisionDecimal.swift",
+      "kind": "StringLiteral",
+      "offset": 1585,
+      "length": 13,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/Structs\/PrecisionDecimal.swift",
+      "kind": "StringLiteral",
+      "offset": 1597,
+      "length": 3,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/Structs\/PrecisionDecimal.swift",
+      "kind": "StringLiteral",
+      "offset": 1646,
+      "length": 35,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/Structs\/PrecisionDecimal.swift",
+      "kind": "StringLiteral",
+      "offset": 1680,
+      "length": 9,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/Structs\/PrecisionDecimal.swift",
+      "kind": "StringLiteral",
+      "offset": 1923,
+      "length": 7,
+      "value": "\"whole\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/Structs\/PrecisionDecimal.swift",
+      "kind": "StringLiteral",
+      "offset": 1939,
+      "length": 10,
+      "value": "\"fraction\""
     },
     {
       "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/CdpModule.swift",
@@ -3744,9 +4779,226 @@
     {
       "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/CdpModule.swift",
       "kind": "StringLiteral",
+      "offset": 2963,
+      "length": 63,
+      "value": "\"Incompatable config type. Must pass an instance of CdpConfig.\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/CdpModule.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3515,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/CdpModule.swift",
+      "kind": "StringLiteral",
+      "offset": 3595,
+      "length": 16,
+      "value": "\"registrationId\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/CdpModule.swift",
+      "kind": "StringLiteral",
+      "offset": 3676,
+      "length": 23,
+      "value": "\"softwareApplicationId\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/CdpModule.swift",
+      "kind": "StringLiteral",
+      "offset": 3764,
+      "length": 25,
+      "value": "\"softwareApplicationName\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/CdpModule.swift",
+      "kind": "StringLiteral",
+      "offset": 3819,
+      "length": 14,
+      "value": "\"CFBundleName\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/CdpModule.swift",
+      "kind": "StringLiteral",
+      "offset": 3849,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/CdpModule.swift",
+      "kind": "StringLiteral",
+      "offset": 3869,
+      "length": 28,
+      "value": "\"softwareApplicationVersion\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/CdpModule.swift",
+      "kind": "StringLiteral",
+      "offset": 3927,
+      "length": 28,
+      "value": "\"CFBundleShortVersionString\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/CdpModule.swift",
+      "kind": "StringLiteral",
+      "offset": 3971,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/CdpModule.swift",
+      "kind": "StringLiteral",
+      "offset": 3991,
+      "length": 8,
+      "value": "\"osName\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/CdpModule.swift",
+      "kind": "StringLiteral",
+      "offset": 4046,
+      "length": 11,
+      "value": "\"osVersion\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/CdpModule.swift",
+      "kind": "Dictionary",
+      "offset": 5119,
+      "length": 20,
+      "value": "[(\"isAnonymous\", \"1\")]"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/CdpModule.swift",
+      "kind": "Dictionary",
+      "offset": 5309,
+      "length": 20,
+      "value": "[(\"isAnonymous\", \"0\")]"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/CdpModule.swift",
+      "kind": "StringLiteral",
       "offset": 5502,
-      "length": 31,
-      "value": "\"cdp.identityEvent.serialQueue\""
+      "length": 61,
+      "value": "\"com.salesforce.marketingcloud.cdp.identityEvent.serialQueue\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/CdpModule.swift",
+      "kind": "StringLiteral",
+      "offset": 5756,
+      "length": 105,
+      "value": "\"Failed to convert message with id `\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/CdpModule.swift",
+      "kind": "StringLiteral",
+      "offset": 5805,
+      "length": 1,
+      "value": "\"` and name `\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/CdpModule.swift",
+      "kind": "StringLiteral",
+      "offset": 5832,
+      "length": 1,
+      "value": "\"` as event. Message Dropped.\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/CdpModule.swift",
+      "kind": "StringLiteral",
+      "offset": 6893,
+      "length": 68,
+      "value": "\"SFMCSdk.initModule() must be called before using CdpModule.shared.\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/CdpModule.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7730,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/CdpModule.swift",
+      "kind": "StringLiteral",
+      "offset": 7778,
+      "length": 6,
+      "value": "\"true\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/CdpModule.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7811,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/CdpModule.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7843,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/CdpModule.swift",
+      "kind": "StringLiteral",
+      "offset": 7987,
+      "length": 15,
+      "value": "\"Deprovisioned\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/CdpModule.swift",
+      "kind": "Dictionary",
+      "offset": 8029,
+      "length": 26,
+      "value": "[(\"state\", \"Deprovisioned\")]"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/CdpModule.swift",
+      "kind": "StringLiteral",
+      "offset": 8106,
+      "length": 9,
+      "value": "\"consent\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/CdpModule.swift",
+      "kind": "StringLiteral",
+      "offset": 8164,
+      "length": 9,
+      "value": "\"version\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Storage\/Dao\/BaseDao.swift",
+      "kind": "StringLiteral",
+      "offset": 894,
+      "length": 56,
+      "value": "\"Failed to fetch under given condition. Error: \""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Storage\/Dao\/BaseDao.swift",
+      "kind": "StringLiteral",
+      "offset": 949,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Storage\/Dao\/BaseDao.swift",
+      "kind": "Array",
+      "offset": 984,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Storage\/Dao\/BaseDao.swift",
+      "kind": "StringLiteral",
+      "offset": 1625,
+      "length": 42,
+      "value": "\"Failed to delete events. Error: \""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Storage\/Dao\/BaseDao.swift",
+      "kind": "StringLiteral",
+      "offset": 1666,
+      "length": 1,
+      "value": "\"\""
     },
     {
       "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Storage\/Dao\/QueueEventDao.swift",
@@ -3770,11 +5022,326 @@
       "value": "20"
     },
     {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Storage\/Dao\/QueueEventDao.swift",
+      "kind": "StringLiteral",
+      "offset": 1021,
+      "length": 47,
+      "value": "\"Inserting Events to database process started.\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Storage\/Dao\/QueueEventDao.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1148,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Storage\/Dao\/QueueEventDao.swift",
+      "kind": "StringLiteral",
+      "offset": 2053,
+      "length": 49,
+      "value": "\"Inserting Events to database process completed.\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Storage\/Dao\/QueueEventDao.swift",
+      "kind": "StringLiteral",
+      "offset": 2237,
+      "length": 39,
+      "value": "\"Failed to save event. Error: \""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Storage\/Dao\/QueueEventDao.swift",
+      "kind": "StringLiteral",
+      "offset": 2275,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Storage\/Dao\/QueueEventDao.swift",
+      "kind": "StringLiteral",
+      "offset": 2436,
+      "length": 16,
+      "value": "\"priority == %i\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Storage\/Dao\/QueueEventDao.swift",
+      "kind": "StringLiteral",
+      "offset": 2979,
+      "length": 10,
+      "value": "\"priority\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Storage\/Dao\/QueueEventDao.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3002,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Storage\/Dao\/QueueEventDao.swift",
+      "kind": "StringLiteral",
+      "offset": 3052,
+      "length": 13,
+      "value": "\"createdDate\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Storage\/Dao\/QueueEventDao.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3078,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Storage\/Dao\/QueueEventDao.swift",
+      "kind": "StringLiteral",
+      "offset": 3531,
+      "length": 40,
+      "value": "\"Failed to trim events. Error: \""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Storage\/Dao\/QueueEventDao.swift",
+      "kind": "StringLiteral",
+      "offset": 3570,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Storage\/Dao\/QueueEventDao.swift",
+      "kind": "StringLiteral",
+      "offset": 4079,
+      "length": 18,
+      "value": "\"QueueEventEntity\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Storage\/Dao\/QueueEventDao.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4277,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Storage\/Dao\/QueueEventDao.swift",
+      "kind": "StringLiteral",
+      "offset": 4421,
+      "length": 45,
+      "value": "\"Failed to count all events. Error: \""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Storage\/Dao\/QueueEventDao.swift",
+      "kind": "StringLiteral",
+      "offset": 4465,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Storage\/Dao\/QueueEventDao.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4506,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Storage\/Dao\/QueueEventDao.swift",
+      "kind": "StringLiteral",
+      "offset": 4825,
+      "length": 13,
+      "value": "\"createdDate\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Storage\/Dao\/QueueEventDao.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4851,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Storage\/Dao\/QueueEventDao.swift",
+      "kind": "StringLiteral",
+      "offset": 4952,
+      "length": 16,
+      "value": "\"category == %@\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Storage\/Dao\/QueueEventDao.swift",
+      "kind": "StringLiteral",
+      "offset": 5212,
+      "length": 43,
+      "value": "\"Failed to get all events. Error: \""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Storage\/Dao\/QueueEventDao.swift",
+      "kind": "StringLiteral",
+      "offset": 5254,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Storage\/Dao\/QueueEventDao.swift",
+      "kind": "Array",
+      "offset": 5289,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Storage\/Dao\/QueueEventDao.swift",
+      "kind": "StringLiteral",
+      "offset": 5827,
+      "length": 82,
+      "value": "\"Corrupted entities with following ids were deleted: \""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Storage\/Dao\/QueueEventDao.swift",
+      "kind": "StringLiteral",
+      "offset": 5907,
+      "length": 1,
+      "value": "\")\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Storage\/Dao\/QueueEventDao.swift",
+      "kind": "StringLiteral",
+      "offset": 7074,
+      "length": 15,
+      "value": "\"eventId IN %@\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Storage\/Dao\/QueueEventDao.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7172,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Storage\/Dao\/QueueEventDao.swift",
+      "kind": "StringLiteral",
+      "offset": 7377,
+      "length": 63,
+      "value": "\"Failed to increment failed count by eventIds. Error: \""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Storage\/Dao\/QueueEventDao.swift",
+      "kind": "StringLiteral",
+      "offset": 7439,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Storage\/Dao\/QueueEventDao.swift",
+      "kind": "StringLiteral",
+      "offset": 7596,
+      "length": 15,
+      "value": "\"eventId IN %@\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Storage\/Dao\/QueueEventDao.swift",
+      "kind": "StringLiteral",
+      "offset": 7929,
+      "length": 41,
+      "value": "\"failedAttempts >= %i AND priority != %i\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Storage\/Dao\/QueueEventDao.swift",
+      "kind": "StringLiteral",
+      "offset": 8170,
+      "length": 16,
+      "value": "\"priority != %i\""
+    },
+    {
       "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Storage\/Entities\/Domain\/QueueEventDomainEntity.swift",
       "kind": "IntegerLiteral",
       "offset": 246,
       "length": 1,
       "value": "0"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Storage\/Entities\/Domain\/QueueEventDomainEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 1059,
+      "length": 10,
+      "value": "\"deviceId\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Storage\/Entities\/Domain\/QueueEventDomainEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 2915,
+      "length": 33,
+      "value": "\"Could not decrypt event payload\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Storage\/Entities\/Domain\/QueueEventDomainEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 3070,
+      "length": 91,
+      "value": "\"Could not decrypt event payload. Encrypted payload: \""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Storage\/Entities\/Domain\/QueueEventDomainEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 3160,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Storage\/Entities\/Domain\/QueueEventDomainEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 4020,
+      "length": 9,
+      "value": "\"eventId\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Storage\/Entities\/Domain\/QueueEventDomainEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 4052,
+      "length": 11,
+      "value": "\"sessionId\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Storage\/Entities\/Domain\/QueueEventDomainEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 4088,
+      "length": 10,
+      "value": "\"dateTime\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Storage\/Entities\/Domain\/QueueEventDomainEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 4160,
+      "length": 11,
+      "value": "\"eventType\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Storage\/Entities\/Domain\/QueueEventDomainEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 4420,
+      "length": 10,
+      "value": "\"category\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Storage\/Entities\/Domain\/QueueEventDomainEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 4650,
+      "length": 11,
+      "value": "\"longitude\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Storage\/Entities\/Domain\/QueueEventDomainEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 4704,
+      "length": 10,
+      "value": "\"latitude\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Storage\/Entities\/Domain\/QueueEventDomainEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 4763,
+      "length": 9,
+      "value": "\"channel\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Storage\/Entities\/Domain\/QueueEventDomainEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 4776,
+      "length": 8,
+      "value": "\"mobile\""
     },
     {
       "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Storage\/Entities\/Domain\/QueueEventDomainEntity.swift",
@@ -3791,6 +5358,958 @@
       "value": "\"{}\""
     },
     {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/JsonUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 1192,
+      "length": 25,
+      "value": "\"Parsing to json failed.\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/JsonUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 1297,
+      "length": 70,
+      "value": "\"Parsing to json using dictionaryToJson() failed: nilPointerException\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/JsonUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 1806,
+      "length": 8,
+      "value": "\"events\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/JsonUtil.swift",
+      "kind": "Array",
+      "offset": 2686,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/JsonUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 2794,
+      "length": 31,
+      "value": "\"Parsing to dictionary failed.\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/JsonUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 2905,
+      "length": 65,
+      "value": "\"Parsing to dictionary using jsonToDictionary() failed: \""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/JsonUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 2969,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/JsonUtil.swift",
+      "kind": "Array",
+      "offset": 3355,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/JsonUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 3526,
+      "length": 31,
+      "value": "\"Parsing to dictionary failed.\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/JsonUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 3612,
+      "length": 55,
+      "value": "\"Parsing to json using jsonToArray() failed: castError\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/JsonUtil.swift",
+      "kind": "Array",
+      "offset": 4069,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/JsonUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 4288,
+      "length": 25,
+      "value": "\"Parsing to json failed.\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/JsonUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 4393,
+      "length": 71,
+      "value": "\"Parsing to json using stringArrayToJson() failed: nilPointerException\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "IntegerLiteral",
+      "offset": 266,
+      "length": 3,
+      "value": "100"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 278,
+      "length": 10,
+      "value": "\"Continue\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "IntegerLiteral",
+      "offset": 298,
+      "length": 3,
+      "value": "101"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 310,
+      "length": 21,
+      "value": "\"Switching Protocols\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "IntegerLiteral",
+      "offset": 341,
+      "length": 3,
+      "value": "102"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 353,
+      "length": 12,
+      "value": "\"Processing\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "IntegerLiteral",
+      "offset": 375,
+      "length": 3,
+      "value": "200"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 387,
+      "length": 4,
+      "value": "\"OK\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "IntegerLiteral",
+      "offset": 401,
+      "length": 3,
+      "value": "201"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 413,
+      "length": 9,
+      "value": "\"Created\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "IntegerLiteral",
+      "offset": 432,
+      "length": 3,
+      "value": "202"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 444,
+      "length": 10,
+      "value": "\"Accepted\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "IntegerLiteral",
+      "offset": 464,
+      "length": 3,
+      "value": "203"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 476,
+      "length": 31,
+      "value": "\"Non-Authoritative Information\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "IntegerLiteral",
+      "offset": 517,
+      "length": 3,
+      "value": "204"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 529,
+      "length": 12,
+      "value": "\"No Content\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "IntegerLiteral",
+      "offset": 551,
+      "length": 3,
+      "value": "205"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 563,
+      "length": 15,
+      "value": "\"Reset Content\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "IntegerLiteral",
+      "offset": 588,
+      "length": 3,
+      "value": "206"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 600,
+      "length": 17,
+      "value": "\"Partial Content\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "IntegerLiteral",
+      "offset": 627,
+      "length": 3,
+      "value": "207"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 639,
+      "length": 14,
+      "value": "\"Multi-Status\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "IntegerLiteral",
+      "offset": 663,
+      "length": 3,
+      "value": "208"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 675,
+      "length": 18,
+      "value": "\"Already Reported\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "IntegerLiteral",
+      "offset": 703,
+      "length": 3,
+      "value": "226"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 715,
+      "length": 9,
+      "value": "\"IM Used\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "IntegerLiteral",
+      "offset": 734,
+      "length": 3,
+      "value": "300"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 746,
+      "length": 18,
+      "value": "\"Multiple Choices\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "IntegerLiteral",
+      "offset": 774,
+      "length": 3,
+      "value": "301"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 786,
+      "length": 19,
+      "value": "\"Moved Permanently\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "IntegerLiteral",
+      "offset": 815,
+      "length": 3,
+      "value": "302"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 827,
+      "length": 7,
+      "value": "\"Found\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "IntegerLiteral",
+      "offset": 844,
+      "length": 3,
+      "value": "303"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 856,
+      "length": 11,
+      "value": "\"See Other\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "IntegerLiteral",
+      "offset": 877,
+      "length": 3,
+      "value": "304"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 889,
+      "length": 14,
+      "value": "\"Not Modified\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "IntegerLiteral",
+      "offset": 913,
+      "length": 3,
+      "value": "305"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 925,
+      "length": 11,
+      "value": "\"Use Proxy\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "IntegerLiteral",
+      "offset": 946,
+      "length": 3,
+      "value": "306"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 958,
+      "length": 14,
+      "value": "\"Switch Proxy\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "IntegerLiteral",
+      "offset": 982,
+      "length": 3,
+      "value": "307"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 994,
+      "length": 20,
+      "value": "\"Temporary Redirect\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1024,
+      "length": 3,
+      "value": "308"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 1036,
+      "length": 20,
+      "value": "\"Permanent Redirect\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1066,
+      "length": 3,
+      "value": "400"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 1078,
+      "length": 13,
+      "value": "\"Bad Request\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1101,
+      "length": 3,
+      "value": "401"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 1113,
+      "length": 14,
+      "value": "\"Unauthorized\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1137,
+      "length": 3,
+      "value": "402"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 1149,
+      "length": 18,
+      "value": "\"Payment Required\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1177,
+      "length": 3,
+      "value": "403"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 1189,
+      "length": 11,
+      "value": "\"Forbidden\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1210,
+      "length": 3,
+      "value": "404"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 1222,
+      "length": 11,
+      "value": "\"Not Found\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1243,
+      "length": 3,
+      "value": "405"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 1255,
+      "length": 20,
+      "value": "\"Method Not Allowed\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1285,
+      "length": 3,
+      "value": "406"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 1297,
+      "length": 16,
+      "value": "\"Not Acceptable\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1323,
+      "length": 3,
+      "value": "407"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 1335,
+      "length": 31,
+      "value": "\"Proxy Authentication Required\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1376,
+      "length": 3,
+      "value": "408"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 1388,
+      "length": 17,
+      "value": "\"Request Timeout\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1415,
+      "length": 3,
+      "value": "409"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 1427,
+      "length": 10,
+      "value": "\"Conflict\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1447,
+      "length": 3,
+      "value": "410"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 1459,
+      "length": 6,
+      "value": "\"Gone\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1475,
+      "length": 3,
+      "value": "411"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 1487,
+      "length": 17,
+      "value": "\"Length Required\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1514,
+      "length": 3,
+      "value": "412"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 1526,
+      "length": 21,
+      "value": "\"Precondition Failed\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1557,
+      "length": 3,
+      "value": "413"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 1569,
+      "length": 19,
+      "value": "\"Payload Too Large\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1598,
+      "length": 3,
+      "value": "414"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 1610,
+      "length": 14,
+      "value": "\"URI Too Long\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1634,
+      "length": 3,
+      "value": "415"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 1646,
+      "length": 24,
+      "value": "\"Unsupported Media Type\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1680,
+      "length": 3,
+      "value": "416"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 1692,
+      "length": 23,
+      "value": "\"Range Not Satisfiable\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1725,
+      "length": 3,
+      "value": "417"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 1737,
+      "length": 20,
+      "value": "\"Expectation Failed\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1767,
+      "length": 3,
+      "value": "418"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 1779,
+      "length": 14,
+      "value": "\"I'm a teapot\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1803,
+      "length": 3,
+      "value": "421"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 1815,
+      "length": 21,
+      "value": "\"Misdirected Request\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1846,
+      "length": 3,
+      "value": "422"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 1858,
+      "length": 22,
+      "value": "\"Unprocessable Entity\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1890,
+      "length": 3,
+      "value": "423"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 1902,
+      "length": 8,
+      "value": "\"Locked\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1920,
+      "length": 3,
+      "value": "424"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 1932,
+      "length": 19,
+      "value": "\"Failed Dependency\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1961,
+      "length": 3,
+      "value": "426"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 1973,
+      "length": 18,
+      "value": "\"Upgrade Required\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2001,
+      "length": 3,
+      "value": "428"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 2013,
+      "length": 23,
+      "value": "\"Precondition Required\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2046,
+      "length": 3,
+      "value": "429"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 2058,
+      "length": 19,
+      "value": "\"Too Many Requests\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2087,
+      "length": 3,
+      "value": "431"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 2099,
+      "length": 33,
+      "value": "\"Request Header Fields Too Large\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2142,
+      "length": 3,
+      "value": "451"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 2154,
+      "length": 31,
+      "value": "\"Unavailable For Legal Reasons\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2195,
+      "length": 3,
+      "value": "500"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 2207,
+      "length": 23,
+      "value": "\"Internal Server Error\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2240,
+      "length": 3,
+      "value": "501"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 2252,
+      "length": 17,
+      "value": "\"Not Implemented\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2279,
+      "length": 3,
+      "value": "502"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 2291,
+      "length": 13,
+      "value": "\"Bad Gateway\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2314,
+      "length": 3,
+      "value": "503"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 2326,
+      "length": 21,
+      "value": "\"Service Unavailable\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2357,
+      "length": 3,
+      "value": "504"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 2369,
+      "length": 17,
+      "value": "\"Gateway Timeout\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2396,
+      "length": 3,
+      "value": "505"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 2408,
+      "length": 28,
+      "value": "\"HTTP Version Not Supported\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2446,
+      "length": 3,
+      "value": "506"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 2458,
+      "length": 25,
+      "value": "\"Variant Also Negotiates\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2493,
+      "length": 3,
+      "value": "507"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 2505,
+      "length": 22,
+      "value": "\"Insufficient Storage\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2537,
+      "length": 3,
+      "value": "508"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 2549,
+      "length": 15,
+      "value": "\"Loop Detected\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2574,
+      "length": 3,
+      "value": "510"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 2586,
+      "length": 14,
+      "value": "\"Not Extended\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2610,
+      "length": 3,
+      "value": "511"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 2622,
+      "length": 33,
+      "value": "\"Network Authentication Required\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/HttpResponseUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 2676,
+      "length": 14,
+      "value": "\"invalid code\""
+    },
+    {
       "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Http\/RequestHelper.swift",
       "kind": "StringLiteral",
       "offset": 204,
@@ -3805,6 +6324,244 @@
       "value": "\"AUTH\""
     },
     {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Http\/RequestHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 619,
+      "length": 14,
+      "value": "\"CFBundleName\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Http\/RequestHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 649,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Http\/RequestHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 709,
+      "length": 28,
+      "value": "\"CFBundleShortVersionString\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Http\/RequestHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 753,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Http\/RequestHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 772,
+      "length": 114,
+      "value": "\"CdpSdk\/\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Http\/RequestHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 793,
+      "length": 1,
+      "value": "\" (\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Http\/RequestHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 804,
+      "length": 1,
+      "value": "\" \""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Http\/RequestHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 817,
+      "length": 1,
+      "value": "\"; \""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Http\/RequestHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 833,
+      "length": 1,
+      "value": "\"; \""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Http\/RequestHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 848,
+      "length": 1,
+      "value": "\") \""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Http\/RequestHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 867,
+      "length": 1,
+      "value": "\"\/\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Http\/RequestHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 885,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Http\/RequestHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 1014,
+      "length": 13,
+      "value": "\"appSourceId\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Http\/RequestHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 1043,
+      "length": 10,
+      "value": "\"deviceId\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Http\/RequestHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 1267,
+      "length": 41,
+      "value": "\"Failed to create body for auth request.\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Http\/RequestHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 1433,
+      "length": 6,
+      "value": "\"POST\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Http\/RequestHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 1482,
+      "length": 14,
+      "value": "\"Content-Type\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Http\/RequestHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 1505,
+      "length": 18,
+      "value": "\"application\/json\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Http\/RequestHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 1566,
+      "length": 8,
+      "value": "\"Accept\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Http\/RequestHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 1583,
+      "length": 18,
+      "value": "\"application\/json\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Http\/RequestHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 1644,
+      "length": 12,
+      "value": "\"User-Agent\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Http\/RequestHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 1745,
+      "length": 16,
+      "value": "\"authentication\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Http\/RequestHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 1967,
+      "length": 43,
+      "value": "\"Failed to create WrappedRequest for auth.\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Http\/RequestHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 2400,
+      "length": 6,
+      "value": "\"POST\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Http\/RequestHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 2449,
+      "length": 14,
+      "value": "\"Content-Type\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Http\/RequestHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 2472,
+      "length": 18,
+      "value": "\"application\/json\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Http\/RequestHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 2533,
+      "length": 8,
+      "value": "\"Accept\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Http\/RequestHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 2550,
+      "length": 18,
+      "value": "\"application\/json\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Http\/RequestHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 2611,
+      "length": 12,
+      "value": "\"User-Agent\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Http\/RequestHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 2712,
+      "length": 8,
+      "value": "\"events\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Http\/RequestHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 2949,
+      "length": 44,
+      "value": "\"Failed to create WrappedRequest for event.\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Extensions\/Optional\/URLtoString.swift",
+      "kind": "StringLiteral",
+      "offset": 306,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Extensions\/Optional\/URLtoString.swift",
+      "kind": "StringLiteral",
+      "offset": 327,
+      "length": 20,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Extensions\/Optional\/URLtoString.swift",
+      "kind": "StringLiteral",
+      "offset": 346,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
       "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/ReceivedEventToCdpEvents.swift",
       "kind": "IntegerLiteral",
       "offset": 189,
@@ -3817,6 +6574,559 @@
       "offset": 218,
       "length": 1,
       "value": "0"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/ReceivedEventToCdpEvents.swift",
+      "kind": "Dictionary",
+      "offset": 336,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/ReceivedEventToCdpEvents.swift",
+      "kind": "StringLiteral",
+      "offset": 410,
+      "length": 12,
+      "value": "\"appVersion\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/ReceivedEventToCdpEvents.swift",
+      "kind": "StringLiteral",
+      "offset": 507,
+      "length": 9,
+      "value": "\"appName\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/ReceivedEventToCdpEvents.swift",
+      "kind": "StringLiteral",
+      "offset": 620,
+      "length": 14,
+      "value": "\"behaviorType\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/ReceivedEventToCdpEvents.swift",
+      "kind": "StringLiteral",
+      "offset": 638,
+      "length": 11,
+      "value": "\"AppUpdate\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/ReceivedEventToCdpEvents.swift",
+      "kind": "StringLiteral",
+      "offset": 669,
+      "length": 20,
+      "value": "\"previousAppVersion\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/ReceivedEventToCdpEvents.swift",
+      "kind": "StringLiteral",
+      "offset": 778,
+      "length": 14,
+      "value": "\"behaviorType\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/ReceivedEventToCdpEvents.swift",
+      "kind": "StringLiteral",
+      "offset": 796,
+      "length": 12,
+      "value": "\"ScreenView\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/ReceivedEventToCdpEvents.swift",
+      "kind": "StringLiteral",
+      "offset": 828,
+      "length": 12,
+      "value": "\"screenName\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/ReceivedEventToCdpEvents.swift",
+      "kind": "StringLiteral",
+      "offset": 906,
+      "length": 14,
+      "value": "\"behaviorType\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/ReceivedEventToCdpEvents.swift",
+      "kind": "StringLiteral",
+      "offset": 938,
+      "length": 16,
+      "value": "\"AppFirstLaunch\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/ReceivedEventToCdpEvents.swift",
+      "kind": "StringLiteral",
+      "offset": 957,
+      "length": 11,
+      "value": "\"AppLaunch\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/ReceivedEventToCdpEvents.swift",
+      "kind": "StringLiteral",
+      "offset": 1017,
+      "length": 14,
+      "value": "\"behaviorType\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/ReceivedEventToCdpEvents.swift",
+      "kind": "StringLiteral",
+      "offset": 1035,
+      "length": 17,
+      "value": "\"AppBackgrounded\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/ReceivedEventToCdpEvents.swift",
+      "kind": "Dictionary",
+      "offset": 1087,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/ReceivedEventToCdpEvents.swift",
+      "kind": "StringLiteral",
+      "offset": 1139,
+      "length": 11,
+      "value": "\"appEvents\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/ReceivedEventToCdpEvents.swift",
+      "kind": "StringLiteral",
+      "offset": 1852,
+      "length": 81,
+      "value": "\"Ignoring unrecognized event: \""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/ReceivedEventToCdpEvents.swift",
+      "kind": "StringLiteral",
+      "offset": 1899,
+      "length": 1,
+      "value": "\" [\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/ReceivedEventToCdpEvents.swift",
+      "kind": "StringLiteral",
+      "offset": 1931,
+      "length": 1,
+      "value": "\"]\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/ReceivedEventToCdpEvents.swift",
+      "kind": "Array",
+      "offset": 1950,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/ReceivedEventToCdpEvents.swift",
+      "kind": "StringLiteral",
+      "offset": 2082,
+      "length": 19,
+      "value": "\"catalogObjectType\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/ReceivedEventToCdpEvents.swift",
+      "kind": "StringLiteral",
+      "offset": 2139,
+      "length": 17,
+      "value": "\"catalogObjectId\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/ReceivedEventToCdpEvents.swift",
+      "kind": "StringLiteral",
+      "offset": 2192,
+      "length": 10,
+      "value": "\"quantity\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/ReceivedEventToCdpEvents.swift",
+      "kind": "StringLiteral",
+      "offset": 2292,
+      "length": 7,
+      "value": "\"price\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/ReceivedEventToCdpEvents.swift",
+      "kind": "StringLiteral",
+      "offset": 2385,
+      "length": 10,
+      "value": "\"currency\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/ReceivedEventToCdpEvents.swift",
+      "kind": "StringLiteral",
+      "offset": 2479,
+      "length": 11,
+      "value": "\"attribute\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/ReceivedEventToCdpEvents.swift",
+      "kind": "Array",
+      "offset": 2903,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/ReceivedEventToCdpEvents.swift",
+      "kind": "StringLiteral",
+      "offset": 3019,
+      "length": 17,
+      "value": "\"interactionName\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/ReceivedEventToCdpEvents.swift",
+      "kind": "StringLiteral",
+      "offset": 3058,
+      "length": 9,
+      "value": "\"orderId\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/ReceivedEventToCdpEvents.swift",
+      "kind": "StringLiteral",
+      "offset": 3155,
+      "length": 15,
+      "value": "\"orderCurrency\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/ReceivedEventToCdpEvents.swift",
+      "kind": "StringLiteral",
+      "offset": 3258,
+      "length": 17,
+      "value": "\"orderTotalValue\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/ReceivedEventToCdpEvents.swift",
+      "kind": "StringLiteral",
+      "offset": 3381,
+      "length": 11,
+      "value": "\"attribute\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/ReceivedEventToCdpEvents.swift",
+      "kind": "StringLiteral",
+      "offset": 3498,
+      "length": 7,
+      "value": "\"order\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/ReceivedEventToCdpEvents.swift",
+      "kind": "StringLiteral",
+      "offset": 3656,
+      "length": 14,
+      "value": "\"orderEventId\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/ReceivedEventToCdpEvents.swift",
+      "kind": "StringLiteral",
+      "offset": 3819,
+      "length": 11,
+      "value": "\"orderItem\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/ReceivedEventToCdpEvents.swift",
+      "kind": "Array",
+      "offset": 4211,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/ReceivedEventToCdpEvents.swift",
+      "kind": "StringLiteral",
+      "offset": 4301,
+      "length": 17,
+      "value": "\"interactionName\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/ReceivedEventToCdpEvents.swift",
+      "kind": "StringLiteral",
+      "offset": 4393,
+      "length": 6,
+      "value": "\"cart\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/ReceivedEventToCdpEvents.swift",
+      "kind": "StringLiteral",
+      "offset": 4539,
+      "length": 13,
+      "value": "\"cartEventId\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/ReceivedEventToCdpEvents.swift",
+      "kind": "StringLiteral",
+      "offset": 4704,
+      "length": 10,
+      "value": "\"cartItem\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/ReceivedEventToCdpEvents.swift",
+      "kind": "Array",
+      "offset": 4958,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/ReceivedEventToCdpEvents.swift",
+      "kind": "StringLiteral",
+      "offset": 5090,
+      "length": 17,
+      "value": "\"interactionName\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/ReceivedEventToCdpEvents.swift",
+      "kind": "StringLiteral",
+      "offset": 5129,
+      "length": 4,
+      "value": "\"id\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/ReceivedEventToCdpEvents.swift",
+      "kind": "StringLiteral",
+      "offset": 5167,
+      "length": 6,
+      "value": "\"type\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/ReceivedEventToCdpEvents.swift",
+      "kind": "StringLiteral",
+      "offset": 5299,
+      "length": 11,
+      "value": "\"attribute\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/ReceivedEventToCdpEvents.swift",
+      "kind": "StringLiteral",
+      "offset": 5458,
+      "length": 22,
+      "value": "\"relatedCatalogObject\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/ReceivedEventToCdpEvents.swift",
+      "kind": "StringLiteral",
+      "offset": 5586,
+      "length": 9,
+      "value": "\"catalog\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/ReceivedEventToCdpEvents.swift",
+      "kind": "Dictionary",
+      "offset": 5741,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/ReceivedEventToCdpEvents.swift",
+      "kind": "StringLiteral",
+      "offset": 5803,
+      "length": 11,
+      "value": "\"attribute\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/ReceivedEventToCdpEvents.swift",
+      "kind": "Array",
+      "offset": 5986,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/ReceivedEventToCdpEvents.swift",
+      "kind": "Dictionary",
+      "offset": 6133,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/ReceivedEventToCdpEvents.swift",
+      "kind": "Array",
+      "offset": 6374,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/ReceivedEventToCdpEvents.swift",
+      "kind": "Array",
+      "offset": 6536,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/ReceivedEventToCdpEvents.swift",
+      "kind": "Dictionary",
+      "offset": 8240,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/ReceivedEventToCdpEvents.swift",
+      "kind": "StringLiteral",
+      "offset": 8712,
+      "length": 8,
+      "value": "\"userId\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/ReceivedEventToCdpEvents.swift",
+      "kind": "StringLiteral",
+      "offset": 8866,
+      "length": 21,
+      "value": "\"partyIdentification\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/ReceivedEventToCdpEvents.swift",
+      "kind": "Dictionary",
+      "offset": 9444,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/ReceivedEventToCdpEvents.swift",
+      "kind": "StringLiteral",
+      "offset": 9610,
+      "length": 14,
+      "value": "\"advertiserId\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/ReceivedEventToCdpEvents.swift",
+      "kind": "StringLiteral",
+      "offset": 9671,
+      "length": 13,
+      "value": "\"isAnonymous\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/ReceivedEventToCdpEvents.swift",
+      "kind": "StringLiteral",
+      "offset": 9688,
+      "length": 65,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/ReceivedEventToCdpEvents.swift",
+      "kind": "StringLiteral",
+      "offset": 9731,
+      "length": 13,
+      "value": "\"isAnonymous\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/ReceivedEventToCdpEvents.swift",
+      "kind": "StringLiteral",
+      "offset": 9749,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/ReceivedEventToCdpEvents.swift",
+      "kind": "StringLiteral",
+      "offset": 9752,
+      "length": 6,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/ReceivedEventToCdpEvents.swift",
+      "kind": "StringLiteral",
+      "offset": 9757,
+      "length": 21,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/ReceivedEventToCdpEvents.swift",
+      "kind": "StringLiteral",
+      "offset": 9777,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/ReceivedEventToCdpEvents.swift",
+      "kind": "StringLiteral",
+      "offset": 9890,
+      "length": 10,
+      "value": "\"identity\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/ReceivedEventToCdpEvents.swift",
+      "kind": "StringLiteral",
+      "offset": 10310,
+      "length": 24,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/ReceivedEventToCdpEvents.swift",
+      "kind": "StringLiteral",
+      "offset": 10326,
+      "length": 1,
+      "value": "\".\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/ReceivedEventToCdpEvents.swift",
+      "kind": "StringLiteral",
+      "offset": 10333,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/ReceivedEventToCdpEvents.swift",
+      "kind": "StringLiteral",
+      "offset": 10624,
+      "length": 10,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/ReceivedEventToCdpEvents.swift",
+      "kind": "StringLiteral",
+      "offset": 10633,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/ReceivedEventToCdpEvents.swift",
+      "kind": "StringLiteral",
+      "offset": 10729,
+      "length": 26,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/ReceivedEventToCdpEvents.swift",
+      "kind": "StringLiteral",
+      "offset": 10745,
+      "length": 1,
+      "value": "\".\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/ReceivedEventToCdpEvents.swift",
+      "kind": "StringLiteral",
+      "offset": 10754,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/ReceivedEventToCdpEvents.swift",
+      "kind": "StringLiteral",
+      "offset": 11152,
+      "length": 6,
+      "value": "\"['`]\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/ReceivedEventToCdpEvents.swift",
+      "kind": "StringLiteral",
+      "offset": 11166,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/ReceivedEventToCdpEvents.swift",
+      "kind": "StringLiteral",
+      "offset": 11237,
+      "length": 34,
+      "value": "\"[\\W_]+|(?<=[a-z])(?=[A-Z][a-z])\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/ReceivedEventToCdpEvents.swift",
+      "kind": "StringLiteral",
+      "offset": 11279,
+      "length": 5,
+      "value": "\".$1\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/ReceivedEventToCdpEvents.swift",
+      "kind": "StringLiteral",
+      "offset": 11625,
+      "length": 2,
+      "value": "\"\""
     },
     {
       "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Config\/CdpConfigBuilder.swift",
@@ -3842,9 +7152,205 @@
     {
       "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Config\/CdpConfigBuilder.swift",
       "kind": "StringLiteral",
+      "offset": 759,
+      "length": 33,
+      "value": "\"The \""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Config\/CdpConfigBuilder.swift",
+      "kind": "StringLiteral",
+      "offset": 772,
+      "length": 4,
+      "value": "\" must be valid UUID\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Config\/CdpConfigBuilder.swift",
+      "kind": "StringLiteral",
+      "offset": 867,
+      "length": 32,
+      "value": "\"The endpoint must not be empty\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Config\/CdpConfigBuilder.swift",
+      "kind": "StringLiteral",
+      "offset": 988,
+      "length": 48,
+      "value": "\"The endpoint '\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Config\/CdpConfigBuilder.swift",
+      "kind": "StringLiteral",
+      "offset": 1014,
+      "length": 23,
+      "value": "\"' must be a valid URL\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Config\/CdpConfigBuilder.swift",
+      "kind": "StringLiteral",
+      "offset": 1121,
+      "length": 12,
+      "value": "\"^.+:\/\/.*\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Config\/CdpConfigBuilder.swift",
+      "kind": "StringLiteral",
+      "offset": 1215,
+      "length": 21,
+      "value": "\"https:\/\/\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Config\/CdpConfigBuilder.swift",
+      "kind": "StringLiteral",
+      "offset": 1235,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Config\/CdpConfigBuilder.swift",
+      "kind": "StringLiteral",
+      "offset": 1274,
+      "length": 15,
+      "value": "\"^https:\/\/.*\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Config\/CdpConfigBuilder.swift",
+      "kind": "StringLiteral",
+      "offset": 1457,
+      "length": 38,
+      "value": "\"https:\/\/\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Config\/CdpConfigBuilder.swift",
+      "kind": "StringLiteral",
+      "offset": 1480,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Config\/CdpConfigBuilder.swift",
+      "kind": "StringLiteral",
+      "offset": 1483,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Config\/CdpConfigBuilder.swift",
+      "kind": "StringLiteral",
+      "offset": 1494,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Config\/CdpConfigBuilder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2594,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Config\/CdpConfigBuilder.swift",
+      "kind": "StringLiteral",
+      "offset": 2691,
+      "length": 70,
+      "value": "\"Session Timeout cannot be less than 0. Setting Session Timeout to 0.\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Config\/CdpConfigBuilder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2834,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Config\/CdpConfigBuilder.swift",
+      "kind": "StringLiteral",
       "offset": 244,
       "length": 16,
       "value": "\"Cdp.CdpConfigBuilder\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Storage\/Managers\/QueueEventManager.swift",
+      "kind": "StringLiteral",
+      "offset": 561,
+      "length": 69,
+      "value": "\"QueueEventManager will be unable to access database due to nil dao.\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Storage\/Managers\/QueueEventManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2418,
+      "length": 72,
+      "value": "\"The getAll() failed. The queueEventDao was nil, returning empty array.\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Storage\/Managers\/QueueEventManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3711,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Storage\/Managers\/QueueEventManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3842,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Storage\/Managers\/QueueEventManager.swift",
+      "kind": "StringLiteral",
+      "offset": 4289,
+      "length": 67,
+      "value": "\"The addQueueEventDaoObserver() failed. The queueEventDao was nil.\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Location\/ValueObjects\/CdpCoordinates.swift",
+      "kind": "IntegerLiteral",
+      "offset": 811,
+      "length": 3,
+      "value": "-90"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Location\/ValueObjects\/CdpCoordinates.swift",
+      "kind": "IntegerLiteral",
+      "offset": 828,
+      "length": 2,
+      "value": "90"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Location\/ValueObjects\/CdpCoordinates.swift",
+      "kind": "IntegerLiteral",
+      "offset": 845,
+      "length": 4,
+      "value": "-180"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Location\/ValueObjects\/CdpCoordinates.swift",
+      "kind": "IntegerLiteral",
+      "offset": 864,
+      "length": 3,
+      "value": "180"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Location\/ValueObjects\/CdpCoordinates.swift",
+      "kind": "StringLiteral",
+      "offset": 969,
+      "length": 211,
+      "value": "\"Invalid coordinates (\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Location\/ValueObjects\/CdpCoordinates.swift",
+      "kind": "StringLiteral",
+      "offset": 1030,
+      "length": 3,
+      "value": "\" and \""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Location\/ValueObjects\/CdpCoordinates.swift",
+      "kind": "StringLiteral",
+      "offset": 1047,
+      "length": 1,
+      "value": "\").\nLatitude must be between -90 and 90, longitude must be between -180 and 180.\""
     },
     {
       "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Location\/ValueObjects\/CdpCoordinates.swift",
@@ -3852,6 +7358,27 @@
       "offset": 285,
       "length": 14,
       "value": "\"Cdp.CdpCoordinates\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Logging\/CdpLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 515,
+      "length": 3,
+      "value": "\" \""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Logging\/CdpLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 713,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Logging\/CdpLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 767,
+      "length": 5,
+      "value": "\" - \""
     },
     {
       "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/FatalErrorUtil.swift",
@@ -3868,6 +7395,27 @@
       "value": "\"auth\""
     },
     {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Storage\/Managers\/CdpStorageManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2120,
+      "length": 71,
+      "value": "\"Database service failed. Error initializing context manager: \""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Storage\/Managers\/CdpStorageManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2190,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Storage\/Managers\/CdpStorageManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2351,
+      "length": 6,
+      "value": "\"true\""
+    },
+    {
       "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Identity\/IdentityManager.swift",
       "kind": "StringLiteral",
       "offset": 202,
@@ -3880,6 +7428,55 @@
       "offset": 339,
       "length": 3,
       "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Identity\/IdentityManager.swift",
+      "kind": "Dictionary",
+      "offset": 679,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Identity\/IdentityManager.swift",
+      "kind": "Dictionary",
+      "offset": 739,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Identity\/IdentityManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1628,
+      "length": 50,
+      "value": "\"Error while reading profile attributes: \""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Identity\/IdentityManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1677,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Identity\/IdentityManager.swift",
+      "kind": "Dictionary",
+      "offset": 1718,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Identity\/IdentityManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2100,
+      "length": 50,
+      "value": "\"Error while writing profile attributes: \""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Identity\/IdentityManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2149,
+      "length": 1,
+      "value": "\"\""
     },
     {
       "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/Identity\/ContactPoint.swift",
@@ -3971,6 +7568,153 @@
       "offset": 751,
       "length": 15,
       "value": "\"Deprovisioned\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/InternalSdk.swift",
+      "kind": "StringLiteral",
+      "offset": 969,
+      "length": 49,
+      "value": "\"Cannot track events - tenant was deprovisioned.\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/InternalSdk.swift",
+      "kind": "StringLiteral",
+      "offset": 1150,
+      "length": 49,
+      "value": "\"Cannot set location - tenant was deprovisioned.\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/InternalSdk.swift",
+      "kind": "StringLiteral",
+      "offset": 1290,
+      "length": 56,
+      "value": "\"Cannot deprovision - tenant was already deprovisioned.\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/InternalSdk.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1410,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/InternalSdk.swift",
+      "kind": "Dictionary",
+      "offset": 1549,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/InternalSdk.swift",
+      "kind": "Dictionary",
+      "offset": 1581,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/InternalSdk.swift",
+      "kind": "Dictionary",
+      "offset": 1652,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/InternalSdk.swift",
+      "kind": "StringLiteral",
+      "offset": 3997,
+      "length": 6,
+      "value": "\"name\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/InternalSdk.swift",
+      "kind": "StringLiteral",
+      "offset": 4032,
+      "length": 8,
+      "value": "\"config\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/InternalSdk.swift",
+      "kind": "StringLiteral",
+      "offset": 4068,
+      "length": 16,
+      "value": "\"consentManager\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/InternalSdk.swift",
+      "kind": "StringLiteral",
+      "offset": 4120,
+      "length": 16,
+      "value": "\"sessionManager\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/InternalSdk.swift",
+      "kind": "StringLiteral",
+      "offset": 4172,
+      "length": 14,
+      "value": "\"eventManager\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/InternalSdk.swift",
+      "kind": "StringLiteral",
+      "offset": 4220,
+      "length": 17,
+      "value": "\"locationManager\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/InternalSdk.swift",
+      "kind": "StringLiteral",
+      "offset": 4274,
+      "length": 9,
+      "value": "\"version\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/InternalSdk.swift",
+      "kind": "StringLiteral",
+      "offset": 4322,
+      "length": 12,
+      "value": "\"User-Agent\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/InternalSdk.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5210,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/InternalSdk.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5639,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/InternalSdk.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5718,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/InternalSdk.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5758,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/ccollings\/git\/soma\/MarketingCloudSdk\/sdk-cdp-ios\/Cdp\/Cdp\/InternalSdk.swift",
+      "kind": "StringLiteral",
+      "offset": 6296,
+      "length": 38,
+      "value": "\"00000000-0000-0000-0000-000000000000\""
+    },
+    {
+      "filePath": "\/Users\/ccollings\/Library\/Developer\/Xcode\/DerivedData\/Cdp-fvtzwilxyfpwryewkhczuhorzvyy\/Build\/Intermediates.noindex\/ArchiveIntermediates\/Cdp\/IntermediateBuildFilesPath\/Cdp.build\/Release-iphoneos\/Cdp.build\/DerivedSources\/CoreDataGenerated\/CdpModuleModel\/QueueEventEntity+CoreDataProperties.swift",
+      "kind": "StringLiteral",
+      "offset": 387,
+      "length": 18,
+      "value": "\"QueueEventEntity\""
     }
   ]
 }
