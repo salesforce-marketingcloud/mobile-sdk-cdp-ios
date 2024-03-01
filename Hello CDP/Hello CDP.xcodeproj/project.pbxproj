@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1765BE38086E1FF97F5D0C7C /* Pods_Hello_CDP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B288241949E2855F4BEE6DC /* Pods_Hello_CDP.framework */; };
 		6A204B89256453B200833D05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A204B88256453B200833D05 /* AppDelegate.swift */; };
 		6A204B8D256453B200833D05 /* SdkStateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A204B8C256453B200833D05 /* SdkStateViewController.swift */; };
 		6A204B90256453B200833D05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A204B8E256453B200833D05 /* Main.storyboard */; };
@@ -24,7 +25,9 @@
 		6A204B94256453B300833D05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6A204B96256453B300833D05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6AB877C8256F225C000B1A4C /* HelloCDPLogOutputter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloCDPLogOutputter.swift; sourceTree = "<group>"; };
-		6AB877D7256F2570000B1A4C /* Core.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Core.xcframework; path = "Pods/MarketingCloud-Core-Internal/Frameworks/Core.xcframework"; sourceTree = "<group>"; };
+		9B288241949E2855F4BEE6DC /* Pods_Hello_CDP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hello_CDP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A302D12224725E14A76641C1 /* Pods-Hello CDP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hello CDP.release.xcconfig"; path = "Target Support Files/Pods-Hello CDP/Pods-Hello CDP.release.xcconfig"; sourceTree = "<group>"; };
+		F3C379CE7373F60F9519779A /* Pods-Hello CDP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hello CDP.debug.xcconfig"; path = "Target Support Files/Pods-Hello CDP/Pods-Hello CDP.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,17 +35,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1765BE38086E1FF97F5D0C7C /* Pods_Hello_CDP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		16B744316F523A85EEAC82CD /* Pods */ = {
+		57D07CD3D9C001BDFBFC368C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9B288241949E2855F4BEE6DC /* Pods_Hello_CDP.framework */,
 			);
-			path = Pods;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		6A204B7C256453B200833D05 = {
@@ -50,8 +55,8 @@
 			children = (
 				6A204B87256453B200833D05 /* Hello CDP */,
 				6A204B86256453B200833D05 /* Products */,
-				16B744316F523A85EEAC82CD /* Pods */,
-				F7455A2EE2C068675F4538F3 /* Frameworks */,
+				AC69AAE2333E8236C45BD4CA /* Pods */,
+				57D07CD3D9C001BDFBFC368C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,12 +82,13 @@
 			path = "Hello CDP";
 			sourceTree = "<group>";
 		};
-		F7455A2EE2C068675F4538F3 /* Frameworks */ = {
+		AC69AAE2333E8236C45BD4CA /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				6AB877D7256F2570000B1A4C /* Core.xcframework */,
+				F3C379CE7373F60F9519779A /* Pods-Hello CDP.debug.xcconfig */,
+				A302D12224725E14A76641C1 /* Pods-Hello CDP.release.xcconfig */,
 			);
-			name = Frameworks;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -92,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6A204B99256453B300833D05 /* Build configuration list for PBXNativeTarget "Hello CDP" */;
 			buildPhases = (
+				63FB41287113CF79DF10E5CE /* [CP] Check Pods Manifest.lock */,
 				6A204B81256453B200833D05 /* Sources */,
 				6A204B82256453B200833D05 /* Frameworks */,
 				6A204B83256453B200833D05 /* Resources */,
+				A5571B4AEE2621DE3A43DD9C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -150,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		63FB41287113CF79DF10E5CE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Hello CDP-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A5571B4AEE2621DE3A43DD9C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hello CDP/Pods-Hello CDP-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hello CDP/Pods-Hello CDP-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Hello CDP/Pods-Hello CDP-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6A204B81256453B200833D05 /* Sources */ = {
@@ -302,15 +352,18 @@
 		};
 		6A204B9A256453B300833D05 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3C379CE7373F60F9519779A /* Pods-Hello CDP.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RNQ52E7G3P;
 				INFOPLIST_FILE = "Hello CDP/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.salesforce.Hello-CDP";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -320,15 +373,18 @@
 		};
 		6A204B9B256453B300833D05 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A302D12224725E14A76641C1 /* Pods-Hello CDP.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RNQ52E7G3P;
 				INFOPLIST_FILE = "Hello CDP/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.salesforce.Hello-CDP";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

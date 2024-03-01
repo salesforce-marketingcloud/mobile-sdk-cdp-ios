@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import Core
+import SFMCSDK
 
 // Custom Logger
 class HelloCDPLogOutputter: LogOutputter {
@@ -14,8 +14,8 @@ class HelloCDPLogOutputter: LogOutputter {
 
     static let shared = HelloCDPLogOutputter()
     
-    override func out(level: MCLogLevel, subsystem: String, category: String, message: String) {
+    override func out(level: LogLevel, subsystem: String, category: LoggerCategory, message: String) {
         logMessages.append(message)
-        print(message)
+        print(subsystem, category.rawValue, message)
     }
 }
