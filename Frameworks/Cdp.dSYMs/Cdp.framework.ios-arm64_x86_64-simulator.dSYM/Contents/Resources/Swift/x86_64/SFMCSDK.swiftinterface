@@ -1,7 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
-// swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name SFMCSDK
-// swift-module-flags-ignorable: -enable-bare-slash-regex
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name SFMCSDK
 import CommonCrypto
 import CoreLocation
 import Foundation
@@ -31,8 +30,8 @@ import os
   @objc func deviceToken() -> Swift.String?
   @objc func accessToken() -> Swift.String?
   @objc func deviceIdentifier() -> Swift.String?
-  @objc func setNotificationRequest(_ request: UserNotifications.UNNotificationRequest)
-  @objc func notificationRequest() -> UserNotifications.UNNotificationRequest?
+  @objc func setNotificationResponse(_ response: UserNotifications.UNNotificationResponse)
+  @objc func notificationResponse() -> UserNotifications.UNNotificationResponse?
   @objc func setNotificationUserInfo(_ userInfo: [Swift.AnyHashable : Any])
   @objc func notificationUserInfo() -> [Swift.AnyHashable : Any]
   @objc func setPushEnabled(_ pushEnabled: Swift.Bool)
@@ -61,8 +60,6 @@ import os
   @objc func markAllMessagesRead() -> Swift.Bool
   @objc func markAllMessagesDeleted() -> Swift.Bool
   @objc func refreshMessages() -> Swift.Bool
-  @objc func inboxMessagesTableViewDataSourceFor(tableView: UIKit.UITableView) -> (any SFMCSDK.InboxMessagesDataSource)?
-  @objc func inboxMessagesTableViewDelegateFor(tableView: UIKit.UITableView, dataSource: any SFMCSDK.InboxMessagesDataSource) -> (any SFMCSDK.InboxMessagesDelegate)?
   @objc func setPiIdentifier(_ identifier: Swift.String?) -> Swift.Bool
   @objc func piIdentifier() -> Swift.String?
   @objc func trackMessageOpened(_ inboxMessage: [Swift.AnyHashable : Any])
@@ -378,8 +375,8 @@ extension SFMCSDK.Publisher {
   @objc final public func deviceToken() -> Swift.String?
   @objc final public func accessToken() -> Swift.String?
   @objc final public func deviceIdentifier() -> Swift.String?
-  @objc final public func setNotificationRequest(_ request: UserNotifications.UNNotificationRequest)
-  @objc final public func notificationRequest() -> UserNotifications.UNNotificationRequest?
+  @objc final public func setNotificationResponse(_ response: UserNotifications.UNNotificationResponse)
+  @objc final public func notificationResponse() -> UserNotifications.UNNotificationResponse?
   @objc final public func setNotificationUserInfo(_ userInfo: [Swift.AnyHashable : Any] = [:])
   @objc final public func notificationUserInfo() -> [Swift.AnyHashable : Any]
   @objc final public func setPushEnabled(_ pushEnabled: Swift.Bool)
@@ -408,8 +405,6 @@ extension SFMCSDK.Publisher {
   @objc final public func markAllMessagesRead() -> Swift.Bool
   @objc final public func markAllMessagesDeleted() -> Swift.Bool
   @objc final public func refreshMessages() -> Swift.Bool
-  @objc final public func inboxMessagesTableViewDataSourceFor(tableView: UIKit.UITableView) -> (any SFMCSDK.InboxMessagesDataSource)?
-  @objc final public func inboxMessagesTableViewDelegateFor(tableView: UIKit.UITableView, dataSource: any SFMCSDK.InboxMessagesDataSource) -> (any SFMCSDK.InboxMessagesDelegate)?
   @objc final public func setPiIdentifier(_ identifier: Swift.String?) -> Swift.Bool
   @objc final public func piIdentifier() -> Swift.String?
   @objc final public func trackMessageOpened(_ inboxMessage: [Swift.AnyHashable : Any])
@@ -509,8 +504,6 @@ extension SFMCSDK.Publisher {
 @objc(SFMCSdkLocationDelegate) public protocol LocationDelegate {
   @objc func sfmc_shouldShowLocationMessage(_ message: [Swift.AnyHashable : Any], forRegion region: [Swift.AnyHashable : Any]) -> Swift.Bool
 }
-@objc(SFMCSdkInboxMessagesDelegate) public protocol InboxMessagesDelegate : UIKit.UITableViewDelegate {
-}
 @objc(SFMCSdkBehaviorType) public enum BehaviorType : Swift.Int, Swift.CaseIterable {
   case appForegrounded
   case appBackgrounded
@@ -556,8 +549,6 @@ extension SFMCSDK.Publisher {
 }
 extension SFMCSDK.Config {
   public static func == (lhs: SFMCSDK.Config, rhs: SFMCSDK.Config) -> Swift.Bool
-}
-@objc(SFMCSdkInboxMessagesDataSource) public protocol InboxMessagesDataSource : UIKit.UITableViewDataSource {
 }
 @objc(SFMCSdkModuleStatus) public enum ModuleStatus : Swift.Int {
   public typealias RawValue = Swift.String
