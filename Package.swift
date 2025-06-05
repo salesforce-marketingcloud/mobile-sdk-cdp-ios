@@ -13,7 +13,7 @@ let package = Package(
     ],
     dependencies: [
         .package(url:"https://github.com/salesforce-marketingcloud/sfmc-sdk-ios",
-                 from: "1.0.6"
+                 from: "2.0.0"
         ),
     ],
     targets: [
