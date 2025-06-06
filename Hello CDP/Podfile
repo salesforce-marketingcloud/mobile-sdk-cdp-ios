@@ -6,6 +6,6 @@ target 'Hello CDP' do
   use_frameworks!
 
   # Pods for Hello CDP
-  pod 'MarketingCloud-Cdp', '~> 2.0.4'
+  pod 'MarketingCloud-Cdp', '~> 2.0.5'
 
 end
