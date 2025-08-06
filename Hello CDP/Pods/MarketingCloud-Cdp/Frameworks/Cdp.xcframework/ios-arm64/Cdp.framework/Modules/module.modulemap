@@ -1,0 +1,11 @@
+framework module Cdp {
+  umbrella header "Cdp.h"
+  export *
+
+  module * { export * }
+}
+
+module Cdp.Swift {
+  header "Cdp-Swift.h"
+  requires objc
+}

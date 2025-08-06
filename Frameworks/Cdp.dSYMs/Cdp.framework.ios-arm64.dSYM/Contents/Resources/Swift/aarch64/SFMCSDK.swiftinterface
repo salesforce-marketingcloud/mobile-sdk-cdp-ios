@@ -1,6 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-compiler-version: Apple Swift version 6.0.2 effective-5.10 (swiftlang-6.0.2.1.2 clang-1600.0.26.4)
 // swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name SFMCSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import CommonCrypto
 import CoreLocation
 import Foundation
@@ -193,7 +194,7 @@ public typealias ManualMergePolicyCallback = (_ v7: Foundation.NSDictionary, _ v
 }
 @objc(SFMCSdkMessageProducer) public enum MessageProducer : Swift.Int, Swift.RawRepresentable {
   public typealias RawValue = Swift.String
-  case cdp, push, sdk
+  case cdp, push, sdk, personalization
   public var rawValue: SFMCSDK.MessageProducer.RawValue {
     get
   }
@@ -359,6 +360,11 @@ public protocol Publisher : AnyObject {
 extension SFMCSDK.Publisher {
   public func send(message: any SFMCSDK.Event)
 }
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(SFMCSdkPersonalization) final public class PERSONALIZATION : ObjectiveC.NSObject {
+  @objc final public func getStatus() -> SFMCSDK.ModuleStatus
+  @objc final public func getIdentity() -> (any SFMCSDK.ModuleIdentity)?
+  @objc deinit
+}
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(SFMCSdkPUSH) final public class PUSH : ObjectiveC.NSObject, SFMCSDK.PushInterface {
   @objc final public func getStatus() -> SFMCSDK.ModuleStatus
   @objc final public func getIdentity() -> (any SFMCSDK.ModuleIdentity)?
@@ -512,7 +518,7 @@ extension SFMCSDK.Publisher {
   public init?(rawValue: Swift.Int)
   public typealias AllCases = [SFMCSDK.BehaviorType]
   public typealias RawValue = Swift.Int
-  public static var allCases: [SFMCSDK.BehaviorType] {
+  nonisolated public static var allCases: [SFMCSDK.BehaviorType] {
     get
   }
   public var rawValue: Swift.Int {
@@ -583,6 +589,7 @@ extension SFMCSDK.Config {
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(SFMCSdk) final public class SFMCSdk : ObjectiveC.NSObject {
   @objc public static var cdp: SFMCSDK.CDP
   @objc public static var mp: SFMCSDK.PUSH
+  @objc public static var personalization: SFMCSDK.PERSONALIZATION
   @objc public static var identity: SFMCSDK.IDENTITY
   @objc public static var sdkVersion: Swift.String
   @objc public static func initializeSdk(_ configuration: SFMCSDK.Config)
@@ -611,12 +618,15 @@ extension SFMCSDK.Config {
   @objc public static func setFileProtectionType(fileProtectionType: Foundation.FileProtectionType?)
   @objc public static func fileProtectionType() -> Foundation.FileProtectionType?
   @objc public static func requestPushSdk(_ callback: @escaping (_ mp: any SFMCSDK.PushInterface) -> Swift.Void)
+  @objc public static func requestPersonalizationSdk(_ callback: @escaping () -> Swift.Void)
+  @objc public static func requestCdpSdk(_ callback: @escaping (_ cdp: any SFMCSDK.CdpInterface) -> Swift.Void)
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc(SFMCSdkConfigBuilder) public class ConfigBuilder : ObjectiveC.NSObject {
   @objc override dynamic public init()
   @objc public func setCdp(config: any SFMCSDK.ModuleConfig, onCompletion: ((_ result: SFMCSDK.OperationResult) -> Swift.Void)? = nil) -> SFMCSDK.ConfigBuilder
   @objc public func setPush(config: any SFMCSDK.ModuleConfig, onCompletion: ((_ result: SFMCSDK.OperationResult) -> Swift.Void)? = nil) -> SFMCSDK.ConfigBuilder
+  @objc public func setPersonalization(config: any SFMCSDK.ModuleConfig, onCompletion: ((_ result: SFMCSDK.OperationResult) -> Swift.Void)? = nil) -> SFMCSDK.ConfigBuilder
   @objc public func build() -> SFMCSDK.Config
   @objc deinit
 }
@@ -627,14 +637,14 @@ extension SFMCSDK.Config {
 }
 @objc(SFMCSdkModuleName) public enum ModuleName : Swift.Int, Swift.CaseIterable {
   public typealias RawValue = Swift.String
-  case cdp, push
+  case cdp, push, personalization
   public var rawValue: SFMCSDK.ModuleName.RawValue {
     get
   }
   public init?(rawValue: SFMCSDK.ModuleName.RawValue)
   public init?(rawIntValue: Swift.Int)
   public typealias AllCases = [SFMCSDK.ModuleName]
-  public static var allCases: [SFMCSDK.ModuleName] {
+  nonisolated public static var allCases: [SFMCSDK.ModuleName] {
     get
   }
 }

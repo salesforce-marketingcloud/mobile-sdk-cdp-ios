@@ -1,0 +1,97 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.0.2 effective-5.10 (swiftlang-6.0.2.1.2 clang-1600.0.26.4)
+// swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name Cdp
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+import AdSupport
+@_exported import Cdp
+import CoreData
+import Foundation
+import SFMCSDK
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+extension CoreData.NSManagedObjectContext {
+  public func executeAndMergeChanges(using batchDeleteRequest: CoreData.NSBatchDeleteRequest) throws
+}
+extension Foundation.HTTPURLResponse {
+  public var statusMessage: Swift.String {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @objc public class CdpConfig : ObjectiveC.NSObject, SFMCSDK.ModuleConfig {
+  @objc final public let name: SFMCSDK.ModuleName
+  @objc final public let appId: Swift.String
+  @objc final public let trackScreens: Swift.Bool
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers final public class CdpModule : ObjectiveC.NSObject, SFMCSDK.CdpInterface, SFMCSDK.SFMCModule, SFMCSDK.Subscriber, SFMCSDK.Publisher {
+  @objc public static var stateProperties: [Swift.String : Swift.String]?
+  @objc public static var moduleVersion: Swift.String
+  @objc final public var name: SFMCSDK.ModuleName
+  final public var coreModuleConfig: Cdp.CdpConfig
+  final public var coreComponents: SFMCSDK.SFMCSdkComponents
+  final public let config: Cdp.CdpConfig
+  @objc public static var shared: Cdp.CdpModule {
+    @objc get
+  }
+  @objc final public var state: Swift.String {
+    @objc get
+  }
+  @objc public static func initModule(config: any SFMCSDK.ModuleConfig, components: SFMCSDK.SFMCSdkComponents) -> (any SFMCSDK.SFMCModule)?
+  @objc final public func getConsent() -> SFMCSDK.Consent
+  @objc final public func setConsent(consent: SFMCSDK.Consent)
+  @objc final public func setLocation(coordinates: (any SFMCSDK.Coordinates)?, expiresIn: Swift.Int)
+  @objc final public func getIdentity() -> (any SFMCSDK.ModuleIdentity)?
+  @objc final public func setProfileToAnonymous()
+  @objc final public func setProfileToKnown()
+  @objc final public func receive(message: SFMCSDK.Message)
+  @objc deinit
+}
+public func httpResponseStatusToMessage(statusCode: Swift.Int) -> Swift.String
+@objc public class CdpConfigBuilder : ObjectiveC.NSObject {
+  @objc public init(appId: Swift.String, endpoint: Swift.String)
+  @objc public func trackScreens(_ enable: Swift.Bool) -> Cdp.CdpConfigBuilder
+  @objc public func trackLifecycle(_ enable: Swift.Bool) -> Cdp.CdpConfigBuilder
+  @objc public func sessionTimeout(_ seconds: Swift.Int) -> Cdp.CdpConfigBuilder
+  @objc public func build() -> Cdp.CdpConfig
+  @objc deinit
+}
+@objc(CdpCoordinates) public class CdpCoordinates : ObjectiveC.NSObject, SFMCSDK.Coordinates {
+  @objc final public let latitude: Swift.Double
+  @objc final public let longitude: Swift.Double
+  @objc public init?(latitude: Swift.Double, longitude: Swift.Double)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(QueueEventEntity) public class QueueEventEntity : CoreData.NSManagedObject {
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  @objc deinit
+}
+extension Cdp.QueueEventEntity {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<Cdp.QueueEventEntity>
+  @objc @NSManaged dynamic public var category: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var createdDate: Foundation.Date? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var eventId: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var failedAttempts: Swift.Int64 {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var payload: Foundation.Data? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var priority: Swift.Int64 {
+    @objc get
+    @objc set
+  }
+}

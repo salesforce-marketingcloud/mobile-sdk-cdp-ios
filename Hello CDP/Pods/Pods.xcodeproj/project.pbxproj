@@ -1,0 +1,693 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		5089A5FA78BEE7D13415C1BB02704184 /* MarketingCloud-Cdp */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 4982EA544209C70C02F44899BB9FF386 /* Build configuration list for PBXAggregateTarget "MarketingCloud-Cdp" */;
+			buildPhases = (
+				1801919903F03F010179D963A2909476 /* [CP] Copy XCFrameworks */,
+			);
+			dependencies = (
+				47F8CC674AD3E5337249DEA07D6F0888 /* PBXTargetDependency */,
+			);
+			name = "MarketingCloud-Cdp";
+		};
+		92E1C13909CE7B087C095959AA173954 /* MarketingCloud-SFMCSdk */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 3F663A8A1CE2CFE90E069D3A47CA36F3 /* Build configuration list for PBXAggregateTarget "MarketingCloud-SFMCSdk" */;
+			buildPhases = (
+				E95D5EF7D3DBDC7CB1E1B2D1C6F276B7 /* [CP] Copy XCFrameworks */,
+			);
+			dependencies = (
+			);
+			name = "MarketingCloud-SFMCSdk";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		4E96CACBE881A28DA30DC8B4125F43B5 /* Pods-Hello CDP-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4349FF0409A31E214987240956EC1FB3 /* Pods-Hello CDP-dummy.m */; };
+		6BDA31AF9952C191F03BF86DCA2E8A62 /* Pods-Hello CDP-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3ED9A073AE25E3BBD21A960027FCE877 /* Pods-Hello CDP-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		93D0B543B02A3C76B8020175C52B6261 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		03052D805E0ED47826E52489D86C083A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 92E1C13909CE7B087C095959AA173954;
+			remoteInfo = "MarketingCloud-SFMCSdk";
+		};
+		05D46DB5FA48703337DBAE0D3CBF73EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 92E1C13909CE7B087C095959AA173954;
+			remoteInfo = "MarketingCloud-SFMCSdk";
+		};
+		3C943ACD27DBB6EF128DD58F03736235 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5089A5FA78BEE7D13415C1BB02704184;
+			remoteInfo = "MarketingCloud-Cdp";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0216A4CF5AAC1562CBB71DF8978245DD /* Pods-Hello CDP-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Hello CDP-Info.plist"; sourceTree = "<group>"; };
+		1F76564FB93B742234D03F60EEC62FEF /* SFMCSDK.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = SFMCSDK.xcframework; path = Frameworks/SFMCSDK.xcframework; sourceTree = "<group>"; };
+		20395C0B284A3AC7BEA542C321C95438 /* Pods-Hello CDP-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Hello CDP-frameworks.sh"; sourceTree = "<group>"; };
+		384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3ED9A073AE25E3BBD21A960027FCE877 /* Pods-Hello CDP-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Hello CDP-umbrella.h"; sourceTree = "<group>"; };
+		4349FF0409A31E214987240956EC1FB3 /* Pods-Hello CDP-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Hello CDP-dummy.m"; sourceTree = "<group>"; };
+		566FD47FFBC44831F888022234EB139A /* Pods-Hello CDP-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Hello CDP-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5F2B37C9E7275327A885764136E49010 /* MarketingCloud-SFMCSdk-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "MarketingCloud-SFMCSdk-xcframeworks.sh"; sourceTree = "<group>"; };
+		5F86593D9B3701F82149A0C32DE23F87 /* Pods-Hello CDP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Hello CDP.debug.xcconfig"; sourceTree = "<group>"; };
+		6DCF860BCF7C31BFA75B116336B553AF /* Pods-Hello CDP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Hello CDP.release.xcconfig"; sourceTree = "<group>"; };
+		79F30C9D36608C2F995B6366CF6C37FF /* MarketingCloud-SFMCSdk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "MarketingCloud-SFMCSdk.release.xcconfig"; sourceTree = "<group>"; };
+		99B554795E0AF980DF33FBADED718F1A /* MarketingCloud-SFMCSdk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "MarketingCloud-SFMCSdk.debug.xcconfig"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		ADE9B772B8C35D363D8A8E839ACF7EF2 /* MarketingCloud-Cdp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "MarketingCloud-Cdp.debug.xcconfig"; sourceTree = "<group>"; };
+		B897AB62492CDDAD68622F50216B196A /* Cdp.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = Cdp.xcframework; path = Frameworks/Cdp.xcframework; sourceTree = "<group>"; };
+		C8F53D96E53B40CFA939E9AE4DEF5C79 /* MarketingCloud-Cdp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "MarketingCloud-Cdp.release.xcconfig"; sourceTree = "<group>"; };
+		D24BB54A2E1CDBD79265057242E36EA9 /* Pods-Hello CDP */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Hello CDP"; path = Pods_Hello_CDP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1A41A752FFA527623ADF302DF3A5A9A /* Pods-Hello CDP-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Hello CDP-acknowledgements.plist"; sourceTree = "<group>"; };
+		E84B3E53E3030FC047606A2DCB8CE2B8 /* MarketingCloud-Cdp-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "MarketingCloud-Cdp-xcframeworks.sh"; sourceTree = "<group>"; };
+		FE8F95A1D6FA0B2FD655348D7C12BA28 /* Pods-Hello CDP.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Hello CDP.modulemap"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		576F49C74D230E84C0FCF61A2457378A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93D0B543B02A3C76B8020175C52B6261 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0E1EB6D3CAFC5736CBA84829686DD1D8 /* Pods-Hello CDP */ = {
+			isa = PBXGroup;
+			children = (
+				FE8F95A1D6FA0B2FD655348D7C12BA28 /* Pods-Hello CDP.modulemap */,
+				566FD47FFBC44831F888022234EB139A /* Pods-Hello CDP-acknowledgements.markdown */,
+				E1A41A752FFA527623ADF302DF3A5A9A /* Pods-Hello CDP-acknowledgements.plist */,
+				4349FF0409A31E214987240956EC1FB3 /* Pods-Hello CDP-dummy.m */,
+				20395C0B284A3AC7BEA542C321C95438 /* Pods-Hello CDP-frameworks.sh */,
+				0216A4CF5AAC1562CBB71DF8978245DD /* Pods-Hello CDP-Info.plist */,
+				3ED9A073AE25E3BBD21A960027FCE877 /* Pods-Hello CDP-umbrella.h */,
+				5F86593D9B3701F82149A0C32DE23F87 /* Pods-Hello CDP.debug.xcconfig */,
+				6DCF860BCF7C31BFA75B116336B553AF /* Pods-Hello CDP.release.xcconfig */,
+			);
+			name = "Pods-Hello CDP";
+			path = "Target Support Files/Pods-Hello CDP";
+			sourceTree = "<group>";
+		};
+		4A37256D2DB1D8178A5B28A36B4D1EAD /* MarketingCloud-SFMCSdk */ = {
+			isa = PBXGroup;
+			children = (
+				4C5399345B53C78C3D067A019174EA03 /* Frameworks */,
+				4D8DD653B81693951561BFF0481B61B5 /* Support Files */,
+			);
+			name = "MarketingCloud-SFMCSdk";
+			path = "MarketingCloud-SFMCSdk";
+			sourceTree = "<group>";
+		};
+		4C5399345B53C78C3D067A019174EA03 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1F76564FB93B742234D03F60EEC62FEF /* SFMCSDK.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4D8DD653B81693951561BFF0481B61B5 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5F2B37C9E7275327A885764136E49010 /* MarketingCloud-SFMCSdk-xcframeworks.sh */,
+				99B554795E0AF980DF33FBADED718F1A /* MarketingCloud-SFMCSdk.debug.xcconfig */,
+				79F30C9D36608C2F995B6366CF6C37FF /* MarketingCloud-SFMCSdk.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MarketingCloud-SFMCSdk";
+			sourceTree = "<group>";
+		};
+		64237E481DE0FFE8778998AB39B0862E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				787AEFB518F596A9D47C69ACBEB9AF93 /* MarketingCloud-Cdp */,
+				4A37256D2DB1D8178A5B28A36B4D1EAD /* MarketingCloud-SFMCSdk */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		787AEFB518F596A9D47C69ACBEB9AF93 /* MarketingCloud-Cdp */ = {
+			isa = PBXGroup;
+			children = (
+				F1CEA126FD34D0ECF6149450165FC186 /* Frameworks */,
+				8E07F1B0563B3A31E8C8B3E4C2F13687 /* Support Files */,
+			);
+			name = "MarketingCloud-Cdp";
+			path = "MarketingCloud-Cdp";
+			sourceTree = "<group>";
+		};
+		8E07F1B0563B3A31E8C8B3E4C2F13687 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E84B3E53E3030FC047606A2DCB8CE2B8 /* MarketingCloud-Cdp-xcframeworks.sh */,
+				ADE9B772B8C35D363D8A8E839ACF7EF2 /* MarketingCloud-Cdp.debug.xcconfig */,
+				C8F53D96E53B40CFA939E9AE4DEF5C79 /* MarketingCloud-Cdp.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MarketingCloud-Cdp";
+			sourceTree = "<group>";
+		};
+		AFCA6A6E5C11148868AC7E1859CF4327 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0E1EB6D3CAFC5736CBA84829686DD1D8 /* Pods-Hello CDP */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		C2C5D67500B6BB3AF772B9ABB8015D0F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D24BB54A2E1CDBD79265057242E36EA9 /* Pods-Hello CDP */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				64237E481DE0FFE8778998AB39B0862E /* Pods */,
+				C2C5D67500B6BB3AF772B9ABB8015D0F /* Products */,
+				AFCA6A6E5C11148868AC7E1859CF4327 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E4801F62A6B08CD9B5410329F1A18FDE /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E4801F62A6B08CD9B5410329F1A18FDE /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		F1CEA126FD34D0ECF6149450165FC186 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B897AB62492CDDAD68622F50216B196A /* Cdp.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		6A540621593CCFA3D1777DB0EDAFFCA6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BDA31AF9952C191F03BF86DCA2E8A62 /* Pods-Hello CDP-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		873C4178B251EC03CA45588DEC2D60DA /* Pods-Hello CDP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34F41B714D6FF1F8D733D3E4A99B2693 /* Build configuration list for PBXNativeTarget "Pods-Hello CDP" */;
+			buildPhases = (
+				6A540621593CCFA3D1777DB0EDAFFCA6 /* Headers */,
+				9C45A532D81E389D9FB01D5748FF6895 /* Sources */,
+				576F49C74D230E84C0FCF61A2457378A /* Frameworks */,
+				D26D9B80AA21C8A640EC803B1CCAD4B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FEABE0EF779DE03F421F66E583B1E733 /* PBXTargetDependency */,
+				B298972A2C55C9DB2C1F345CBA5BCB60 /* PBXTargetDependency */,
+			);
+			name = "Pods-Hello CDP";
+			productName = Pods_Hello_CDP;
+			productReference = D24BB54A2E1CDBD79265057242E36EA9 /* Pods-Hello CDP */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			minimizedProjectReferenceProxies = 0;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = C2C5D67500B6BB3AF772B9ABB8015D0F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5089A5FA78BEE7D13415C1BB02704184 /* MarketingCloud-Cdp */,
+				92E1C13909CE7B087C095959AA173954 /* MarketingCloud-SFMCSdk */,
+				873C4178B251EC03CA45588DEC2D60DA /* Pods-Hello CDP */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D26D9B80AA21C8A640EC803B1CCAD4B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1801919903F03F010179D963A2909476 /* [CP] Copy XCFrameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/MarketingCloud-Cdp/MarketingCloud-Cdp-xcframeworks-input-files.xcfilelist",
+			);
+			name = "[CP] Copy XCFrameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/MarketingCloud-Cdp/MarketingCloud-Cdp-xcframeworks-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/MarketingCloud-Cdp/MarketingCloud-Cdp-xcframeworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E95D5EF7D3DBDC7CB1E1B2D1C6F276B7 /* [CP] Copy XCFrameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/MarketingCloud-SFMCSdk/MarketingCloud-SFMCSdk-xcframeworks-input-files.xcfilelist",
+			);
+			name = "[CP] Copy XCFrameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/MarketingCloud-SFMCSdk/MarketingCloud-SFMCSdk-xcframeworks-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/MarketingCloud-SFMCSdk/MarketingCloud-SFMCSdk-xcframeworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9C45A532D81E389D9FB01D5748FF6895 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E96CACBE881A28DA30DC8B4125F43B5 /* Pods-Hello CDP-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		47F8CC674AD3E5337249DEA07D6F0888 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "MarketingCloud-SFMCSdk";
+			target = 92E1C13909CE7B087C095959AA173954 /* MarketingCloud-SFMCSdk */;
+			targetProxy = 05D46DB5FA48703337DBAE0D3CBF73EC /* PBXContainerItemProxy */;
+		};
+		B298972A2C55C9DB2C1F345CBA5BCB60 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "MarketingCloud-SFMCSdk";
+			target = 92E1C13909CE7B087C095959AA173954 /* MarketingCloud-SFMCSdk */;
+			targetProxy = 03052D805E0ED47826E52489D86C083A /* PBXContainerItemProxy */;
+		};
+		FEABE0EF779DE03F421F66E583B1E733 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "MarketingCloud-Cdp";
+			target = 5089A5FA78BEE7D13415C1BB02704184 /* MarketingCloud-Cdp */;
+			targetProxy = 3C943ACD27DBB6EF128DD58F03736235 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		13A970134A9C759CF556E4DFE8EDBABB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DCF860BCF7C31BFA75B116336B553AF /* Pods-Hello CDP.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-Hello CDP/Pods-Hello CDP-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Hello CDP/Pods-Hello CDP.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2B9E26EAE2CD392AD762421F663075A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		63FAF33E1C55B71A5F5A8B3CC8749F99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		6C32F638E614D899B996A36403453185 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8F53D96E53B40CFA939E9AE4DEF5C79 /* MarketingCloud-Cdp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6ECE6A84B26A69034B0CAFEC5ACA4AC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F86593D9B3701F82149A0C32DE23F87 /* Pods-Hello CDP.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-Hello CDP/Pods-Hello CDP-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Hello CDP/Pods-Hello CDP.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		ABBCEE7F36AB186CB590DC5F359EF240 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADE9B772B8C35D363D8A8E839ACF7EF2 /* MarketingCloud-Cdp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AFF8B0255CED03C10B77408C47C789CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99B554795E0AF980DF33FBADED718F1A /* MarketingCloud-SFMCSdk.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B703B79A2EF59B0ED5C6982BF09E2835 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79F30C9D36608C2F995B6366CF6C37FF /* MarketingCloud-SFMCSdk.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		34F41B714D6FF1F8D733D3E4A99B2693 /* Build configuration list for PBXNativeTarget "Pods-Hello CDP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6ECE6A84B26A69034B0CAFEC5ACA4AC8 /* Debug */,
+				13A970134A9C759CF556E4DFE8EDBABB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F663A8A1CE2CFE90E069D3A47CA36F3 /* Build configuration list for PBXAggregateTarget "MarketingCloud-SFMCSdk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFF8B0255CED03C10B77408C47C789CD /* Debug */,
+				B703B79A2EF59B0ED5C6982BF09E2835 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B9E26EAE2CD392AD762421F663075A1 /* Debug */,
+				63FAF33E1C55B71A5F5A8B3CC8749F99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4982EA544209C70C02F44899BB9FF386 /* Build configuration list for PBXAggregateTarget "MarketingCloud-Cdp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABBCEE7F36AB186CB590DC5F359EF240 /* Debug */,
+				6C32F638E614D899B996A36403453185 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
