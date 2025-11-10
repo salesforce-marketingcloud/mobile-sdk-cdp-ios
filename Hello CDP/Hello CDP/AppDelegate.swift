@@ -34,11 +34,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         SFMCSdk.initializeSdk(
             ConfigBuilder()
                 //.setPush(config: mobilePushConfiguration) // If using PUSH make sure to only call initializeSdk once.
-                .setCdp(config: getCDPConfig(), onCompletion: { _ in
-                    print("CDP init onComplete");
-                })
+                .setCdp(config: getCDPConfig())
             .build()
-        )
+        ) {
+            status in
+                for moduleStatus in status where moduleStatus.moduleName == ModuleName.cdp {
+                    if moduleStatus.initStatus == .success {
+                        SFMCSdkLogger.shared.logMessage(level: .debug,
+                                                        subsystem: LoggerSubsystem.module(value: ModuleName.cdp),
+                                                        category: LoggerCategory.session,
+                                                        message: "CDP init onComplete: " + CdpModule.shared.state)
+                    }
+                }
+        }
         
         // Keep in mind events are only sent across the network once one of the following conditions are met:
         // 1. The app is backgrounded or foregrounded.

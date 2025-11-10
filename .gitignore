@@ -1,4 +1,15 @@
+UserInterfaceState.xcuserstate
 .DS_Store
+Package.resolved
+.swiftpm/
+xcuserdata/
 
-Hello CDP/Hello CDP.xcworkspace/xcuserdata/
+# Hello CDP project-local dependencies and artifacts
+Hello CDP/vendor/
+Hello CDP/.bundle/
+Hello CDP/Pods/
+Hello CDP/build/
+Hello CDP/DerivedData/
 Hello CDP/Hello CDP.xcodeproj/xcuserdata/
+Hello CDP/Hello CDP.xcworkspace/xcuserdata/
+Hello CDP/Hello CDP.xcodeproj/project.xcworkspace/xcuserdata/
