@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F0602C8A36BD1701EDE9EEB /* Pods_Hello_CDP__Pods_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 936A3CEF4988FC594359319E /* Pods_Hello_CDP__Pods_.framework */; };
 		6A204B89256453B200833D05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A204B88256453B200833D05 /* AppDelegate.swift */; };
 		6A204B8D256453B200833D05 /* SdkStateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A204B8C256453B200833D05 /* SdkStateViewController.swift */; };
 		6A204B90256453B200833D05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A204B8E256453B200833D05 /* Main.storyboard */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		232D6D8A7808FE445A67D472 /* Pods-Hello CDP (Pods).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hello CDP (Pods).debug.xcconfig"; path = "Target Support Files/Pods-Hello CDP (Pods)/Pods-Hello CDP (Pods).debug.xcconfig"; sourceTree = "<group>"; };
 		6A204B85256453B200833D05 /* Hello CDP (Pods).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hello CDP (Pods).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A204B88256453B200833D05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6A204B8C256453B200833D05 /* SdkStateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SdkStateViewController.swift; sourceTree = "<group>"; };
@@ -32,10 +34,10 @@
 		6A204B94256453B300833D05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6A204B96256453B300833D05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6AB877C8256F225C000B1A4C /* HelloCDPLogOutputter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloCDPLogOutputter.swift; sourceTree = "<group>"; };
-		9C7021AB0A4F98139CCC1641 /* Pods-Hello CDP (Pods).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hello CDP (Pods).debug.xcconfig"; path = "Target Support Files/Pods-Hello CDP (Pods)/Pods-Hello CDP (Pods).debug.xcconfig"; sourceTree = "<group>"; };
+		936A3CEF4988FC594359319E /* Pods_Hello_CDP__Pods_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hello_CDP__Pods_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9B43DE12EBE4A070061BEF2 /* Hello CDP (SPM).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hello CDP (SPM).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9B43DFF2EBE5F1A0061BEF2 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Package.swift; path = ../Package.swift; sourceTree = "<group>"; };
-		C7395525F4121934C84136E9 /* Pods-Hello CDP (Pods).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hello CDP (Pods).release.xcconfig"; path = "Target Support Files/Pods-Hello CDP (Pods)/Pods-Hello CDP (Pods).release.xcconfig"; sourceTree = "<group>"; };
+		F98D45701EF335F3D27E62ED /* Pods-Hello CDP (Pods).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hello CDP (Pods).release.xcconfig"; path = "Target Support Files/Pods-Hello CDP (Pods)/Pods-Hello CDP (Pods).release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F0602C8A36BD1701EDE9EEB /* Pods_Hello_CDP__Pods_.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				B9B43DFF2EBE5F1A0061BEF2 /* Package.swift */,
+				936A3CEF4988FC594359319E /* Pods_Hello_CDP__Pods_.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -102,8 +106,8 @@
 		AC69AAE2333E8236C45BD4CA /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				9C7021AB0A4F98139CCC1641 /* Pods-Hello CDP (Pods).debug.xcconfig */,
-				C7395525F4121934C84136E9 /* Pods-Hello CDP (Pods).release.xcconfig */,
+				232D6D8A7808FE445A67D472 /* Pods-Hello CDP (Pods).debug.xcconfig */,
+				F98D45701EF335F3D27E62ED /* Pods-Hello CDP (Pods).release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -115,12 +119,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6A204B99256453B300833D05 /* Build configuration list for PBXNativeTarget "Hello CDP (Pods)" */;
 			buildPhases = (
-				5D4572022B3879A0AFE5B4CB /* [CP] Check Pods Manifest.lock */,
+				111CF3727C89766B99A81DFB /* [CP] Check Pods Manifest.lock */,
 				E1F2A3B4C5D6E7F890123456 /* [CP] Copy XCFrameworks */,
 				6A204B81256453B200833D05 /* Sources */,
 				6A204B82256453B200833D05 /* Frameworks */,
 				6A204B83256453B200833D05 /* Resources */,
-				09A589C08D9E41F1D2812995 /* [CP] Embed Pods Frameworks */,
+				8896595B3671D2435FB287BD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -212,28 +216,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		09A589C08D9E41F1D2812995 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Hello CDP (Pods)/Pods-Hello CDP (Pods)-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Hello CDP (Pods)/Pods-Hello CDP (Pods)-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Hello CDP (Pods)/Pods-Hello CDP (Pods)-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5D4572022B3879A0AFE5B4CB /* [CP] Check Pods Manifest.lock */ = {
+		111CF3727C89766B99A81DFB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -255,6 +238,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		8896595B3671D2435FB287BD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hello CDP (Pods)/Pods-Hello CDP (Pods)-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hello CDP (Pods)/Pods-Hello CDP (Pods)-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Hello CDP (Pods)/Pods-Hello CDP (Pods)-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		E1F2A3B4C5D6E7F890123456 /* [CP] Copy XCFrameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -271,7 +271,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/MarketingCloud-Cdp-Internal/MarketingCloud-Cdp-Internal-xcframeworks.sh\"\n\"${PODS_ROOT}/Target Support Files/MarketingCloud-SFMCSdk-Internal/MarketingCloud-SFMCSdk-Internal-xcframeworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/MarketingCloud-Cdp/MarketingCloud-Cdp-xcframeworks.sh\"\n\"${PODS_ROOT}/Target Support Files/MarketingCloud-SFMCSdk/MarketingCloud-SFMCSdk-xcframeworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -437,7 +437,7 @@
 		};
 		6A204B9A256453B300833D05 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9C7021AB0A4F98139CCC1641 /* Pods-Hello CDP (Pods).debug.xcconfig */;
+			baseConfigurationReference = 232D6D8A7808FE445A67D472 /* Pods-Hello CDP (Pods).debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -458,7 +458,7 @@
 		};
 		6A204B9B256453B300833D05 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C7395525F4121934C84136E9 /* Pods-Hello CDP (Pods).release.xcconfig */;
+			baseConfigurationReference = F98D45701EF335F3D27E62ED /* Pods-Hello CDP (Pods).release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
