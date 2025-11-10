@@ -52,8 +52,11 @@ class SdkStateViewController: UIViewController {
           "email": "john.smith@domain.com",
           "phoneNumber": "1234567890"
         ]
-        SFMCSdk.identity.setProfileAttributes([.cdp: profileAttributes])
-        
+        SFMCSdk.identity.edit { identityModifier in
+            identityModifier.addAttributes(attributes: profileAttributes)
+            return identityModifier
+        }
+
         refreshOutput()
     }
     

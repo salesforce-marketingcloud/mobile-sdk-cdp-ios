@@ -3,21 +3,29 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1765BE38086E1FF97F5D0C7C /* Pods_Hello_CDP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B288241949E2855F4BEE6DC /* Pods_Hello_CDP.framework */; };
 		6A204B89256453B200833D05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A204B88256453B200833D05 /* AppDelegate.swift */; };
 		6A204B8D256453B200833D05 /* SdkStateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A204B8C256453B200833D05 /* SdkStateViewController.swift */; };
 		6A204B90256453B200833D05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A204B8E256453B200833D05 /* Main.storyboard */; };
 		6A204B92256453B300833D05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A204B91256453B300833D05 /* Assets.xcassets */; };
 		6A204B95256453B300833D05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A204B93256453B300833D05 /* LaunchScreen.storyboard */; };
 		6AB877C9256F225C000B1A4C /* HelloCDPLogOutputter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB877C8256F225C000B1A4C /* HelloCDPLogOutputter.swift */; };
+		B956C54A2EBF90AA000AF107 /* Cdp in Frameworks */ = {isa = PBXBuildFile; productRef = B956C5492EBF90AA000AF107 /* Cdp */; };
+		B956C54D2EBF95EC000AF107 /* Cdp in Frameworks */ = {isa = PBXBuildFile; productRef = B956C54C2EBF95EC000AF107 /* Cdp */; };
+		B987CA132EBF7B2B00E09DC7 /* Cdp in Frameworks */ = {isa = PBXBuildFile; productRef = B987CA122EBF7B2B00E09DC7 /* Cdp */; };
+		B9B43DEC2EBE4BD70061BEF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A204B88256453B200833D05 /* AppDelegate.swift */; };
+		B9B43DED2EBE4BDE0061BEF2 /* HelloCDPLogOutputter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB877C8256F225C000B1A4C /* HelloCDPLogOutputter.swift */; };
+		B9B43DEE2EBE4BE60061BEF2 /* SdkStateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A204B8C256453B200833D05 /* SdkStateViewController.swift */; };
+		B9B43DEF2EBE4BEE0061BEF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A204B8E256453B200833D05 /* Main.storyboard */; };
+		B9B43DF02EBE4BF60061BEF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A204B91256453B300833D05 /* Assets.xcassets */; };
+		B9B43DF12EBE4BFC0061BEF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A204B93256453B300833D05 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6A204B85256453B200833D05 /* Hello CDP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hello CDP.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A204B85256453B200833D05 /* Hello CDP (Pods).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hello CDP (Pods).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A204B88256453B200833D05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6A204B8C256453B200833D05 /* SdkStateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SdkStateViewController.swift; sourceTree = "<group>"; };
 		6A204B8F256453B200833D05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -25,9 +33,10 @@
 		6A204B94256453B300833D05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6A204B96256453B300833D05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6AB877C8256F225C000B1A4C /* HelloCDPLogOutputter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloCDPLogOutputter.swift; sourceTree = "<group>"; };
-		9B288241949E2855F4BEE6DC /* Pods_Hello_CDP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hello_CDP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A302D12224725E14A76641C1 /* Pods-Hello CDP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hello CDP.release.xcconfig"; path = "Target Support Files/Pods-Hello CDP/Pods-Hello CDP.release.xcconfig"; sourceTree = "<group>"; };
-		F3C379CE7373F60F9519779A /* Pods-Hello CDP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hello CDP.debug.xcconfig"; path = "Target Support Files/Pods-Hello CDP/Pods-Hello CDP.debug.xcconfig"; sourceTree = "<group>"; };
+		9C7021AB0A4F98139CCC1641 /* Pods-Hello CDP (Pods).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hello CDP (Pods).debug.xcconfig"; path = "Target Support Files/Pods-Hello CDP (Pods)/Pods-Hello CDP (Pods).debug.xcconfig"; sourceTree = "<group>"; };
+		B9B43DE12EBE4A070061BEF2 /* Hello CDP (SPM).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hello CDP (SPM).app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9B43DFF2EBE5F1A0061BEF2 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Package.swift; path = ../Package.swift; sourceTree = "<group>"; };
+		C7395525F4121934C84136E9 /* Pods-Hello CDP (Pods).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hello CDP (Pods).release.xcconfig"; path = "Target Support Files/Pods-Hello CDP (Pods)/Pods-Hello CDP (Pods).release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,7 +44,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1765BE38086E1FF97F5D0C7C /* Pods_Hello_CDP.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9B43DDE2EBE4A070061BEF2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B956C54D2EBF95EC000AF107 /* Cdp in Frameworks */,
+				B956C54A2EBF90AA000AF107 /* Cdp in Frameworks */,
+				B987CA132EBF7B2B00E09DC7 /* Cdp in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,7 +63,7 @@
 		57D07CD3D9C001BDFBFC368C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9B288241949E2855F4BEE6DC /* Pods_Hello_CDP.framework */,
+				B9B43DFF2EBE5F1A0061BEF2 /* Package.swift */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -63,7 +81,8 @@
 		6A204B86256453B200833D05 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6A204B85256453B200833D05 /* Hello CDP.app */,
+				6A204B85256453B200833D05 /* Hello CDP (Pods).app */,
+				B9B43DE12EBE4A070061BEF2 /* Hello CDP (SPM).app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -85,8 +104,8 @@
 		AC69AAE2333E8236C45BD4CA /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				F3C379CE7373F60F9519779A /* Pods-Hello CDP.debug.xcconfig */,
-				A302D12224725E14A76641C1 /* Pods-Hello CDP.release.xcconfig */,
+				9C7021AB0A4F98139CCC1641 /* Pods-Hello CDP (Pods).debug.xcconfig */,
+				C7395525F4121934C84136E9 /* Pods-Hello CDP (Pods).release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -94,23 +113,41 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6A204B84256453B200833D05 /* Hello CDP */ = {
+		6A204B84256453B200833D05 /* Hello CDP (Pods) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6A204B99256453B300833D05 /* Build configuration list for PBXNativeTarget "Hello CDP" */;
+			buildConfigurationList = 6A204B99256453B300833D05 /* Build configuration list for PBXNativeTarget "Hello CDP (Pods)" */;
 			buildPhases = (
-				63FB41287113CF79DF10E5CE /* [CP] Check Pods Manifest.lock */,
+				5D4572022B3879A0AFE5B4CB /* [CP] Check Pods Manifest.lock */,
+				E1F2A3B4C5D6E7F890123456 /* [CP] Copy XCFrameworks */,
 				6A204B81256453B200833D05 /* Sources */,
 				6A204B82256453B200833D05 /* Frameworks */,
 				6A204B83256453B200833D05 /* Resources */,
-				A5571B4AEE2621DE3A43DD9C /* [CP] Embed Pods Frameworks */,
+				09A589C08D9E41F1D2812995 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Hello CDP";
+			name = "Hello CDP (Pods)";
 			productName = "Hello CDP";
-			productReference = 6A204B85256453B200833D05 /* Hello CDP.app */;
+			productReference = 6A204B85256453B200833D05 /* Hello CDP (Pods).app */;
+			productType = "com.apple.product-type.application";
+		};
+		B9B43DE02EBE4A070061BEF2 /* Hello CDP (SPM) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9B43DE92EBE4A080061BEF2 /* Build configuration list for PBXNativeTarget "Hello CDP (SPM)" */;
+			buildPhases = (
+				B9B43DDD2EBE4A070061BEF2 /* Sources */,
+				B9B43DDE2EBE4A070061BEF2 /* Frameworks */,
+				B9B43DDF2EBE4A070061BEF2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Hello CDP (SPM)";
+			productName = "Hello CDP (SPM)";
+			productReference = B9B43DE12EBE4A070061BEF2 /* Hello CDP (SPM).app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -119,12 +156,15 @@
 		6A204B7D256453B200833D05 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1170;
+				LastSwiftUpdateCheck = 2600;
 				LastUpgradeCheck = 1220;
 				ORGANIZATIONNAME = Salesforce;
 				TargetAttributes = {
 					6A204B84256453B200833D05 = {
 						CreatedOnToolsVersion = 11.7;
+					};
+					B9B43DE02EBE4A070061BEF2 = {
+						CreatedOnToolsVersion = 26.0.1;
 					};
 				};
 			};
@@ -137,11 +177,15 @@
 				Base,
 			);
 			mainGroup = 6A204B7C256453B200833D05;
+			packageReferences = (
+				B956C54B2EBF95EC000AF107 /* XCRemoteSwiftPackageReference "mobile-sdk-cdp-ios" */,
+			);
 			productRefGroup = 6A204B86256453B200833D05 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6A204B84256453B200833D05 /* Hello CDP */,
+				6A204B84256453B200833D05 /* Hello CDP (Pods) */,
+				B9B43DE02EBE4A070061BEF2 /* Hello CDP (SPM) */,
 			);
 		};
 /* End PBXProject section */
@@ -157,10 +201,41 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B9B43DDF2EBE4A070061BEF2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9B43DF12EBE4BFC0061BEF2 /* LaunchScreen.storyboard in Resources */,
+				B9B43DF02EBE4BF60061BEF2 /* Assets.xcassets in Resources */,
+				B9B43DEF2EBE4BEE0061BEF2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		63FB41287113CF79DF10E5CE /* [CP] Check Pods Manifest.lock */ = {
+		09A589C08D9E41F1D2812995 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hello CDP (Pods)/Pods-Hello CDP (Pods)-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hello CDP (Pods)/Pods-Hello CDP (Pods)-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Hello CDP (Pods)/Pods-Hello CDP (Pods)-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D4572022B3879A0AFE5B4CB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -175,28 +250,30 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Hello CDP-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Hello CDP (Pods)-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A5571B4AEE2621DE3A43DD9C /* [CP] Embed Pods Frameworks */ = {
+		E1F2A3B4C5D6E7F890123456 /* [CP] Copy XCFrameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Hello CDP/Pods-Hello CDP-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Embed Pods Frameworks";
+			inputPaths = (
+			);
+			name = "[CP] Copy XCFrameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Hello CDP/Pods-Hello CDP-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Hello CDP/Pods-Hello CDP-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/MarketingCloud-Cdp-Internal/MarketingCloud-Cdp-Internal-xcframeworks.sh\"\n\"${PODS_ROOT}/Target Support Files/MarketingCloud-SFMCSdk-Internal/MarketingCloud-SFMCSdk-Internal-xcframeworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -209,6 +286,16 @@
 				6A204B8D256453B200833D05 /* SdkStateViewController.swift in Sources */,
 				6A204B89256453B200833D05 /* AppDelegate.swift in Sources */,
 				6AB877C9256F225C000B1A4C /* HelloCDPLogOutputter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9B43DDD2EBE4A070061BEF2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9B43DEE2EBE4BE60061BEF2 /* SdkStateViewController.swift in Sources */,
+				B9B43DEC2EBE4BD70061BEF2 /* AppDelegate.swift in Sources */,
+				B9B43DED2EBE4BDE0061BEF2 /* HelloCDPLogOutputter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,7 +439,7 @@
 		};
 		6A204B9A256453B300833D05 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F3C379CE7373F60F9519779A /* Pods-Hello CDP.debug.xcconfig */;
+			baseConfigurationReference = 9C7021AB0A4F98139CCC1641 /* Pods-Hello CDP (Pods).debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -373,7 +460,7 @@
 		};
 		6A204B9B256453B300833D05 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A302D12224725E14A76641C1 /* Pods-Hello CDP.release.xcconfig */;
+			baseConfigurationReference = C7395525F4121934C84136E9 /* Pods-Hello CDP (Pods).release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -392,6 +479,81 @@
 			};
 			name = Release;
 		};
+		B9B43DEA2EBE4A080061BEF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Hello CDP/Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.salesforce.Hello-CDP--SPM-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = nonisolated;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B9B43DEB2EBE4A080061BEF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Hello CDP/Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.salesforce.Hello-CDP--SPM-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = nonisolated;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -404,7 +566,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6A204B99256453B300833D05 /* Build configuration list for PBXNativeTarget "Hello CDP" */ = {
+		6A204B99256453B300833D05 /* Build configuration list for PBXNativeTarget "Hello CDP (Pods)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6A204B9A256453B300833D05 /* Debug */,
@@ -413,7 +575,60 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		B9B43DE92EBE4A080061BEF2 /* Build configuration list for PBXNativeTarget "Hello CDP (SPM)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9B43DEA2EBE4A080061BEF2 /* Debug */,
+				B9B43DEB2EBE4A080061BEF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		B987CA112EBF788900E09DC7 /* XCLocalSwiftPackageReference "../../mobile-sdk-cdp-ios" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = "../../mobile-sdk-cdp-ios";
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B956C5482EBF90AA000AF107 /* XCRemoteSwiftPackageReference "mobile-sdk-cdp-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://git.soma.salesforce.com/MarketingCloudSdk/mobile-sdk-cdp-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+		B956C54B2EBF95EC000AF107 /* XCRemoteSwiftPackageReference "mobile-sdk-cdp-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://git.soma.salesforce.com/MarketingCloudSdk/mobile-sdk-cdp-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B956C5492EBF90AA000AF107 /* Cdp */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B956C5482EBF90AA000AF107 /* XCRemoteSwiftPackageReference "mobile-sdk-cdp-ios" */;
+			productName = Cdp;
+		};
+		B956C54C2EBF95EC000AF107 /* Cdp */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B956C54B2EBF95EC000AF107 /* XCRemoteSwiftPackageReference "mobile-sdk-cdp-ios" */;
+			productName = Cdp;
+		};
+		B987CA122EBF7B2B00E09DC7 /* Cdp */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B987CA112EBF788900E09DC7 /* XCLocalSwiftPackageReference "../../mobile-sdk-cdp-ios" */;
+			productName = Cdp;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6A204B7D256453B200833D05 /* Project object */;
 }

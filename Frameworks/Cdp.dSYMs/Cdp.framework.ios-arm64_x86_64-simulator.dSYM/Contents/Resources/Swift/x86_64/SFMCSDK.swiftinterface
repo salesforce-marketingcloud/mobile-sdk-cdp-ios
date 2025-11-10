@@ -1,12 +1,14 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0.2 effective-5.10 (swiftlang-6.0.2.1.2 clang-1600.0.26.4)
-// swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name SFMCSDK
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name SFMCSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
 import CommonCrypto
+import CoreData
 import CoreLocation
 import Foundation
 @_exported import SFMCSDK
 import SFMCSDK_Private
+import Security
 import Swift
 import UIKit
 import UserNotifications
@@ -16,77 +18,6 @@ import _SwiftConcurrencyShims
 import os
 @objc(SFMCSdkURLHandlingDelegate) public protocol URLHandlingDelegate {
   @objc func sfmc_handleURL(_ url: Foundation.URL, type: Swift.String)
-}
-@objc public protocol PushInterface {
-  @objc func getIdentity() -> (any SFMCSDK.ModuleIdentity)?
-  @objc func tearDown()
-  @objc func contactKey() -> Swift.String?
-  @objc func addTag(_ tag: Swift.String) -> Swift.Bool
-  @objc func addTags(_ tags: [Any]) -> Swift.Set<Swift.AnyHashable>?
-  @objc func removeTag(_ tag: Swift.String) -> Swift.Bool
-  @objc func tags() -> Swift.Set<Swift.AnyHashable>?
-  @objc func setDeviceToken(_ deviceToken: Foundation.Data)
-  @objc func setDebugLoggingEnabled(_ enabled: Swift.Bool)
-  @objc func attributes() -> [Swift.AnyHashable : Any]?
-  @objc func deviceToken() -> Swift.String?
-  @objc func accessToken() -> Swift.String?
-  @objc func deviceIdentifier() -> Swift.String?
-  @objc func setNotificationResponse(_ response: UserNotifications.UNNotificationResponse)
-  @objc func notificationResponse() -> UserNotifications.UNNotificationResponse?
-  @objc func setNotificationUserInfo(_ userInfo: [Swift.AnyHashable : Any])
-  @objc func notificationUserInfo() -> [Swift.AnyHashable : Any]
-  @objc func setPushEnabled(_ pushEnabled: Swift.Bool)
-  @objc func pushEnabled() -> Swift.Bool
-  @objc func refresh(fetchCompletionHandler completionHandler: ((UIKit.UIBackgroundFetchResult) -> Swift.Void)?) -> Swift.Bool
-  @objc func setRegistrationCallback(_ registrationCallback: @escaping (Swift.Dictionary<Swift.AnyHashable, Any>) -> Swift.Void)
-  @objc func unsetRegistrationCallback()
-  @objc func setSignedString(_ signedString: Swift.String?) -> Swift.Bool
-  @objc func signedString() -> Swift.String?
-  @objc func setEventDelegate(_ delegate: (any SFMCSDK.InAppMessageEventDelegate)?)
-  @objc func messageId(forMessage: [Swift.AnyHashable : Any]) -> Swift.String?
-  @objc func showInAppMessage(messageId: Swift.String)
-  @objc func setInAppMessage(fontName: Swift.String?) -> Swift.Bool
-  @objc func getAllMessages() -> [Any]?
-  @objc func getUnreadMessages() -> [Any]?
-  @objc func getReadMessages() -> [Any]?
-  @objc func getDeletedMessages() -> [Any]?
-  @objc func getAllMessagesCount() -> Swift.UInt
-  @objc func getUnreadMessagesCount() -> Swift.UInt
-  @objc func getReadMessagesCount() -> Swift.UInt
-  @objc func getDeletedMessagesCount() -> Swift.UInt
-  @objc func markMessageRead(_ messageDictionary: [Swift.AnyHashable : Any]) -> Swift.Bool
-  @objc func markMessageDeleted(_ messageDictionary: [Swift.AnyHashable : Any]) -> Swift.Bool
-  @objc func markMessageWithIdRead(messageId: Swift.String) -> Swift.Bool
-  @objc func markMessageWithIdDeleted(messageId: Swift.String) -> Swift.Bool
-  @objc func markAllMessagesRead() -> Swift.Bool
-  @objc func markAllMessagesDeleted() -> Swift.Bool
-  @objc func refreshMessages() -> Swift.Bool
-  @objc func setPiIdentifier(_ identifier: Swift.String?) -> Swift.Bool
-  @objc func piIdentifier() -> Swift.String?
-  @objc func trackMessageOpened(_ inboxMessage: [Swift.AnyHashable : Any])
-  @objc func trackPageView(url: Swift.String, title: Swift.String?, item: Swift.String?, search: Swift.String?)
-  @objc func trackCartContents(_ cartDictionary: [Swift.AnyHashable : Any])
-  @objc func trackCartConversion(_ orderDictionary: [Swift.AnyHashable : Any])
-  @objc func cartItemDictionary(price: Foundation.NSNumber, quantity: Foundation.NSNumber, item: Swift.String, uniqueId: Swift.String?) -> [Swift.AnyHashable : Any]?
-  @objc func cartDictionary(cartItem: [Any]) -> [Swift.AnyHashable : Any]?
-  @objc func orderDictionary(orderNumber: Swift.String, shipping: Foundation.NSNumber, discount: Foundation.NSNumber, cart: [Swift.AnyHashable : Any]) -> [Swift.AnyHashable : Any]?
-  @objc func setLocationDelegate(_ delegate: (any SFMCSDK.LocationDelegate)?)
-  @objc func regionFrom(dictionary: [Swift.AnyHashable : Any]) -> CoreLocation.CLRegion?
-  @objc func locationEnabled() -> Swift.Bool
-  @objc func startWatchingLocation()
-  @objc func stopWatchingLocation()
-  @objc func watchingLocation() -> Swift.Bool
-  @objc func lastKnownLocation() -> [Swift.String : Swift.String]?
-  @objc func setURLHandlingDelegate(_ delegate: (any SFMCSDK.URLHandlingDelegate)?)
-  @objc func resetDataPolicy() -> Swift.Bool
-  @objc func isAnalyticsEnabled() -> Swift.Bool
-  @objc func setAnalyticsEnabled(_ analyticsEnabled: Swift.Bool)
-  @objc func isPiAnalyticsEnabled() -> Swift.Bool
-  @objc func setPiAnalyticsEnabled(_ analyticsEnabled: Swift.Bool)
-  @objc func isLocationEnabled() -> Swift.Bool
-  @objc func setLocationEnabled(_ geoFenceEnabled: Swift.Bool)
-  @objc func setInboxEnabled(_ inboxEnabled: Swift.Bool)
-  @objc func isInboxEnabled() -> Swift.Bool
 }
 @objc(SFMCSdkSystemEvent) final public class SystemEvent : ObjectiveC.NSObject, SFMCSDK.Event {
   @objc final public let id: Swift.String
@@ -139,27 +70,6 @@ import os
   @objc final public func setLocation(coordinates: (any SFMCSDK.Coordinates)?, expiresIn: Swift.Int)
   @objc deinit
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(SFMCSdkIDENTITY) final public class IDENTITY : ObjectiveC.NSObject {
-  @objc final public func toJson() -> Swift.String
-  @objc final public func setProfileId(_ profile: Swift.String)
-  final public func setProfileId(_ profile: Swift.String, _ modules: [SFMCSDK.ModuleName])
-  final public func setProfileId(_ modules: [SFMCSDK.ModuleName : Swift.String])
-  @available(swift, obsoleted: 1)
-  @objc final public func setProfileId(profile: Swift.String, rawModules: [Swift.Int])
-  @available(swift, obsoleted: 1)
-  @objc final public func setProfileId(profiles: [Swift.Int : Swift.String])
-  @objc final public func clearProfileAttribute(key: Swift.String)
-  @objc final public func clearProfileAttributes(keys: [Swift.String])
-  @objc final public func setProfileAttributes(_ attributes: [Swift.String : Swift.String])
-  final public func setProfileAttribute(_ key: Swift.String, _ value: Swift.String, _ modules: [SFMCSDK.ModuleName] = ModuleName.allCases)
-  final public func setProfileAttributes(_ attributes: [Swift.String : Swift.String], _ modules: [SFMCSDK.ModuleName])
-  final public func setProfileAttributes(_ attributes: [SFMCSDK.ModuleName : [Swift.String : Swift.String]])
-  @available(swift, obsoleted: 1)
-  @objc final public func setProfileAttributesNamed(attributes: [Swift.String : Swift.String], rawModules: [Swift.Int])
-  @available(swift, obsoleted: 1)
-  @objc final public func setProfileAttributesNamed(_ attributes: [Swift.Int : [Swift.String : Swift.String]])
-  @objc deinit
-}
 public typealias AutoMergePolicyCallback = (_ isMergeSucces: Swift.Bool) -> Swift.Void
 public typealias ManualMergePolicyCallback = (_ v7: Foundation.NSDictionary, _ v8: Foundation.NSDictionary) -> Swift.Void
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(SFMCSdkEventBus) public class EventBus : ObjectiveC.NSObject {
@@ -168,6 +78,22 @@ public typealias ManualMergePolicyCallback = (_ v7: Foundation.NSDictionary, _ v
   @objc public static func subscribe(subscriber: any SFMCSDK.Subscriber)
   @objc public static func unsubscribe(subscriber: any SFMCSDK.Subscriber)
   @objc deinit
+}
+@objc public protocol SessionManagerProtocol {
+  @objc func getSessionId() -> Swift.String
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(SFMCSdkSessionManager) final public class SessionManager : ObjectiveC.NSObject, SFMCSDK.SessionManagerProtocol {
+  public static let shared: SFMCSDK.SessionManager
+  @objc final public func getSessionId() -> Swift.String
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(SFIdentity) final public class Identity : ObjectiveC.NSObject {
+  @objc final public func toJson() -> Swift.String
+  @objc deinit
+}
+extension SFMCSDK.Identity {
+  @objc final public func edit(identity updater: @escaping (any SFMCSDK.IdentityModifier) -> any SFMCSDK.IdentityModifier)
+  @objc final public func get() -> (any SFMCSDK.IdentityInfo)?
 }
 @objc public protocol Logger {
   @objc var redactedValues: [Swift.String] { get }
@@ -192,13 +118,124 @@ public typealias ManualMergePolicyCallback = (_ v7: Foundation.NSDictionary, _ v
   @objc static var stateProperties: [Swift.String : Swift.String]? { get set }
   @objc static func initModule(config: any SFMCSDK.ModuleConfig, components: SFMCSDK.SFMCSdkComponents) -> (any SFMCSDK.SFMCModule)?
 }
+public class ServiceManager {
+  public init(requestBuilder: any SFMCSDK.RequestBuilder = DefaultRequestBuilder(), responseDecoder: any SFMCSDK.ResponseDecoder = JSONResponseDecoder(), networkExecutor: any SFMCSDK.NetworkExecutor = URLSessionExecutor())
+  @objc deinit
+}
+extension SFMCSDK.ServiceManager : SFMCSDK.Service {
+  public func performRequest<Request, Response>(request: Request, completion: @escaping (Swift.Result<SFMCSDK.ServiceResponse<Response>, any Swift.Error>) -> Swift.Void) where Request : SFMCSDK.ServiceProtocol, Response : Swift.Decodable
+}
+public protocol NetworkRequestProviding {
+  var url: Foundation.URL { get }
+  var method: SFMCSDK.HTTPMethod { get }
+  var body: [Swift.String : Any]? { get }
+}
+public protocol HeaderProviding {
+  var baseHeaders: [Swift.String : Swift.String] { get }
+}
+public protocol UserAgentProviding {
+  func generateUserAgent() -> Swift.String
+}
+public protocol ServiceProtocol : SFMCSDK.HeaderProviding, SFMCSDK.NetworkRequestProviding {
+}
+public protocol Service {
+  func performRequest<Request, Response>(request: Request, completion: @escaping (Swift.Result<SFMCSDK.ServiceResponse<Response>, any Swift.Error>) -> Swift.Void) where Request : SFMCSDK.ServiceProtocol, Response : Swift.Decodable
+}
+extension SFMCSDK.HeaderProviding {
+  public var userAgentProvider: (any SFMCSDK.UserAgentProviding)? {
+    get
+  }
+  public var headers: [Swift.String : Swift.String] {
+    get
+  }
+}
+public enum ServiceError : Swift.Error, Swift.CustomStringConvertible {
+  case noData(headers: [Swift.AnyHashable : Any])
+  case encodingError(any Swift.Error)
+  case decodingError(any Swift.Error)
+  case failed(statusCode: Swift.Int, data: Foundation.Data?, headers: [Swift.AnyHashable : Any])
+  case network(error: any Swift.Error, headers: [Swift.AnyHashable : Any])
+  case unknown
+  public var description: Swift.String {
+    get
+  }
+}
+extension Swift.Error {
+  public var model: [Swift.String : Any]? {
+    get
+  }
+  public var headers: [Swift.AnyHashable : Any]? {
+    get
+  }
+  public func shouldRetry(forStatusCode code: Swift.Int = 429) -> Swift.Bool
+}
+public protocol NetworkExecutor {
+  func execute(request: Foundation.URLRequest, completion: @escaping (Swift.Result<SFMCSDK.NetworkResponse, any Swift.Error>) -> Swift.Void)
+}
+public struct NetworkResponse {
+  public let data: Foundation.Data
+  public let headers: [Swift.AnyHashable : Any]
+}
+public struct ServiceResponse<ResponseType> where ResponseType : Swift.Decodable {
+  public let model: ResponseType
+  public let data: Foundation.Data
+  public let headers: [Swift.AnyHashable : Any]
+}
+public protocol RequestBuilder {
+  func buildRequest(from request: any SFMCSDK.ServiceProtocol) throws -> Foundation.URLRequest
+}
+public protocol ResponseDecoder {
+  func decode<T>(_ data: Foundation.Data) throws -> T where T : Swift.Decodable
+}
+public protocol JSONConvertible {
+  func convertToDictionary(from jsonString: Swift.String) -> [Swift.String : Any]?
+  func convertToJSONString(from dictionary: [Swift.String : Any]) -> Swift.String?
+}
+public class URLSessionExecutor : SFMCSDK.NetworkExecutor {
+  public init(session: Foundation.URLSession = URLSession.shared)
+  public func execute(request: Foundation.URLRequest, completion: @escaping (Swift.Result<SFMCSDK.NetworkResponse, any Swift.Error>) -> Swift.Void)
+  @objc deinit
+}
+public class DefaultRequestBuilder : SFMCSDK.RequestBuilder {
+  public init()
+  public func buildRequest(from request: any SFMCSDK.ServiceProtocol) throws -> Foundation.URLRequest
+  @objc deinit
+}
+public class JSONResponseDecoder : SFMCSDK.ResponseDecoder {
+  public init()
+  public func decode<T>(_ data: Foundation.Data) throws -> T where T : Swift.Decodable
+  @objc deinit
+}
+public class JSONParser : SFMCSDK.JSONConvertible {
+  public init()
+  public func convertToJSONString(from dictionary: [Swift.String : Any]) -> Swift.String?
+  public func convertToDictionary(from jsonString: Swift.String) -> [Swift.String : Any]?
+  @objc deinit
+}
+public enum HTTPMethod : Swift.String {
+  case get
+  case post
+  case put
+  case delete
+  case head
+  case patch
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
 @objc(SFMCSdkMessageProducer) public enum MessageProducer : Swift.Int, Swift.RawRepresentable {
   public typealias RawValue = Swift.String
-  case cdp, push, sdk, personalization
+  case cdp, engagement, sdk, personalization, pushFeature, mobileAppMessaging
   public var rawValue: SFMCSDK.MessageProducer.RawValue {
     get
   }
   public init(rawValue: SFMCSDK.MessageProducer.RawValue)
+}
+@objc public protocol MobileAppMessagingProtocol {
+  @objc func getIdentity() -> (any SFMCSDK.ModuleIdentity)?
+  @objc func internalTearDown()
 }
 @objc(SFMCSdkAuthHeader) public class AuthHeader : ObjectiveC.NSObject {
   @objc final public let key: Swift.String
@@ -217,7 +254,7 @@ public typealias ManualMergePolicyCallback = (_ v7: Foundation.NSDictionary, _ v
 }
 @objc(SFMCSdkEventCategory) public enum EventCategory : Swift.Int {
   public typealias RawValue = Swift.String
-  case engagement, identity, system
+  case engagement, identity, system, pushFeature, mobileAppMessaging
   public var rawValue: SFMCSDK.EventCategory.RawValue {
     get
   }
@@ -254,6 +291,35 @@ public typealias ManualMergePolicyCallback = (_ v7: Foundation.NSDictionary, _ v
   @objc override dynamic public init()
   @objc deinit
 }
+@objc(SFIdentityInfo) public protocol IdentityInfo {
+  @objc var profileId: Swift.String? { get }
+  @objc var attributes: [Swift.String : Swift.String] { get }
+  @objc var partyIdentificationNumber: Swift.String? { get }
+  @objc var partyIdentificationName: Swift.String? { get }
+  @objc var partyIdentificationType: Swift.String? { get }
+}
+@objc(SFMCPushFeatureEventType) public enum PushFeatureEventType : Swift.Int, Swift.CaseIterable {
+  case pushToken = 0
+  case pushClick = 1
+  case pushEnabledInSdk = 2
+  case pushEnabledInGlobalSettings = 3
+  case quietPushEnabled = 4
+  case pushUrlHandling = 5
+  public init?(rawValue: Swift.Int)
+  public typealias AllCases = [SFMCSDK.PushFeatureEventType]
+  public typealias RawValue = Swift.Int
+  nonisolated public static var allCases: [SFMCSDK.PushFeatureEventType] {
+    get
+  }
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+extension SFMCSDK.PushFeatureEventType : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
 @_hasMissingDesignatedInitializers @objc(SFMCSdkStorageManager) public class StorageManager : ObjectiveC.NSObject {
   @objc public func getRegistrationId() -> Swift.String
   @objc public func getOrCreateSecurePrefs(name: Swift.String) -> SFMCSDK.SecurePrefs
@@ -280,6 +346,48 @@ public typealias ManualMergePolicyCallback = (_ v7: Foundation.NSDictionary, _ v
 @_hasMissingDesignatedInitializers @objc(SFMCSdkEncryptionManager) public class EncryptionManager : ObjectiveC.NSObject {
   @objc public func encrypt(string: Swift.String) -> Foundation.Data?
   @objc public func decrypt(stringData: Foundation.Data) -> Swift.String?
+  @objc deinit
+}
+@objc(SFMCSdkPushClickEvent) public class PushClickEvent : SFMCSDK.PushFeatureEventBase {
+  @objc final public let userInfo: [Swift.AnyHashable : Any]
+  @objc final public let notificationResponse: UserNotifications.UNNotificationResponse?
+  @objc final public let pnContextInfo: SFMCSDK.SFMCPNContextInfo
+  @objc public init(userInfo: [Swift.AnyHashable : Any], response: UserNotifications.UNNotificationResponse?, pnContextInfo: SFMCSDK.SFMCPNContextInfo)
+  @objc deinit
+}
+@objc(SFMCSdkPushFeatureEventBase) public class PushFeatureEventBase : ObjectiveC.NSObject, SFMCSDK.Event {
+  @objc final public let pushFeatureEventType: SFMCSDK.PushFeatureEventType
+  @objc final public let id: Swift.String
+  @objc final public let name: Swift.String
+  @objc final public let category: SFMCSDK.EventCategory
+  @objc final public let attributes: [Swift.String : Any]?
+  @objc public init(pushFeatureEventType: SFMCSDK.PushFeatureEventType)
+  @objc deinit
+}
+@objc(SFMCSdkPushTokenEvent) public class PushTokenEvent : SFMCSDK.PushFeatureEventBase {
+  @objc final public let token: Swift.String
+  @objc public init(token: Swift.String)
+  @objc deinit
+}
+@objc(SFMCSdkPushEnabledInSDKEvent) public class PushEnabledInSDKEvent : SFMCSDK.PushFeatureEventBase {
+  @objc final public let isPushEnabledInSDK: Swift.Bool
+  @objc public init(isPushEnabledInSDK: Swift.Bool)
+  @objc deinit
+}
+@objc(SFMCSdkPushEnabledInGlobalSettingsEvent) public class PushEnabledInGlobalSettingsEvent : SFMCSDK.PushFeatureEventBase {
+  @objc final public let isPushEnabledInGlobalSettings: Swift.Bool
+  @objc public init(isPushEnabledInGlobalSettings: Swift.Bool)
+  @objc deinit
+}
+@objc(SFMCSdkQuietPushEnabledEvent) public class QuietPushEnabledEvent : SFMCSDK.PushFeatureEventBase {
+  @objc final public let isQuietPushEnabled: Swift.Bool
+  @objc public init(isQuietPushEnabled: Swift.Bool)
+  @objc deinit
+}
+@objc(SFMCSdkPushURLHandlingEvent) public class PushURLHandlingEvent : SFMCSDK.PushFeatureEventBase {
+  @objc final public let urlString: Swift.String
+  @objc final public let type: Swift.String
+  @objc public init(urlString: Swift.String, type: Swift.String)
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc(SFMCSdkCompatibility) public class Compatibility : ObjectiveC.NSObject {
@@ -325,6 +433,58 @@ public typealias ManualMergePolicyCallback = (_ v7: Foundation.NSDictionary, _ v
   }
   public init(rawValue: SFMCSDK.LoggerCategory.RawValue)
 }
+public class CoreDataStack : SFMCSDK.PersistenceStack {
+  public init?(configuration: any SFMCSDK.PersistentStoreConfiguration)
+  public var viewContext: CoreData.NSManagedObjectContext {
+    get
+  }
+  public func newBackgroundContext() -> CoreData.NSManagedObjectContext
+  public func saveContext(_ context: CoreData.NSManagedObjectContext) throws
+  @objc deinit
+}
+public class CoreDataRepository<Entity> : SFMCSDK.Repository where Entity : CoreData.NSManagedObject {
+  public init(stack: any SFMCSDK.PersistenceStack, useBackgroundContext: Swift.Bool = true)
+  public func fetchAll(completion: ([Entity]?, (any Swift.Error)?) -> Swift.Void)
+  public func fetch(predicate: Foundation.NSPredicate?, sortDescriptors: [Foundation.NSSortDescriptor]?, completion: ([Entity]?, (any Swift.Error)?) -> Swift.Void)
+  public func fetchById(id: CoreData.NSManagedObjectID, completion: (Entity?, (any Swift.Error)?) -> Swift.Void)
+  @discardableResult
+  public func create(configure: (Entity) -> Swift.Void) -> Entity?
+  public func update(_ object: Entity, completion: ((any Swift.Error)?) -> Swift.Void)
+  public func updateBatch(configure: ([Entity]) -> Swift.Void, objects: [Entity]) -> (any Swift.Error)?
+  public func delete(_ object: Entity, completion: ((any Swift.Error)?) -> Swift.Void)
+  public func batchFetch(predicate: Foundation.NSPredicate?, sortDescriptors: [Foundation.NSSortDescriptor]?, offset: Swift.Int, fetchLimit: Swift.Int, completion: ([Entity]?, (any Swift.Error)?) -> Swift.Void)
+  public func batchDelete(predicate: Foundation.NSPredicate?, sortDescriptors: [Foundation.NSSortDescriptor]?, offset: Swift.Int?, fetchLimit: Swift.Int?, completion: ((any Swift.Error)?) -> Swift.Void)
+  @objc deinit
+}
+public protocol PersistentStoreConfiguration {
+  var modelName: Swift.String { get }
+  var storeType: Swift.String { get }
+  var managedObjectModelURL: Foundation.URL { get }
+  var persistentStoreURL: Foundation.URL? { get }
+  var persistentStoreLoadTimeout: Swift.Double { get }
+  var options: [Swift.String : Any]? { get }
+  var transformers: [Foundation.ValueTransformer]? { get }
+}
+extension SFMCSDK.PersistentStoreConfiguration {
+  public func isProtectedDataAvailable() -> Swift.Bool
+}
+public protocol Repository {
+  associatedtype Entity : CoreData.NSManagedObject
+  func fetchAll(completion: ([Self.Entity]?, (any Swift.Error)?) -> Swift.Void)
+  func fetch(predicate: Foundation.NSPredicate?, sortDescriptors: [Foundation.NSSortDescriptor]?, completion: ([Self.Entity]?, (any Swift.Error)?) -> Swift.Void)
+  func fetchById(id: CoreData.NSManagedObjectID, completion: (Self.Entity?, (any Swift.Error)?) -> Swift.Void)
+  func create(configure: (Self.Entity) -> Swift.Void) -> Self.Entity?
+  func update(_ object: Self.Entity, completion: ((any Swift.Error)?) -> Swift.Void)
+  func updateBatch(configure: ([Self.Entity]) -> Swift.Void, objects: [Self.Entity]) -> (any Swift.Error)?
+  func delete(_ object: Self.Entity, completion: ((any Swift.Error)?) -> Swift.Void)
+  func batchFetch(predicate: Foundation.NSPredicate?, sortDescriptors: [Foundation.NSSortDescriptor]?, offset: Swift.Int, fetchLimit: Swift.Int, completion: ([Self.Entity]?, (any Swift.Error)?) -> Swift.Void)
+  func batchDelete(predicate: Foundation.NSPredicate?, sortDescriptors: [Foundation.NSSortDescriptor]?, offset: Swift.Int?, fetchLimit: Swift.Int?, completion: ((any Swift.Error)?) -> Swift.Void)
+}
+public protocol PersistenceStack {
+  var viewContext: CoreData.NSManagedObjectContext { get }
+  func newBackgroundContext() -> CoreData.NSManagedObjectContext
+  func saveContext(_ context: CoreData.NSManagedObjectContext) throws
+}
 @objc(SFMCSdkFakeEvent) final public class FakeEvent : ObjectiveC.NSObject, SFMCSDK.Event {
   @objc final public let id: Swift.String
   @objc final public let name: Swift.String
@@ -341,15 +501,19 @@ public enum LoggerSubsystem {
   }
   public init?(rawValue: SFMCSDK.LoggerSubsystem.RawValue)
 }
+extension Foundation.NSLocking {
+  public func withCriticalSection<T>(block: () throws -> T) rethrows -> T
+}
+extension Foundation.NSRecursiveLock {
+  public func withCriticalSection<T>(block: () throws -> T) rethrows -> T
+}
 @objc(SFMCSdkIdentityEvent) final public class IdentityEvent : ObjectiveC.NSObject, SFMCSDK.IdentityEventProtocol {
   @objc final public let id: Swift.String
   @objc final public let name: Swift.String
   @objc final public let category: SFMCSDK.EventCategory
-  @objc final public let profileId: Swift.String?
-  @objc final public let profileAttributes: [Swift.String : Swift.String]?
-  @objc final public let attributes: [Swift.String : Any]?
-  @objc public init(profileId: Swift.String)
-  @objc public init(profileAttributes: [Swift.String : Swift.String])
+  @objc final public let identityData: (any SFMCSDK.IdentityEventData)?
+  @objc final public var attributes: [Swift.String : Any]?
+  @objc public init(data: any SFMCSDK.IdentityEventData)
   @objc public init(attributes: [Swift.String : Any])
   @objc deinit
 }
@@ -363,80 +527,6 @@ extension SFMCSDK.Publisher {
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(SFMCSdkPersonalization) final public class PERSONALIZATION : ObjectiveC.NSObject {
   @objc final public func getStatus() -> SFMCSDK.ModuleStatus
   @objc final public func getIdentity() -> (any SFMCSDK.ModuleIdentity)?
-  @objc deinit
-}
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(SFMCSdkPUSH) final public class PUSH : ObjectiveC.NSObject, SFMCSDK.PushInterface {
-  @objc final public func getStatus() -> SFMCSDK.ModuleStatus
-  @objc final public func getIdentity() -> (any SFMCSDK.ModuleIdentity)?
-  @available(*, deprecated, message: "The SFMCSdk takes care of tear downs during initializations, making this method unnecessary. Its usage should be avoided to prevent race conditions.")
-  @objc final public func tearDown()
-  @objc final public func contactKey() -> Swift.String?
-  @objc final public func addTag(_ tag: Swift.String) -> Swift.Bool
-  @objc final public func addTags(_ tags: [Any]) -> Swift.Set<Swift.AnyHashable>?
-  @objc final public func removeTag(_ tag: Swift.String) -> Swift.Bool
-  @objc final public func tags() -> Swift.Set<Swift.AnyHashable>?
-  @objc final public func setDeviceToken(_ deviceToken: Foundation.Data)
-  @objc final public func setDebugLoggingEnabled(_ enabled: Swift.Bool)
-  @objc final public func attributes() -> [Swift.AnyHashable : Any]?
-  @objc final public func deviceToken() -> Swift.String?
-  @objc final public func accessToken() -> Swift.String?
-  @objc final public func deviceIdentifier() -> Swift.String?
-  @objc final public func setNotificationResponse(_ response: UserNotifications.UNNotificationResponse)
-  @objc final public func notificationResponse() -> UserNotifications.UNNotificationResponse?
-  @objc final public func setNotificationUserInfo(_ userInfo: [Swift.AnyHashable : Any] = [:])
-  @objc final public func notificationUserInfo() -> [Swift.AnyHashable : Any]
-  @objc final public func setPushEnabled(_ pushEnabled: Swift.Bool)
-  @objc final public func pushEnabled() -> Swift.Bool
-  @objc final public func refresh(fetchCompletionHandler completionHandler: ((UIKit.UIBackgroundFetchResult) -> Swift.Void)? = nil) -> Swift.Bool
-  @objc final public func setRegistrationCallback(_ registrationCallback: @escaping (Swift.Dictionary<Swift.AnyHashable, Any>) -> Swift.Void)
-  @objc final public func unsetRegistrationCallback()
-  @objc final public func setSignedString(_ signedString: Swift.String?) -> Swift.Bool
-  @objc final public func signedString() -> Swift.String?
-  @objc final public func setEventDelegate(_ delegate: (any SFMCSDK.InAppMessageEventDelegate)?)
-  @objc final public func messageId(forMessage: [Swift.AnyHashable : Any]) -> Swift.String?
-  @objc final public func showInAppMessage(messageId: Swift.String)
-  @objc final public func setInAppMessage(fontName: Swift.String?) -> Swift.Bool
-  @objc final public func getAllMessages() -> [Any]?
-  @objc final public func getUnreadMessages() -> [Any]?
-  @objc final public func getReadMessages() -> [Any]?
-  @objc final public func getDeletedMessages() -> [Any]?
-  @objc final public func getAllMessagesCount() -> Swift.UInt
-  @objc final public func getUnreadMessagesCount() -> Swift.UInt
-  @objc final public func getReadMessagesCount() -> Swift.UInt
-  @objc final public func getDeletedMessagesCount() -> Swift.UInt
-  @objc final public func markMessageRead(_ messageDictionary: [Swift.AnyHashable : Any]) -> Swift.Bool
-  @objc final public func markMessageDeleted(_ messageDictionary: [Swift.AnyHashable : Any]) -> Swift.Bool
-  @objc final public func markMessageWithIdRead(messageId: Swift.String) -> Swift.Bool
-  @objc final public func markMessageWithIdDeleted(messageId: Swift.String) -> Swift.Bool
-  @objc final public func markAllMessagesRead() -> Swift.Bool
-  @objc final public func markAllMessagesDeleted() -> Swift.Bool
-  @objc final public func refreshMessages() -> Swift.Bool
-  @objc final public func setPiIdentifier(_ identifier: Swift.String?) -> Swift.Bool
-  @objc final public func piIdentifier() -> Swift.String?
-  @objc final public func trackMessageOpened(_ inboxMessage: [Swift.AnyHashable : Any])
-  @objc final public func trackPageView(url: Swift.String, title: Swift.String?, item: Swift.String?, search: Swift.String?)
-  @objc final public func trackCartContents(_ cartDictionary: [Swift.AnyHashable : Any])
-  @objc final public func trackCartConversion(_ orderDictionary: [Swift.AnyHashable : Any])
-  @objc final public func cartItemDictionary(price: Foundation.NSNumber, quantity: Foundation.NSNumber, item: Swift.String, uniqueId: Swift.String?) -> [Swift.AnyHashable : Any]?
-  @objc final public func cartDictionary(cartItem: [Any]) -> [Swift.AnyHashable : Any]?
-  @objc final public func orderDictionary(orderNumber: Swift.String, shipping: Foundation.NSNumber, discount: Foundation.NSNumber, cart: [Swift.AnyHashable : Any]) -> [Swift.AnyHashable : Any]?
-  @objc final public func setLocationDelegate(_ delegate: (any SFMCSDK.LocationDelegate)?)
-  @objc final public func regionFrom(dictionary: [Swift.AnyHashable : Any]) -> CoreLocation.CLRegion?
-  @objc final public func locationEnabled() -> Swift.Bool
-  @objc final public func startWatchingLocation()
-  @objc final public func stopWatchingLocation()
-  @objc final public func watchingLocation() -> Swift.Bool
-  @objc final public func lastKnownLocation() -> [Swift.String : Swift.String]?
-  @objc final public func setURLHandlingDelegate(_ delegate: (any SFMCSDK.URLHandlingDelegate)?)
-  @objc final public func resetDataPolicy() -> Swift.Bool
-  @objc final public func isAnalyticsEnabled() -> Swift.Bool
-  @objc final public func setAnalyticsEnabled(_ analyticsEnabled: Swift.Bool)
-  @objc final public func isPiAnalyticsEnabled() -> Swift.Bool
-  @objc final public func setPiAnalyticsEnabled(_ analyticsEnabled: Swift.Bool)
-  @objc final public func setLocationEnabled(_ locationEnabled: Swift.Bool)
-  @objc final public func isLocationEnabled() -> Swift.Bool
-  @objc final public func setInboxEnabled(_ inboxEnabled: Swift.Bool)
-  @objc final public func isInboxEnabled() -> Swift.Bool
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc(SFMCSdkCartEvent) public class CartEvent : SFMCSDK.EngagementEvent {
@@ -455,6 +545,13 @@ extension SFMCSDK.Publisher {
   @objc public init(lineItems: [SFMCSDK.LineItem])
   @objc deinit
 }
+@objc(SFIdentityEventData) public protocol IdentityEventData {
+  @objc var profileId: Swift.String? { get set }
+  @objc var attributes: [Swift.String : Swift.String] { get set }
+  @objc var partyIdentificationNumber: Swift.String? { get set }
+  @objc var partyIdentificationName: Swift.String? { get set }
+  @objc var partyIdentificationType: Swift.String? { get set }
+}
 @objc(SFMCSdkLineItem) public class LineItem : ObjectiveC.NSObject {
   @objc final public let catalogObjectType: Swift.String
   @objc final public let catalogObjectId: Swift.String
@@ -463,6 +560,55 @@ extension SFMCSDK.Publisher {
   @objc final public let currency: Swift.String?
   @objc final public let attributes: [Swift.String : Any]?
   @objc public init(catalogObjectType: Swift.String, catalogObjectId: Swift.String, quantity: Swift.Int, price: Foundation.NSDecimalNumber? = nil, currency: Swift.String? = nil, attributes: [Swift.String : Any] = [:])
+  @objc deinit
+}
+@objc(SFIdentityModifier) public protocol IdentityModifier {
+  @objc var profileId: Swift.String { get set }
+  @objc var attributes: [Swift.String : Swift.String] { get }
+  @objc var partyIdentificationNumber: Swift.String? { get set }
+  @objc var partyIdentificationName: Swift.String? { get set }
+  @objc var partyIdentificationType: Swift.String? { get set }
+  @objc func addAttribute(key: Swift.String, value: Swift.String)
+  @objc func addAttributes(attributes: [Swift.String : Swift.String])
+  @objc func clearAttribute(key: Swift.String)
+  @objc func clearAttributes(keys: [Swift.String])
+  @objc func clearAllAttributes()
+}
+public protocol EncryptionProviding {
+  var encryptionKey: Foundation.Data { get set }
+  func encrypt(_ value: Foundation.Data) -> Foundation.Data?
+  func decrypt(_ value: Foundation.Data) -> Foundation.Data?
+}
+@objc(SFEncryptedBlobTransformer) public class EncryptedBlobTransformer : Foundation.ValueTransformer {
+  public init(encryptionProviding: any SFMCSDK.EncryptionProviding)
+  @objc override dynamic public func transformedValue(_ value: Any?) -> Any?
+  @objc override dynamic public func reverseTransformedValue(_ value: Any?) -> Any?
+  @objc override dynamic public class func allowsReverseTransformation() -> Swift.Bool
+  @objc override dynamic public class func transformedValueClass() -> Swift.AnyClass
+  @objc deinit
+}
+public enum EncryptionKeyError : Swift.Error {
+  case keychainError(Darwin.OSStatus)
+  case randomDataGenerationFailed
+  case keyDerivationFailed(Swift.Int)
+  case keyWrapFailed(Swift.Int)
+  case keyUnwrapFailed(Swift.Int)
+  case invalidKeychainData
+  case memoryAccessError
+  case invalidSeedKeyEncoding
+}
+public protocol EncryptionKeyManaging {
+  static func encryptionKey(usingSeedKey seedKey: Swift.String) throws -> Foundation.Data
+}
+@_hasMissingDesignatedInitializers final public class EncryptionKeyManager : SFMCSDK.EncryptionKeyManaging {
+  public static func encryptionKey(usingSeedKey seedKey: Swift.String) throws -> Foundation.Data
+  @objc deinit
+}
+public class AES256Crypto : SFMCSDK.EncryptionProviding {
+  public var encryptionKey: Foundation.Data
+  public init?(encryptionKey: Foundation.Data)
+  public func encrypt(_ value: Foundation.Data) -> Foundation.Data?
+  public func decrypt(_ value: Foundation.Data) -> Foundation.Data?
   @objc deinit
 }
 @objc(SFMCSdkConsent) public enum Consent : Swift.Int {
@@ -493,6 +639,10 @@ extension SFMCSDK.Publisher {
   @objc var category: SFMCSDK.EventCategory { get }
   @objc var attributes: [Swift.String : Any]? { get }
 }
+@objc public protocol MarketingCloudSdkProtocol {
+  @objc func getIdentity() -> (any SFMCSDK.ModuleIdentity)?
+  @objc func internalTearDown()
+}
 @objc(SFMCSdkCatalogObject) public class CatalogObject : ObjectiveC.NSObject {
   @objc final public let type: Swift.String
   @objc final public let id: Swift.String
@@ -506,6 +656,10 @@ extension SFMCSDK.Publisher {
   final public func addObserver(_ observer: any SFMCSDK.BehaviorObserver)
   final public func removeObserver(_ observer: any SFMCSDK.BehaviorObserver)
   @objc deinit
+}
+@objc public protocol PushFeatureProtocol {
+  @objc func getIdentity() -> (any SFMCSDK.ModuleIdentity)?
+  @objc func internalTearDown()
 }
 @objc(SFMCSdkLocationDelegate) public protocol LocationDelegate {
   @objc func sfmc_shouldShowLocationMessage(_ message: [Swift.AnyHashable : Any], forRegion region: [Swift.AnyHashable : Any]) -> Swift.Bool
@@ -558,7 +712,7 @@ extension SFMCSDK.Config {
 }
 @objc(SFMCSdkModuleStatus) public enum ModuleStatus : Swift.Int {
   public typealias RawValue = Swift.String
-  case cancelled, disabled, failed, inactive, initializing, operational
+  case cancelled, failed, inactive, initializing, operational
   public var rawValue: SFMCSDK.ModuleStatus.RawValue {
     get
   }
@@ -572,10 +726,19 @@ extension SFMCSDK.Config {
   @objc public init?(name: Swift.String, attributes: [Swift.String : Any]? = nil)
   @objc deinit
 }
+@objc(SFEncryptedStringTransformer) public class EncryptedStringTransformer : Foundation.ValueTransformer {
+  public init(encryptionProviding: any SFMCSDK.EncryptionProviding)
+  @objc override dynamic public func transformedValue(_ value: Any?) -> Any?
+  @objc override dynamic public func reverseTransformedValue(_ value: Any?) -> Any?
+  @objc override dynamic public class func allowsReverseTransformation() -> Swift.Bool
+  @objc override dynamic public class func transformedValueClass() -> Swift.AnyClass
+  @objc deinit
+}
 @_hasMissingDesignatedInitializers @objc(SFMCSdkComponents) public class SFMCSdkComponents : ObjectiveC.NSObject {
   @objc final public let encryptionManager: SFMCSDK.EncryptionManager
   @objc final public let storageManager: SFMCSDK.StorageManager
   @objc final public let behaviorManager: SFMCSDK.BehaviorManager
+  @objc final public let sessionManager: SFMCSDK.SessionManager
   @objc public func createNetworkManager(authenticator: (any SFMCSDK.Authenticator)? = nil) -> SFMCSDK.NetworkManager
   @objc deinit
 }
@@ -588,11 +751,10 @@ extension SFMCSDK.Config {
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(SFMCSdk) final public class SFMCSdk : ObjectiveC.NSObject {
   @objc public static var cdp: SFMCSDK.CDP
-  @objc public static var mp: SFMCSDK.PUSH
   @objc public static var personalization: SFMCSDK.PERSONALIZATION
-  @objc public static var identity: SFMCSDK.IDENTITY
+  @objc public static let identity: SFMCSDK.Identity
   @objc public static var sdkVersion: Swift.String
-  @objc public static func initializeSdk(_ configuration: SFMCSDK.Config)
+  @objc public static func initializeSdk(_ configuration: SFMCSDK.Config, completion: ((_ status: [SFMCSDK.ModuleInitStatus]) -> Swift.Void)? = nil)
   @objc public static func track(event: any SFMCSDK.Event)
   @objc public static func state() -> Swift.String
   @available(*, deprecated, message: "The SFMCSdk takes care of tear downs during initializations, making this method unnecessary. Its usage should be avoided to prevent race conditions.")
@@ -617,16 +779,17 @@ extension SFMCSDK.Config {
   @objc public static func keychainAccessErrorsAreFatal() -> Swift.Bool
   @objc public static func setFileProtectionType(fileProtectionType: Foundation.FileProtectionType?)
   @objc public static func fileProtectionType() -> Foundation.FileProtectionType?
-  @objc public static func requestPushSdk(_ callback: @escaping (_ mp: any SFMCSDK.PushInterface) -> Swift.Void)
   @objc public static func requestPersonalizationSdk(_ callback: @escaping () -> Swift.Void)
   @objc public static func requestCdpSdk(_ callback: @escaping (_ cdp: any SFMCSDK.CdpInterface) -> Swift.Void)
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc(SFMCSdkConfigBuilder) public class ConfigBuilder : ObjectiveC.NSObject {
   @objc override dynamic public init()
-  @objc public func setCdp(config: any SFMCSDK.ModuleConfig, onCompletion: ((_ result: SFMCSDK.OperationResult) -> Swift.Void)? = nil) -> SFMCSDK.ConfigBuilder
-  @objc public func setPush(config: any SFMCSDK.ModuleConfig, onCompletion: ((_ result: SFMCSDK.OperationResult) -> Swift.Void)? = nil) -> SFMCSDK.ConfigBuilder
-  @objc public func setPersonalization(config: any SFMCSDK.ModuleConfig, onCompletion: ((_ result: SFMCSDK.OperationResult) -> Swift.Void)? = nil) -> SFMCSDK.ConfigBuilder
+  @objc public func setCdp(config: any SFMCSDK.ModuleConfig) -> SFMCSDK.ConfigBuilder
+  @objc public func setEngagement(config: any SFMCSDK.ModuleConfig) -> SFMCSDK.ConfigBuilder
+  @objc public func setPersonalization(config: any SFMCSDK.ModuleConfig) -> SFMCSDK.ConfigBuilder
+  @objc public func setPushFeature(config: any SFMCSDK.ModuleConfig) -> SFMCSDK.ConfigBuilder
+  @objc public func setMAM(config: any SFMCSDK.ModuleConfig) -> SFMCSDK.ConfigBuilder
   @objc public func build() -> SFMCSDK.Config
   @objc deinit
 }
@@ -637,7 +800,7 @@ extension SFMCSDK.Config {
 }
 @objc(SFMCSdkModuleName) public enum ModuleName : Swift.Int, Swift.CaseIterable {
   public typealias RawValue = Swift.String
-  case cdp, push, personalization
+  case cdp, engagement, personalization, pushFeature, mobileAppMessaging
   public var rawValue: SFMCSDK.ModuleName.RawValue {
     get
   }
@@ -687,6 +850,11 @@ extension SFMCSDK.Config {
   @objc open func isBlockedByRetryAfter(_ requestName: Swift.String) -> Swift.Bool
   @objc deinit
 }
+public struct DeferredCall {
+  public init(closure: @escaping () -> Swift.Void)
+  public let closure: () -> Swift.Void
+  public func execute()
+}
 @objc(SFMCSdkAuthenticator) public protocol Authenticator {
   @objc var lock: Foundation.NSLock { get }
   @objc func getCachedTokenHeader() -> SFMCSDK.AuthHeader?
@@ -714,6 +882,11 @@ extension SFMCSDK.Config {
   }
   @objc deinit
 }
+@_hasMissingDesignatedInitializers @objc(SFMCModuleInitStatus) final public class ModuleInitStatus : ObjectiveC.NSObject {
+  @objc final public let moduleName: SFMCSDK.ModuleName
+  @objc final public let initStatus: SFMCSDK.OperationResult
+  @objc deinit
+}
 @objc(SFMCSdkModuleIdentity) public protocol ModuleIdentity {
   @objc var applicationId: Swift.String { get }
   @objc var profileId: Swift.String? { get }
@@ -722,9 +895,7 @@ extension SFMCSDK.Config {
   @objc func customPropertiesToJson() -> Swift.String?
 }
 @objc(SFMCSdkIdentityEventProtocol) public protocol IdentityEventProtocol : SFMCSDK.Event {
-  @objc var profileId: Swift.String? { get }
-  @objc var profileAttributes: [Swift.String : Swift.String]? { get }
-  @objc var attributes: [Swift.String : Any]? { get }
+  @objc var identityData: (any SFMCSDK.IdentityEventData)? { get }
 }
 @objc(SFMCSdkOperationResult) public enum OperationResult : Swift.Int {
   public typealias RawValue = Swift.String
@@ -768,12 +939,56 @@ extension SFMCSDK.Config {
     get
   }
 }
+@objc public class SFMCPNContextInfo : ObjectiveC.NSObject {
+  @objc final public let source: SFMCSDK.SFMCPNContextSource
+  @objc final public let destinationsArray: [Foundation.NSNumber]
+  @objc final public let businessUnitId: Swift.String?
+  public func destinations() -> [SFMCSDK.SFMCPNContextDestination]
+  @objc public init(source: SFMCSDK.SFMCPNContextSource, destinationsArray: [Foundation.NSNumber], businessUnitId: Swift.String?)
+  @objc public func isInavlidOrAbsentContext() -> Swift.Bool
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
 @objc(SFMCSdkCompletedCall) public class CompletedCall : ObjectiveC.NSObject {
   @objc final public let wrappedRequest: SFMCSDK.WrappedRequest
   @objc final public let wrappedResponse: SFMCSDK.WrappedResponse
   @objc public init(_ wrappedRequest: SFMCSDK.WrappedRequest, _ wrappedResponse: SFMCSDK.WrappedResponse)
   @objc deinit
 }
+@objc public enum SFMCPNContextSource : Swift.Int, Swift.CaseIterable {
+  case none = 0
+  case mce = 1
+  case mam = 2
+  public init?(rawValue: Swift.Int)
+  public typealias AllCases = [SFMCSDK.SFMCPNContextSource]
+  public typealias RawValue = Swift.Int
+  nonisolated public static var allCases: [SFMCSDK.SFMCPNContextSource] {
+    get
+  }
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum SFMCPNContextDestination : Swift.Int, Swift.CaseIterable {
+  case none = 0
+  case mce = 1
+  case mam = 2
+  case dataCloud = 4
+  public init?(rawValue: Swift.Int)
+  public typealias AllCases = [SFMCSDK.SFMCPNContextDestination]
+  public typealias RawValue = Swift.Int
+  nonisolated public static var allCases: [SFMCSDK.SFMCPNContextDestination] {
+    get
+  }
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+extension SFMCSDK.HTTPMethod : Swift.Equatable {}
+extension SFMCSDK.HTTPMethod : Swift.Hashable {}
+extension SFMCSDK.HTTPMethod : Swift.RawRepresentable {}
 extension SFMCSDK.MessageProducer : Swift.Equatable {}
 extension SFMCSDK.MessageProducer : Swift.Hashable {}
 extension SFMCSDK.EventCategory : Swift.Equatable {}
@@ -781,6 +996,9 @@ extension SFMCSDK.EventCategory : Swift.Hashable {}
 extension SFMCSDK.EventCategory : Swift.RawRepresentable {}
 extension SFMCSDK.LogLevel : Swift.Hashable {}
 extension SFMCSDK.LogLevel : Swift.RawRepresentable {}
+extension SFMCSDK.PushFeatureEventType : Swift.Equatable {}
+extension SFMCSDK.PushFeatureEventType : Swift.Hashable {}
+extension SFMCSDK.PushFeatureEventType : Swift.RawRepresentable {}
 extension SFMCSDK.LoggerCategory : Swift.Equatable {}
 extension SFMCSDK.LoggerCategory : Swift.Hashable {}
 extension SFMCSDK.LoggerCategory : Swift.RawRepresentable {}
@@ -804,3 +1022,9 @@ extension SFMCSDK.OperationResult : Swift.RawRepresentable {}
 extension SFMCSDK.NetworkManagerError : Swift.Equatable {}
 extension SFMCSDK.NetworkManagerError : Swift.Hashable {}
 extension SFMCSDK.NetworkManagerError : Swift.RawRepresentable {}
+extension SFMCSDK.SFMCPNContextSource : Swift.Equatable {}
+extension SFMCSDK.SFMCPNContextSource : Swift.Hashable {}
+extension SFMCSDK.SFMCPNContextSource : Swift.RawRepresentable {}
+extension SFMCSDK.SFMCPNContextDestination : Swift.Equatable {}
+extension SFMCSDK.SFMCPNContextDestination : Swift.Hashable {}
+extension SFMCSDK.SFMCPNContextDestination : Swift.RawRepresentable {}
