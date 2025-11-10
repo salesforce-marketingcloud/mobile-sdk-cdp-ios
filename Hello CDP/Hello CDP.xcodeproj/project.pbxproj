@@ -13,16 +13,8 @@
 		6A204B92256453B300833D05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A204B91256453B300833D05 /* Assets.xcassets */; };
 		6A204B95256453B300833D05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A204B93256453B300833D05 /* LaunchScreen.storyboard */; };
 		6AB877C9256F225C000B1A4C /* HelloCDPLogOutputter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB877C8256F225C000B1A4C /* HelloCDPLogOutputter.swift */; };
-		B956C54A2EBF90AA000AF107 /* Cdp in Frameworks */ = {isa = PBXBuildFile; productRef = B956C5492EBF90AA000AF107 /* Cdp */; };
-		B956C54D2EBF95EC000AF107 /* Cdp in Frameworks */ = {isa = PBXBuildFile; productRef = B956C54C2EBF95EC000AF107 /* Cdp */; };
-		B956C5502EC25EDA000AF107 /* Cdp in Frameworks */ = {isa = PBXBuildFile; productRef = B956C54F2EC25EDA000AF107 /* Cdp */; };
-		B956C5532EC26000000AF107 /* Cdp in Frameworks */ = {isa = PBXBuildFile; productRef = B956C5522EC26000000AF107 /* Cdp */; };
-		B956C5562EC26101000AF107 /* Cdp in Frameworks */ = {isa = PBXBuildFile; productRef = B956C5552EC26101000AF107 /* Cdp */; };
-		B956C5592EC26A90000AF107 /* Cdp in Frameworks */ = {isa = PBXBuildFile; productRef = B956C5582EC26A90000AF107 /* Cdp */; };
-		B956C55C2EC26E82000AF107 /* Cdp in Frameworks */ = {isa = PBXBuildFile; productRef = B956C55B2EC26E82000AF107 /* Cdp */; };
-		B956C55F2EC26F43000AF107 /* Cdp in Frameworks */ = {isa = PBXBuildFile; productRef = B956C55E2EC26F43000AF107 /* Cdp */; };
+		B93FD8D42EC2878500C948F8 /* Cdp in Frameworks */ = {isa = PBXBuildFile; productRef = B93FD8D32EC2878500C948F8 /* Cdp */; };
 		B96659052EC27AB50042621F /* Cdp in Frameworks */ = {isa = PBXBuildFile; productRef = B96659042EC27AB50042621F /* Cdp */; };
-		B987CA132EBF7B2B00E09DC7 /* Cdp in Frameworks */ = {isa = PBXBuildFile; productRef = B987CA122EBF7B2B00E09DC7 /* Cdp */; };
 		B9B43DEC2EBE4BD70061BEF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A204B88256453B200833D05 /* AppDelegate.swift */; };
 		B9B43DED2EBE4BDE0061BEF2 /* HelloCDPLogOutputter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB877C8256F225C000B1A4C /* HelloCDPLogOutputter.swift */; };
 		B9B43DEE2EBE4BE60061BEF2 /* SdkStateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A204B8C256453B200833D05 /* SdkStateViewController.swift */; };
@@ -58,16 +50,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B956C55F2EC26F43000AF107 /* Cdp in Frameworks */,
-				B956C5562EC26101000AF107 /* Cdp in Frameworks */,
-				B956C54D2EBF95EC000AF107 /* Cdp in Frameworks */,
-				B956C55C2EC26E82000AF107 /* Cdp in Frameworks */,
-				B956C5532EC26000000AF107 /* Cdp in Frameworks */,
-				B956C54A2EBF90AA000AF107 /* Cdp in Frameworks */,
+				B93FD8D42EC2878500C948F8 /* Cdp in Frameworks */,
 				B96659052EC27AB50042621F /* Cdp in Frameworks */,
-				B956C5592EC26A90000AF107 /* Cdp in Frameworks */,
-				B956C5502EC25EDA000AF107 /* Cdp in Frameworks */,
-				B987CA132EBF7B2B00E09DC7 /* Cdp in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,7 +176,7 @@
 			);
 			mainGroup = 6A204B7C256453B200833D05;
 			packageReferences = (
-				B96659032EC27AB50042621F /* XCRemoteSwiftPackageReference "mobile-sdk-cdp-ios" */,
+				B93FD8D22EC2878500C948F8 /* XCRemoteSwiftPackageReference "mobile-sdk-cdp-ios" */,
 			);
 			productRefGroup = 6A204B86256453B200833D05 /* Products */;
 			projectDirPath = "";
@@ -600,55 +584,8 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCLocalSwiftPackageReference section */
-		B987CA112EBF788900E09DC7 /* XCLocalSwiftPackageReference "../../mobile-sdk-cdp-ios" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = "../../mobile-sdk-cdp-ios";
-		};
-/* End XCLocalSwiftPackageReference section */
-
 /* Begin XCRemoteSwiftPackageReference section */
-		B956C54E2EC25EDA000AF107 /* XCRemoteSwiftPackageReference "mobile-sdk-cdp-ios" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/salesforce-marketingcloud/mobile-sdk-cdp-ios";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 3.0.0;
-			};
-		};
-		B956C5512EC26000000AF107 /* XCRemoteSwiftPackageReference "mobile-sdk-cdp-ios" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/salesforce-marketingcloud/mobile-sdk-cdp-ios";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 3.0.0;
-			};
-		};
-		B956C5542EC26101000AF107 /* XCRemoteSwiftPackageReference "mobile-sdk-cdp-ios" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/salesforce-marketingcloud/mobile-sdk-cdp-ios";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 3.0.0;
-			};
-		};
-		B956C5572EC26A90000AF107 /* XCRemoteSwiftPackageReference "mobile-sdk-cdp-ios" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/salesforce-marketingcloud/mobile-sdk-cdp-ios";
-			requirement = {
-				kind = exactVersion;
-				version = 3.0.0;
-			};
-		};
-		B956C55A2EC26E82000AF107 /* XCRemoteSwiftPackageReference "mobile-sdk-cdp-ios" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/salesforce-marketingcloud/mobile-sdk-cdp-ios";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 3.0.0;
-			};
-		};
-		B96659032EC27AB50042621F /* XCRemoteSwiftPackageReference "mobile-sdk-cdp-ios" */ = {
+		B93FD8D22EC2878500C948F8 /* XCRemoteSwiftPackageReference "mobile-sdk-cdp-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/salesforce-marketingcloud/mobile-sdk-cdp-ios";
 			requirement = {
@@ -659,51 +596,13 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		B956C5492EBF90AA000AF107 /* Cdp */ = {
+		B93FD8D32EC2878500C948F8 /* Cdp */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = Cdp;
-		};
-		B956C54C2EBF95EC000AF107 /* Cdp */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = Cdp;
-		};
-		B956C54F2EC25EDA000AF107 /* Cdp */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = B956C54E2EC25EDA000AF107 /* XCRemoteSwiftPackageReference "mobile-sdk-cdp-ios" */;
-			productName = Cdp;
-		};
-		B956C5522EC26000000AF107 /* Cdp */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = B956C5512EC26000000AF107 /* XCRemoteSwiftPackageReference "mobile-sdk-cdp-ios" */;
-			productName = Cdp;
-		};
-		B956C5552EC26101000AF107 /* Cdp */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = B956C5542EC26101000AF107 /* XCRemoteSwiftPackageReference "mobile-sdk-cdp-ios" */;
-			productName = Cdp;
-		};
-		B956C5582EC26A90000AF107 /* Cdp */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = B956C5572EC26A90000AF107 /* XCRemoteSwiftPackageReference "mobile-sdk-cdp-ios" */;
-			productName = Cdp;
-		};
-		B956C55B2EC26E82000AF107 /* Cdp */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = B956C55A2EC26E82000AF107 /* XCRemoteSwiftPackageReference "mobile-sdk-cdp-ios" */;
-			productName = Cdp;
-		};
-		B956C55E2EC26F43000AF107 /* Cdp */ = {
-			isa = XCSwiftPackageProductDependency;
+			package = B93FD8D22EC2878500C948F8 /* XCRemoteSwiftPackageReference "mobile-sdk-cdp-ios" */;
 			productName = Cdp;
 		};
 		B96659042EC27AB50042621F /* Cdp */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = B96659032EC27AB50042621F /* XCRemoteSwiftPackageReference "mobile-sdk-cdp-ios" */;
-			productName = Cdp;
-		};
-		B987CA122EBF7B2B00E09DC7 /* Cdp */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = B987CA112EBF788900E09DC7 /* XCLocalSwiftPackageReference "../../mobile-sdk-cdp-ios" */;
 			productName = Cdp;
 		};
 /* End XCSwiftPackageProductDependency section */
