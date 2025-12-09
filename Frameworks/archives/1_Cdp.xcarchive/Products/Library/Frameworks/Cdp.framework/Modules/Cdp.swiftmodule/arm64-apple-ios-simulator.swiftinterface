@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
 // swift-module-flags: -target arm64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name Cdp
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
 import AdSupport
 @_exported import Cdp
 import CoreData
@@ -13,7 +13,7 @@ import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
 extension CoreData.NSManagedObjectContext {
-  public func executeAndMergeChanges(using batchDeleteRequest: CoreData.NSBatchDeleteRequest) throws
+  nonisolated public func executeAndMergeChanges(using batchDeleteRequest: CoreData.NSBatchDeleteRequest) throws
 }
 extension Foundation.HTTPURLResponse {
   public var statusMessage: Swift.String {
@@ -39,11 +39,17 @@ extension Foundation.HTTPURLResponse {
   @objc final public var state: Swift.String {
     @objc get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func initModule(config: any SFMCSDK.ModuleConfig, components: SFMCSDK.SFMCSdkComponents) -> (any SFMCSDK.SFMCModule)?
+  #endif
   @objc final public func getConsent() -> SFMCSDK.Consent
   @objc final public func setConsent(consent: SFMCSDK.Consent)
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func setLocation(coordinates: (any SFMCSDK.Coordinates)?, expiresIn: Swift.Int)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func getIdentity() -> (any SFMCSDK.ModuleIdentity)?
+  #endif
   @objc final public func setProfileToAnonymous()
   @objc final public func setProfileToKnown()
   @objc final public func receive(message: SFMCSDK.Message)
@@ -61,37 +67,53 @@ public func httpResponseStatusToMessage(statusCode: Swift.Int) -> Swift.String
 @objc(CdpCoordinates) public class CdpCoordinates : ObjectiveC.NSObject, SFMCSDK.Coordinates {
   @objc final public let latitude: Swift.Double
   @objc final public let longitude: Swift.Double
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init?(latitude: Swift.Double, longitude: Swift.Double)
+  #endif
   @objc deinit
 }
-@_inheritsConvenienceInitializers @objc(QueueEventEntity) public class QueueEventEntity : CoreData.NSManagedObject {
-  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+public typealias QueueEventEntityCoreDataClassSet = Foundation.NSSet
+@_inheritsConvenienceInitializers @objc(QueueEventEntity) nonisolated public class QueueEventEntity : CoreData.NSManagedObject {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  #endif
   @objc deinit
 }
+public typealias QueueEventEntityCoreDataPropertiesSet = Foundation.NSSet
 extension Cdp.QueueEventEntity {
   @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<Cdp.QueueEventEntity>
-  @objc @NSManaged dynamic public var category: Swift.String? {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var category: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var createdDate: Foundation.Date? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var createdDate: Foundation.Date? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var eventId: Swift.String? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var eventId: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var failedAttempts: Swift.Int64 {
+  #endif
+  @objc @NSManaged nonisolated dynamic public var failedAttempts: Swift.Int64 {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var payload: Foundation.Data? {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var payload: Foundation.Data? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var priority: Swift.Int64 {
+  #endif
+  @objc @NSManaged nonisolated dynamic public var priority: Swift.Int64 {
     @objc get
     @objc set
   }
 }
+public typealias CdpModuleModelFoundationFrameworkSet = Foundation.NSSet
+public typealias CdpModuleModelCoreDataFrameworkManagedObject = CoreData.NSManagedObject
