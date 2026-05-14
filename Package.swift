@@ -12,7 +12,7 @@ let package = Package(
         .library(name: "Cdp", targets: ["CdpWrapper"])
     ],
     dependencies: [
-        .package(url: "https://github.com/salesforce-marketingcloud/sfmc-sdk-ios", from: "3.0.0"),
+        .package(url: "https://github.com/salesforce-marketingcloud/sfmc-sdk-ios", from: "4.0.0"),
     ],
     targets: [
         .binaryTarget(

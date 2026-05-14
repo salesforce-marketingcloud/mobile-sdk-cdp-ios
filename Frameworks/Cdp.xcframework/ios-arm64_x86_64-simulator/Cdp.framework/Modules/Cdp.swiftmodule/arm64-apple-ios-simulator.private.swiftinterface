@@ -61,7 +61,18 @@ public func httpResponseStatusToMessage(statusCode: Swift.Int) -> Swift.String
   @objc public func trackScreens(_ enable: Swift.Bool) -> Cdp.CdpConfigBuilder
   @objc public func trackLifecycle(_ enable: Swift.Bool) -> Cdp.CdpConfigBuilder
   @objc public func sessionTimeout(_ seconds: Swift.Int) -> Cdp.CdpConfigBuilder
+  @objc public func eventFlushRate(_ flushRate: Cdp.EventFlushRateQuantity) -> Cdp.CdpConfigBuilder
   @objc public func build() -> Cdp.CdpConfig
+  @objc deinit
+}
+@objcMembers @objc(CdpEventFlushRateQuantity) public class EventFlushRateQuantity : ObjectiveC.NSObject {
+  @objc final public let quantity: Swift.Int
+  @objc public init(quantity: Swift.Int)
+  @objc deinit
+}
+@objcMembers @objc(CdpEventFlushRateQuantityAndInterval) final public class EventFlushRateQuantityAndInterval : Cdp.EventFlushRateQuantity {
+  @objc final public let interval: Foundation.TimeInterval
+  @objc public init(quantity: Swift.Int, interval: Foundation.TimeInterval)
   @objc deinit
 }
 @objc(CdpCoordinates) public class CdpCoordinates : ObjectiveC.NSObject, SFMCSDK.Coordinates {

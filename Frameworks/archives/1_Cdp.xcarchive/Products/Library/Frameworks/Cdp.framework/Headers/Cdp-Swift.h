@@ -318,6 +318,7 @@ SWIFT_CLASS("_TtC3Cdp9CdpConfig")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+@class CdpEventFlushRateQuantity;
 /// This class is a Cdp Config Builder helper.
 SWIFT_CLASS("_TtC3Cdp16CdpConfigBuilder")
 @interface CdpConfigBuilder : NSObject
@@ -348,6 +349,13 @@ SWIFT_CLASS("_TtC3Cdp16CdpConfigBuilder")
 /// returns:
 /// CdpConfigBuilder
 - (CdpConfigBuilder * _Nonnull)sessionTimeout:(NSInteger)seconds SWIFT_WARN_UNUSED_RESULT;
+/// Customizes the event flush rate. By default, events are flushed after a minimum of 20 events.
+/// \param flushRate The event flush rate configuration (EventFlushRateQuantity or EventFlushRateQuantityAndInterval)
+///
+///
+/// returns:
+/// CdpConfigBuilder
+- (CdpConfigBuilder * _Nonnull)eventFlushRate:(CdpEventFlushRateQuantity * _Nonnull)flushRate SWIFT_WARN_UNUSED_RESULT;
 /// Builds configuration.
 ///
 /// returns:
@@ -417,6 +425,138 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) CdpModule * 
 /// The SDK internal initializer.
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+/// Configures event flushing based on a quantity threshold.
+/// Events are automatically flushed when the queue reaches the specified quantity.
+/// This is a simple, quantity-only flush strategy that does not include time-based flushing.
+/// <h2>Default Behavior</h2>
+/// If not explicitly configured, the SDK uses a default flush rate of 20 events (quantity-based only).
+/// <h2>Usage</h2>
+/// Configure the flush rate when building your CDP configuration:
+/// <em>Swift:</em>
+/// \code
+/// // Option 1: Flush when queue reaches 10 events
+/// let flushRate = EventFlushRateQuantity(quantity: 10)
+///
+/// // Option 2: Flush at 10 events OR every 30 seconds, whichever comes first
+/// let flushRate = EventFlushRateQuantityAndInterval(quantity: 10, interval: 30.0)
+///
+/// let config = CdpConfigBuilder(appId: appId, endpoint: endpoint)
+///     .eventFlushRate(flushRate)
+///     .build()
+///
+/// \endcode<em>Objective-C:</em>
+/// \code
+/// // Option 1: Flush when queue reaches 10 events
+/// CdpEventFlushRateQuantity *flushRate = [[CdpEventFlushRateQuantity alloc] initWithQuantity:10];
+///
+/// // Option 2: Flush at 10 events OR every 30 seconds, whichever comes first
+/// CdpEventFlushRateQuantityAndInterval *flushRate =
+///     [[CdpEventFlushRateQuantityAndInterval alloc] initWithQuantity:10 interval:30.0];
+///
+/// CdpConfigBuilder *builder = [[CdpConfigBuilder alloc] initWithAppId:appId endpoint:endpoint];
+/// [builder eventFlushRate:flushRate];
+/// CdpConfig *config = [builder build];
+///
+/// \endcode<h2>Behavior</h2>
+/// important:
+/// Quantity must be greater than 0. Invalid values will cause a fatal error.
+/// seealso:
+/// <code>EventFlushRateQuantityAndInterval</code> for dual-threshold strategy
+/// <ul>
+///   <li>
+///     Events are flushed immediately when the queue size reaches the quantity threshold
+///   </li>
+///   <li>
+///     No automatic time-based flushing occurs (use <code>EventFlushRateQuantityAndInterval</code> for that)
+///   </li>
+///   <li>
+///     Events may sit in the queue indefinitely if the threshold is never reached
+///   </li>
+///   <li>
+///     Manual flushes are still possible via the SDK’s flush methods
+///   </li>
+/// </ul>
+SWIFT_CLASS_NAMED("EventFlushRateQuantity")
+@interface CdpEventFlushRateQuantity : NSObject
+/// The number of events that must accumulate in the queue before a flush is triggered.
+@property (nonatomic, readonly) NSInteger quantity;
+/// Initializes a quantity-based flush rate.
+/// precondition:
+/// <code>quantity</code> must be greater than 0.
+/// important:
+/// Providing an invalid quantity (≤ 0) will cause a fatal error.
+/// <h2>Example</h2>
+/// \code
+/// // Flush when 10 events have accumulated
+/// let flushRate = EventFlushRateQuantity(quantity: 10)
+///
+/// \endcode\param quantity The number of events to accumulate before flushing. Must be greater than 0.
+///
+- (nonnull instancetype)initWithQuantity:(NSInteger)quantity OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+/// Configures event flushing based on both a quantity threshold AND a time interval.
+/// Events are automatically flushed when EITHER condition is met (whichever happens first):
+/// <ul>
+///   <li>
+///     The queue reaches the specified quantity threshold, OR
+///   </li>
+///   <li>
+///     The specified time interval elapses
+///   </li>
+/// </ul>
+/// This provides a balance between minimizing API calls (by batching events) and ensuring
+/// timely delivery (by flushing after a time limit even if the queue isn’t full).
+/// <h2>Example</h2>
+/// Flush events every 10 events OR every 30 seconds, whichever comes first:
+/// \code
+/// let flushRate = EventFlushRateQuantityAndInterval(quantity: 10, interval: 30.0)
+///
+/// \endcode<h2>Behavior</h2>
+/// important:
+/// Both quantity and interval must be greater than 0. Invalid values will cause a fatal error.
+/// note:
+/// This class extends <code>EventFlushRateQuantity</code>, so it can be used anywhere a quantity-based flush rate is expected.
+/// The interval-based timer only runs when the app is in the foreground.
+/// <ul>
+///   <li>
+///     <em>Quantity threshold:</em> Events flush immediately when the queue size reaches the quantity
+///   </li>
+///   <li>
+///     <em>Interval timer:</em> Runs in the background and triggers a flush every <code>interval</code> seconds
+///   </li>
+///   <li>
+///     <em>First condition wins:</em> The first threshold to be reached triggers the flush
+///   </li>
+///   <li>
+///     <em>Foreground only:</em> The interval timer automatically pauses when the app enters the background
+///     and resumes when the app returns to the foreground
+///   </li>
+/// </ul>
+SWIFT_CLASS_NAMED("EventFlushRateQuantityAndInterval")
+@interface CdpEventFlushRateQuantityAndInterval : CdpEventFlushRateQuantity
+/// The time interval in seconds between automatic flushes.
+@property (nonatomic, readonly) NSTimeInterval interval;
+/// Initializes a quantity and interval based flush rate.
+/// precondition:
+/// Both <code>quantity</code> and <code>interval</code> must be greater than 0.
+/// important:
+/// Providing invalid values (≤ 0) will cause a fatal error.
+/// <h2>Example</h2>
+/// \code
+/// // Flush at 10 events OR every 30 seconds
+/// let flushRate = EventFlushRateQuantityAndInterval(quantity: 10, interval: 30.0)
+///
+/// \endcode\param quantity The number of events to accumulate before flushing. Must be greater than 0.
+///
+/// \param interval The time interval in seconds between automatic flushes. Must be greater than 0.
+///
+- (nonnull instancetype)initWithQuantity:(NSInteger)quantity interval:(NSTimeInterval)interval OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithQuantity:(NSInteger)quantity SWIFT_UNAVAILABLE;
 @end
 
 @class NSEntityDescription;
@@ -765,6 +905,7 @@ SWIFT_CLASS("_TtC3Cdp9CdpConfig")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+@class CdpEventFlushRateQuantity;
 /// This class is a Cdp Config Builder helper.
 SWIFT_CLASS("_TtC3Cdp16CdpConfigBuilder")
 @interface CdpConfigBuilder : NSObject
@@ -795,6 +936,13 @@ SWIFT_CLASS("_TtC3Cdp16CdpConfigBuilder")
 /// returns:
 /// CdpConfigBuilder
 - (CdpConfigBuilder * _Nonnull)sessionTimeout:(NSInteger)seconds SWIFT_WARN_UNUSED_RESULT;
+/// Customizes the event flush rate. By default, events are flushed after a minimum of 20 events.
+/// \param flushRate The event flush rate configuration (EventFlushRateQuantity or EventFlushRateQuantityAndInterval)
+///
+///
+/// returns:
+/// CdpConfigBuilder
+- (CdpConfigBuilder * _Nonnull)eventFlushRate:(CdpEventFlushRateQuantity * _Nonnull)flushRate SWIFT_WARN_UNUSED_RESULT;
 /// Builds configuration.
 ///
 /// returns:
@@ -864,6 +1012,138 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) CdpModule * 
 /// The SDK internal initializer.
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+/// Configures event flushing based on a quantity threshold.
+/// Events are automatically flushed when the queue reaches the specified quantity.
+/// This is a simple, quantity-only flush strategy that does not include time-based flushing.
+/// <h2>Default Behavior</h2>
+/// If not explicitly configured, the SDK uses a default flush rate of 20 events (quantity-based only).
+/// <h2>Usage</h2>
+/// Configure the flush rate when building your CDP configuration:
+/// <em>Swift:</em>
+/// \code
+/// // Option 1: Flush when queue reaches 10 events
+/// let flushRate = EventFlushRateQuantity(quantity: 10)
+///
+/// // Option 2: Flush at 10 events OR every 30 seconds, whichever comes first
+/// let flushRate = EventFlushRateQuantityAndInterval(quantity: 10, interval: 30.0)
+///
+/// let config = CdpConfigBuilder(appId: appId, endpoint: endpoint)
+///     .eventFlushRate(flushRate)
+///     .build()
+///
+/// \endcode<em>Objective-C:</em>
+/// \code
+/// // Option 1: Flush when queue reaches 10 events
+/// CdpEventFlushRateQuantity *flushRate = [[CdpEventFlushRateQuantity alloc] initWithQuantity:10];
+///
+/// // Option 2: Flush at 10 events OR every 30 seconds, whichever comes first
+/// CdpEventFlushRateQuantityAndInterval *flushRate =
+///     [[CdpEventFlushRateQuantityAndInterval alloc] initWithQuantity:10 interval:30.0];
+///
+/// CdpConfigBuilder *builder = [[CdpConfigBuilder alloc] initWithAppId:appId endpoint:endpoint];
+/// [builder eventFlushRate:flushRate];
+/// CdpConfig *config = [builder build];
+///
+/// \endcode<h2>Behavior</h2>
+/// important:
+/// Quantity must be greater than 0. Invalid values will cause a fatal error.
+/// seealso:
+/// <code>EventFlushRateQuantityAndInterval</code> for dual-threshold strategy
+/// <ul>
+///   <li>
+///     Events are flushed immediately when the queue size reaches the quantity threshold
+///   </li>
+///   <li>
+///     No automatic time-based flushing occurs (use <code>EventFlushRateQuantityAndInterval</code> for that)
+///   </li>
+///   <li>
+///     Events may sit in the queue indefinitely if the threshold is never reached
+///   </li>
+///   <li>
+///     Manual flushes are still possible via the SDK’s flush methods
+///   </li>
+/// </ul>
+SWIFT_CLASS_NAMED("EventFlushRateQuantity")
+@interface CdpEventFlushRateQuantity : NSObject
+/// The number of events that must accumulate in the queue before a flush is triggered.
+@property (nonatomic, readonly) NSInteger quantity;
+/// Initializes a quantity-based flush rate.
+/// precondition:
+/// <code>quantity</code> must be greater than 0.
+/// important:
+/// Providing an invalid quantity (≤ 0) will cause a fatal error.
+/// <h2>Example</h2>
+/// \code
+/// // Flush when 10 events have accumulated
+/// let flushRate = EventFlushRateQuantity(quantity: 10)
+///
+/// \endcode\param quantity The number of events to accumulate before flushing. Must be greater than 0.
+///
+- (nonnull instancetype)initWithQuantity:(NSInteger)quantity OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+/// Configures event flushing based on both a quantity threshold AND a time interval.
+/// Events are automatically flushed when EITHER condition is met (whichever happens first):
+/// <ul>
+///   <li>
+///     The queue reaches the specified quantity threshold, OR
+///   </li>
+///   <li>
+///     The specified time interval elapses
+///   </li>
+/// </ul>
+/// This provides a balance between minimizing API calls (by batching events) and ensuring
+/// timely delivery (by flushing after a time limit even if the queue isn’t full).
+/// <h2>Example</h2>
+/// Flush events every 10 events OR every 30 seconds, whichever comes first:
+/// \code
+/// let flushRate = EventFlushRateQuantityAndInterval(quantity: 10, interval: 30.0)
+///
+/// \endcode<h2>Behavior</h2>
+/// important:
+/// Both quantity and interval must be greater than 0. Invalid values will cause a fatal error.
+/// note:
+/// This class extends <code>EventFlushRateQuantity</code>, so it can be used anywhere a quantity-based flush rate is expected.
+/// The interval-based timer only runs when the app is in the foreground.
+/// <ul>
+///   <li>
+///     <em>Quantity threshold:</em> Events flush immediately when the queue size reaches the quantity
+///   </li>
+///   <li>
+///     <em>Interval timer:</em> Runs in the background and triggers a flush every <code>interval</code> seconds
+///   </li>
+///   <li>
+///     <em>First condition wins:</em> The first threshold to be reached triggers the flush
+///   </li>
+///   <li>
+///     <em>Foreground only:</em> The interval timer automatically pauses when the app enters the background
+///     and resumes when the app returns to the foreground
+///   </li>
+/// </ul>
+SWIFT_CLASS_NAMED("EventFlushRateQuantityAndInterval")
+@interface CdpEventFlushRateQuantityAndInterval : CdpEventFlushRateQuantity
+/// The time interval in seconds between automatic flushes.
+@property (nonatomic, readonly) NSTimeInterval interval;
+/// Initializes a quantity and interval based flush rate.
+/// precondition:
+/// Both <code>quantity</code> and <code>interval</code> must be greater than 0.
+/// important:
+/// Providing invalid values (≤ 0) will cause a fatal error.
+/// <h2>Example</h2>
+/// \code
+/// // Flush at 10 events OR every 30 seconds
+/// let flushRate = EventFlushRateQuantityAndInterval(quantity: 10, interval: 30.0)
+///
+/// \endcode\param quantity The number of events to accumulate before flushing. Must be greater than 0.
+///
+/// \param interval The time interval in seconds between automatic flushes. Must be greater than 0.
+///
+- (nonnull instancetype)initWithQuantity:(NSInteger)quantity interval:(NSTimeInterval)interval OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithQuantity:(NSInteger)quantity SWIFT_UNAVAILABLE;
 @end
 
 @class NSEntityDescription;

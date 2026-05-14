@@ -1939,6 +1939,35 @@
           },
           {
             "kind": "Function",
+            "name": "eventFlushRate",
+            "printedName": "eventFlushRate(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CdpConfigBuilder",
+                "printedName": "Cdp.CdpConfigBuilder",
+                "usr": "c:@M@Cdp@objc(cs)CdpConfigBuilder"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "EventFlushRateQuantity",
+                "printedName": "Cdp.EventFlushRateQuantity",
+                "usr": "c:@M@Cdp@objc(cs)CdpEventFlushRateQuantity"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Cdp@objc(cs)CdpConfigBuilder(im)eventFlushRate:",
+            "mangledName": "$s3Cdp0A13ConfigBuilderC14eventFlushRateyAcA05EventeF8QuantityCF",
+            "moduleName": "Cdp",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "build",
             "printedName": "build()",
             "children": [
@@ -2078,6 +2107,16 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Cdp",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "CoreData",
         "printedName": "CoreData",
         "declKind": "Import",
@@ -2106,6 +2145,417 @@
         "printedName": "SFMCSDK",
         "declKind": "Import",
         "moduleName": "Cdp"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Cdp",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "EventFlushRateQuantity",
+        "printedName": "EventFlushRateQuantity",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "quantity",
+            "printedName": "quantity",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Cdp@objc(cs)CdpEventFlushRateQuantity(py)quantity",
+            "mangledName": "$s3Cdp22EventFlushRateQuantityC8quantitySivp",
+            "moduleName": "Cdp",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Cdp@objc(cs)CdpEventFlushRateQuantity(im)quantity",
+                "mangledName": "$s3Cdp22EventFlushRateQuantityC8quantitySivg",
+                "moduleName": "Cdp",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(quantity:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "EventFlushRateQuantity",
+                "printedName": "Cdp.EventFlushRateQuantity",
+                "usr": "c:@M@Cdp@objc(cs)CdpEventFlushRateQuantity"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@Cdp@objc(cs)CdpEventFlushRateQuantity(im)initWithQuantity:",
+            "mangledName": "$s3Cdp22EventFlushRateQuantityC8quantityACSi_tcfc",
+            "moduleName": "Cdp",
+            "objc_name": "initWithQuantity:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "EventFlushRateQuantity",
+                "printedName": "Cdp.EventFlushRateQuantity",
+                "usr": "c:@M@Cdp@objc(cs)CdpEventFlushRateQuantity"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@Cdp@objc(cs)CdpEventFlushRateQuantity(im)init",
+            "mangledName": "$s3Cdp22EventFlushRateQuantityCACycfc",
+            "moduleName": "Cdp",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@Cdp@objc(cs)CdpEventFlushRateQuantity",
+        "mangledName": "$s3Cdp22EventFlushRateQuantityC",
+        "moduleName": "Cdp",
+        "objc_name": "CdpEventFlushRateQuantity",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "ObjCMembers",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "EventFlushRateQuantityAndInterval",
+        "printedName": "EventFlushRateQuantityAndInterval",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "interval",
+            "printedName": "interval",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Cdp@objc(cs)CdpEventFlushRateQuantityAndInterval(py)interval",
+            "mangledName": "$s3Cdp33EventFlushRateQuantityAndIntervalC8intervalSdvp",
+            "moduleName": "Cdp",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Cdp@objc(cs)CdpEventFlushRateQuantityAndInterval(im)interval",
+                "mangledName": "$s3Cdp33EventFlushRateQuantityAndIntervalC8intervalSdvg",
+                "moduleName": "Cdp",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(quantity:interval:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "EventFlushRateQuantityAndInterval",
+                "printedName": "Cdp.EventFlushRateQuantityAndInterval",
+                "usr": "c:@M@Cdp@objc(cs)CdpEventFlushRateQuantityAndInterval"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@Cdp@objc(cs)CdpEventFlushRateQuantityAndInterval(im)initWithQuantity:interval:",
+            "mangledName": "$s3Cdp33EventFlushRateQuantityAndIntervalC8quantity8intervalACSi_Sdtcfc",
+            "moduleName": "Cdp",
+            "objc_name": "initWithQuantity:interval:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(quantity:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "EventFlushRateQuantityAndInterval",
+                "printedName": "Cdp.EventFlushRateQuantityAndInterval",
+                "usr": "c:@M@Cdp@objc(cs)CdpEventFlushRateQuantityAndInterval"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@Cdp@objc(cs)CdpEventFlushRateQuantityAndInterval(im)initWithQuantity:",
+            "mangledName": "$s3Cdp33EventFlushRateQuantityAndIntervalC8quantityACSi_tcfc",
+            "moduleName": "Cdp",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithQuantity:",
+            "declAttributes": [
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@Cdp@objc(cs)CdpEventFlushRateQuantityAndInterval",
+        "mangledName": "$s3Cdp33EventFlushRateQuantityAndIntervalC",
+        "moduleName": "Cdp",
+        "objc_name": "CdpEventFlushRateQuantityAndInterval",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjC",
+          "ObjCMembers",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:@M@Cdp@objc(cs)CdpEventFlushRateQuantity",
+        "superclassNames": [
+          "Cdp.EventFlushRateQuantity",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -3690,14 +4140,14 @@
     {
       "filePath": "\/Users\/srobichaud\/source\/MobileSdk\/ios\/dev\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/Managers\/EventManager.swift",
       "kind": "StringLiteral",
-      "offset": 884,
+      "offset": 947,
       "length": 11,
       "value": "\"queueSize\""
     },
     {
       "filePath": "\/Users\/srobichaud\/source\/MobileSdk\/ios\/dev\/sdk-cdp-ios\/Cdp\/Cdp\/Events\/Managers\/EventManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 1883,
+      "offset": 2153,
       "length": 5,
       "value": "false"
     },
@@ -3837,35 +4287,35 @@
     {
       "filePath": "\/Users\/srobichaud\/source\/MobileSdk\/ios\/dev\/sdk-cdp-ios\/Cdp\/Cdp\/Config\/CdpConfig.swift",
       "kind": "StringLiteral",
-      "offset": 592,
+      "offset": 648,
       "length": 7,
       "value": "\"appId\""
     },
     {
       "filePath": "\/Users\/srobichaud\/source\/MobileSdk\/ios\/dev\/sdk-cdp-ios\/Cdp\/Cdp\/Config\/CdpConfig.swift",
       "kind": "StringLiteral",
-      "offset": 620,
+      "offset": 676,
       "length": 10,
       "value": "\"endpoint\""
     },
     {
       "filePath": "\/Users\/srobichaud\/source\/MobileSdk\/ios\/dev\/sdk-cdp-ios\/Cdp\/Cdp\/Config\/CdpConfig.swift",
       "kind": "StringLiteral",
-      "offset": 654,
+      "offset": 710,
       "length": 16,
       "value": "\"sessionTimeout\""
     },
     {
       "filePath": "\/Users\/srobichaud\/source\/MobileSdk\/ios\/dev\/sdk-cdp-ios\/Cdp\/Cdp\/Config\/CdpConfig.swift",
       "kind": "StringLiteral",
-      "offset": 709,
+      "offset": 765,
       "length": 16,
       "value": "\"trackLifecycle\""
     },
     {
       "filePath": "\/Users\/srobichaud\/source\/MobileSdk\/ios\/dev\/sdk-cdp-ios\/Cdp\/Cdp\/Config\/CdpConfig.swift",
       "kind": "StringLiteral",
-      "offset": 755,
+      "offset": 811,
       "length": 14,
       "value": "\"trackScreens\""
     },
@@ -3968,13 +4418,6 @@
       "value": "200"
     },
     {
-      "filePath": "\/Users\/srobichaud\/source\/MobileSdk\/ios\/dev\/sdk-cdp-ios\/Cdp\/Cdp\/Storage\/Dao\/QueueEventDao.swift",
-      "kind": "IntegerLiteral",
-      "offset": 414,
-      "length": 2,
-      "value": "20"
-    },
-    {
       "filePath": "\/Users\/srobichaud\/source\/MobileSdk\/ios\/dev\/sdk-cdp-ios\/Cdp\/Cdp\/Storage\/Entities\/Domain\/QueueEventDomainEntity.swift",
       "kind": "IntegerLiteral",
       "offset": 246,
@@ -4038,6 +4481,20 @@
       "value": "600"
     },
     {
+      "filePath": "\/Users\/srobichaud\/source\/MobileSdk\/ios\/dev\/sdk-cdp-ios\/Cdp\/Cdp\/Config\/EventFlushRate.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2292,
+      "length": 2,
+      "value": "20"
+    },
+    {
+      "filePath": "\/Users\/srobichaud\/source\/MobileSdk\/ios\/dev\/sdk-cdp-ios\/Cdp\/Cdp\/Config\/EventFlushRate.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5167,
+      "length": 4,
+      "value": "1000"
+    },
+    {
       "filePath": "\/Users\/srobichaud\/source\/MobileSdk\/ios\/dev\/sdk-cdp-ios\/Cdp\/Cdp\/Utils\/FatalErrorUtil.swift",
       "kind": "StringLiteral",
       "offset": 435,
@@ -4047,7 +4504,7 @@
     {
       "filePath": "\/Users\/srobichaud\/source\/MobileSdk\/ios\/dev\/sdk-cdp-ios\/Cdp\/Cdp\/Storage\/Managers\/CdpStorageManager.swift",
       "kind": "StringLiteral",
-      "offset": 909,
+      "offset": 996,
       "length": 6,
       "value": "\"auth\""
     },
