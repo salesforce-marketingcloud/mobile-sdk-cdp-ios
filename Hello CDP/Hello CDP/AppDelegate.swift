@@ -64,6 +64,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         .trackScreens(true) // default: false
         .trackLifecycle(true) // default: false
         .sessionTimeout(600) // default: 600
+        .eventFlushRate(EventFlushRateQuantityAndInterval(quantity: 20, interval: 30.0)) // default EventFlushRateQuantity(quantity: 20)
         .build()
     }
 
